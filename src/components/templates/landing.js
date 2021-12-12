@@ -565,194 +565,194 @@ export default function Landing() {
                                 
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/pieter_founder.jpg"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Pieter</p>
+                                    <p className="team_member_name">Name</p>
                                     <p className="team_member_title">Founder</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/ginni_ceo.jpg"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Ginni</p>
-                                    <p className="team_member_title">CEO</p>
-                                    <a className="team_member_url" href="#"></a>
-                                </div>
-                                <div className="team__member">
-                                    <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/david_cio.jpg"/>
-                                    </div>
-                                    <p className="team_member_name">David</p>
-                                    <p className="team_member_title">CIO</p>
-                                    <a className="team_member_url" href="#"></a>
-                                </div>
-                                <div className="team__member">
-                                    <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/bill_cmo.jpg"/>
-                                    </div>
-                                    <p className="team_member_name">William</p>
-                                    <p className="team_member_title">CMO</p>
-                                    <a className="team_member_url" href="#"></a>
-                                </div>
-                                <div className="team__member">
-                                    <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/safra_chief_economist.jpg"/>
-                                    </div>
-                                    <p className="team_member_name">Safra</p>
-                                    <p className="team_member_title">Chief Economist</p>
-                                    <a className="team_member_url" href="#"></a>
-                                </div>
-                                <div className="team__member">
-                                    <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/chanchal_lead_developer.jpg"/>
-                                    </div>
-                                    <p className="team_member_name">Chanchal</p>
-                                    <p className="team_member_title">Lead Developer</p>
-                                    <a className="team_member_url" href="#"></a>
-                                </div>
-                                <div className="team__member">
-                                    <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/alexander_lead_developer.jpg"/>
-                                    </div>
-                                    <p className="team_member_name">Alexander</p>
-                                    <p className="team_member_title">Lead Developer</p>
-                                    <a className="team_member_url" href="#"></a>
-                                </div>
-                                <div className="team__member">
-                                    <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/lisa_lead_designer.jpg"/>
-                                    </div>
-                                    <p className="team_member_name">Lisa</p>
-                                    <p className="team_member_title">Graphic Designer</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Chief Executive Officer</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Demo</p>
-                                    <p className="team_member_title">Demo</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Chief Operating Officer & President</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Demo</p>
-                                    <p className="team_member_title">Demo</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">The Ever Foundation Council Member</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Demo</p>
-                                    <p className="team_member_title">Demo</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Vice President, Risk</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Demo</p>
-                                    <p className="team_member_title">Demo</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Vice President, Products</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Demo</p>
-                                    <p className="team_member_title">Demo</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Vice President, Technology</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Demo</p>
-                                    <p className="team_member_title">Demo</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Vice President, Growth</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Demo</p>
-                                    <p className="team_member_title">Demo</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Vice President, Communications</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Demo</p>
-                                    <p className="team_member_title">Demo</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Vice President, Compliance</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Demo</p>
-                                    <p className="team_member_title">Demo</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Vice President, Investor Relations</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Demo</p>
-                                    <p className="team_member_title">Demo</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Vice President, Business Development</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Demo</p>
-                                    <p className="team_member_title">Demo</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Technical Staff</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Demo</p>
-                                    <p className="team_member_title">Demo</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Technical Staff</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Demo</p>
-                                    <p className="team_member_title">Demo</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Technical Staff</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Demo</p>
-                                    <p className="team_member_title">Demo</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Technical Staff</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Demo</p>
-                                    <p className="team_member_title">Demo</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Technical Staff</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
-                                    <p className="team_member_name">Demo</p>
-                                    <p className="team_member_title">Demo</p>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Technical Staff</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
+                                    </div>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Technical Staff</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
+                                    </div>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Technical Staff</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
+                                    </div>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Technical Staff</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
+                                    </div>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Technical Staff</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
+                                    </div>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Technical Staff</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
+                                    </div>
+                                    <p className="team_member_name">Name</p>
+                                    <p className="team_member_title">Technical Staff</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
                                 

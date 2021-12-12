@@ -1061,7 +1061,7 @@ img {
     width: 100%;
     min-width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: .25fr .25fr .25fr .25fr;
     grid-gap: .5rem;
     padding: 40px 20px;
 }
@@ -2190,7 +2190,7 @@ img {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     .team__list__block{
-        grid-template-columns: auto auto;
+        grid-template-columns: .5fr .5fr;
     }
 }
 
