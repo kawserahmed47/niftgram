@@ -808,7 +808,7 @@ export default function Landing() {
                     <aside className="subscribe">
                         <div className="center">
                             <div className="subscribe__box">
-                                <div className="subscribe__img fade-in--left"><img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="" width="381" loading="eager" /></div>
+                                {/* <div className="subscribe__img fade-in--left"><img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="" width="381" loading="eager" /></div> */}
                                 <form className="subscribe__form fade-in--right form" action="https://laqiwf2orj.execute-api.eu-central-1.amazonaws.com/dev/subscribe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" noValidate="novalidate" autoComplete="off" encType="text/plain"><input type="hidden" value="Subscribe" name="subject" />
                                     <h3 className="subscribe__title h2">STAY UP TO DATE ON ALL THINGS, EVER</h3>
                                     <div className="subscribe__fieldset">
