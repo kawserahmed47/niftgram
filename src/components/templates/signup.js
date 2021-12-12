@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import Header from './layouts/header2';
+import Footer from './layouts/footer'
 
 export default function Signup() {
     const [firstName, setFirstName] = useState();
@@ -45,33 +47,12 @@ export default function Signup() {
         }
        
     }
+
+    document.querySelector("body").style.backgroundColor = "#1652f0"
     return(
         <div>
             <div className="wrapper">
-                <header className="header" id="header_block">
-                    {/* <div className="top_info_block" id="top_info_block"></div> */}
-                    <div className="center" style={{paddingTop: ".5rem", paddingBottom: ".5rem" }}>
-                        <div className="header__logo">
-                            <a href="https://www.ever.re/" className="logo" title="Ever Corp">
-                                <img className="header__logo_image" src="assets/img/brandLogo/everlogo.png" alt=""/>
-                            </a>
-                        </div>
-                        <nav className="header__menu">
-                            <ul className="menu">
-                                <li className="menu__item"><a href="./#about" className="menu__link">About</a></li>
-                                <li className="menu__item"><a href="./#roadmap" className="menu__link">Roadmap</a></li>
-                                <li className="menu__item"><a href="./#token" className="menu__link">Token</a></li>
-                                <li className="menu__item"><a href="./#team" className="menu__link">Team</a></li>
-                                <li className="menu__item"><a href="./#cases" className="menu__link">Backed by</a></li>
-                                <li className="menu__item"><a href="#" className="menu__link">Join our Whitelist</a></li>
-                                <li className="menu__item"><a href="./signin" className="menu__link">Sign In</a></li>
-                            </ul>
-                        </nav>
-                        <div className="header__social">
-
-                        </div><button className="button btn-menu-toggle" type="button" aria-label="открыть меню"><span className="btn-menu-toggle__line btn-menu-toggle__line--top"></span> <span className="btn-menu-toggle__line btn-menu-toggle__line--center"></span> <span className="btn-menu-toggle__line btn-menu-toggle__line--bottom"></span></button>
-                    </div>
-                </header>
+                <Header/>
                 <main class="main">
                     <section class="each-section first">
                         <div class="center center-content">
@@ -118,6 +99,7 @@ export default function Signup() {
                         </div>
                     </section>
                 </main>
+                <Footer/>
                 
             </div>
             

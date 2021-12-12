@@ -1,46 +1,230 @@
-import React from 'react'
+import React, { useState, useEffect,} from 'react'
+import Header from './layouts/header'
+import Footer from './layouts/footer'
 
 export default function Landing() {
+    const [sliderVal, setSliderVal] = useState(0)
+    useEffect(() => {
+        changeArrowWithLink()
+        getAllTeamMembers()
+    });
+
+    var startX,
+        startY,
+        dist,
+        threshold = 150, //required min distance traveled to be considered swipe
+        allowedTime = 1000, // maximum time allowed to travel that distance
+        elapsedTime,
+        startTime
+ 
+    function handleswipe(isrightswipe, isleftswipe){
+        if (isrightswipe){
+            let val = sliderVal
+            val-=10
+            
+            sliderInput (val)
+        }
+        else if(isleftswipe){
+            let val = sliderVal
+            val+=10
+            
+            sliderInput (val)
+        }
+        else{
+            console.log("didn't worked")
+        }
+    }
+ 
+    function touchStart(e){
+        var touchobj = e.changedTouches[0]
+        dist = 0
+        startX = touchobj.pageX
+        startY = touchobj.pageY
+        startTime = new Date().getTime() // record time when finger first makes contact with surface
+        // e.preventDefault()
+    }
+ 
+    function touchMove(e){
+        // e.preventDefault() // prevent scrolling when inside DIV
+    }
+ 
+    function touchEnd(e){
+        var touchobj = e.changedTouches[0]
+        dist = touchobj.pageX - startX // get total dist traveled by finger while in contact with surface
+        elapsedTime = new Date().getTime() - startTime // get time elapsed
+        // check that elapsed time is within specified, horizontal dist traveled >= threshold, and vertical dist traveled <= 100
+        var swiperightBol = (elapsedTime <= allowedTime && dist >= threshold && Math.abs(touchobj.pageY - startY) <= 100)
+        var swipeleftBol = (elapsedTime <= allowedTime && dist*-1 >= threshold && Math.abs(touchobj.pageY - startY) <= 100)
+        
+        handleswipe(swiperightBol, swipeleftBol)
+        // e.preventDefault()
+    }
+
+
+    function sliderInput (val) {
+        val = parseInt(val)
+        let max = parseInt(document.getElementById("rangeSlider").value)
+        let min = 0
+        
+        if(val<min){
+            val=min
+        }
+        if(val>max){
+            val=max
+        }
+
+        setSliderVal(val)
+
+        let teamContainer = document.querySelector(".team__list")
+        let teamBlock = document.querySelectorAll(".team__list__block")[0]
+
+        let width = teamBlock.offsetWidth
+
+        teamContainer.scrollLeft = width*(val/10);
+    };
+
+    // useEffect(() => {
+    //     console.log('Do something after counter has changed', sliderVal);
+    // }, [sliderVal]);
+    
+    function fitSlider(val){
+        val = parseInt(val)
+        if(val%10 !== 0){
+            if(val%10 <= 5){
+                val = val-(val%10)
+                // setSliderVal(val)
+                
+            }else{
+                val = val+(val%10)
+                // setSliderVal(val)
+            }
+            // sliderInput(val)
+        }
+    }
+
+
+    let allTeamMembers = []
+    let perBlock
+    let totalBlock
+    function getAllTeamMembers(){
+        let teamMember = document.querySelectorAll(".team__member")
+
+        teamMember.forEach(element => {
+            allTeamMembers.push(element)
+        });
+        makeTeamBlock()
+    }
+
+    window.onresize = ()=>{
+        makeTeamBlock()
+    }
+    function makeTeamBlock(){
+        let teamContainer = document.querySelector(".team__list")
+        teamContainer.innerHTML = ""
+        if(window.screen.width>500){
+            perBlock = 8
+        }else{
+            perBlock = 4
+        }
+
+        totalBlock = Math.ceil(allTeamMembers.length/perBlock)
+        let blockNeed = totalBlock
+        for(let i=0; i<blockNeed; i++){
+            let block = document.createElement("div");
+            block.classList.add("team__list__block")
+            for(let j=0; j<perBlock && i*perBlock+j<allTeamMembers.length; j++){
+                block.appendChild(allTeamMembers[i*perBlock+j])
+            }
+            teamContainer.appendChild(block)
+        }
+
+        // change slider step
+        let slider = document.getElementById("rangeSlider")
+        slider.max = (totalBlock-1)*10
+        // slider.step = slider.max/totalBlock
+    }
+
+    function changeArrowWithLink(){
+        let element = document.getElementById("typewriter")
+
+        let all = [
+            "Open a free bank account in minutes",
+            "Deposit or Invest as little as $5 and start earning +18% APR, paid out daily",
+            "Trade 1000s of cryptos and securities at one place",
+            "Deposit, buy, and sell cryptos and securities with over 160 supported fiat currencies",
+            "Free demo trading account with $10,000 to perfect your trading skills",
+            "Make your money go further"
+        ]
+
+        let interval
+        let index = 0
+        typeChar()
+        function typeChar(){
+            let charIndex = 0
+            let textTemp = ""
+            let typeForward = true
+            let wait = true
+            interval = setInterval(function(){
+                if(typeForward){
+                    textTemp += all[index][charIndex]
+                    element.innerText = textTemp
+
+                    if(charIndex === all[index].length-1){
+                        typeForward = false
+                        setTimeout(function(){
+                            wait = false
+                        }, 3000)
+                    }else{
+                        charIndex++
+                    }
+                }else{
+                    if(!wait){
+                        textTemp = textTemp.slice(0, -1)
+                        element.innerText = textTemp
+
+                        if(textTemp.length===0){
+                            wait = true
+                            if(index === all.length-1){
+                                index=0
+                            }else{
+                                index++;
+                            }
+                            clearInterval(interval)
+                            typeChar()
+                        }
+                    }
+                }
+            },50)
+        }
+    }
+
     return(
         <div>
             <div className="wrapper">
-                <header className="header" id="header_block">
-                    <div className="center" style={{paddingTop: ".5rem", paddingBottom: ".5rem"}}>
-                        <div className="header__logo">
-                            <a href="https://www.ever.re/" className="logo" title="Ever Corp">
-                                <img className="header__logo_image" src="assets/img/brandLogo/everlogo.png" alt=""/>
-                            </a>
-                        </div>
-                        <nav className="header__menu">
-                            <ul className="menu">
-                                <li className="menu__item"><a href="#about" className="menu__link">About</a></li>
-                                <li className="menu__item"><a href="#roadmap" className="menu__link">Roadmap</a></li>
-                                <li className="menu__item"><a href="#token" className="menu__link">Token</a></li>
-                                <li className="menu__item"><a href="#team" className="menu__link">Team</a></li>
-                                <li className="menu__item"><a href="#cases" className="menu__link">Backed by</a></li>
-                                <li className="menu__item"><a href="#" className="menu__link">Join our Whitelist</a></li>
-                                <li className="menu__item"><a href="./signin" className="menu__link">Sign In</a></li>
-                            </ul>
-                        </nav>
-                        <div className="header__social">
-
-                        </div><button className="button btn-menu-toggle" type="button" aria-label="открыть меню"><span className="btn-menu-toggle__line btn-menu-toggle__line--top"></span> <span className="btn-menu-toggle__line btn-menu-toggle__line--center"></span> <span className="btn-menu-toggle__line btn-menu-toggle__line--bottom"></span></button>
-                    </div>
-                </header>
+                <Header/>
                 <main className="main">
                     <article className="first-screen">
                         <div className="center">
                             <h1 className="first-screen__title h1">One hub, all things money.</h1>
                             <div className="fade-in--200">
-                                <p className="first-screen__desc">The Tokenized ETF Management Platform:<br />experiment with
-                                    aggregated assets to create a tokenized ETF,<br />or invest in proven portfolio formulas.</p>
+                                <p className="first-screen__desc typewriter" id="typewriter" style={{minHeight:"28px"}}>
+                                    
+                                </p>
                             </div>
-                            <div className="first-screen__btns fade-in--400"><a href="#" target="_blank" className="btn btn--grad btn--demo" rel="noopener nofollow"><span>Live Demo
-                                    </span><img src="./assets/img/coins.svg" alt="" /></a></div>
+                            <div className="first-screen__btns fade-in--400">
+                                <a href="./#demo" className="btn btn--grad btn--demo" rel="noopener nofollow">
+                                    <span>Live Demo</span>
+                                    <img src="./assets/img/brandLogo/favicon_white.png" alt="" />
+                                </a>
+                                <a href="./assets/pdf/Wolpaper.pdf" download="Whitepaper v1.pdf" className="btn btn--grad btn--demo" rel="noopener nofollow">
+                                    <span style={{paddingLeft:0}}>Whitepaper v1</span>
+                                    {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
+                                </a>
+                            </div>
                             <div className="fade-in--400">
-                                <p className="first-screen__intro_deck">Explore our <a href="#" target="_blank" className="first-screen__intro_deck a">intro deck</a> and <a href="#" target="_blank" className="first-screen__intro_deck a">whitepaper </a>to know more about the
-                                    project!</p>
-                                <p className="first-screen__intro_deck">Explore our <a href="#" target="_blank" className="first-screen__intro_deck a">audit</a> made by Hacken!</p>
+                                <p className="first-screen__intro_deck">
+                                    Auditing by <img style={{marginLeft:"8px", marginRight:"8px"}} src="./assets/img/certik_logo.svg" height="20" alt="CERTIK"/> CERTIK in progress
+                                </p>
                             </div>
                         </div>
                         <div className="first-screen__scroll">
@@ -54,7 +238,7 @@ export default function Landing() {
                             </div>
                         </div>
                         <div className="first-screen__img">
-                            <picture>
+                            {/* <picture>
                                 <img src="./assets/img/app.png" alt="" loading="lazy" height="900" />
                             </picture>
                             <a target="_blank" href="#" className="btn btn--play" aria-label="Play video" rel="noopener nofollow" data-id="_Jond3Bb4us">
@@ -62,13 +246,16 @@ export default function Landing() {
                                     <path d="M53 87.43V49.15a3 3 0 014.48-2.61l38.28 21.7a3 3 0 01-.28 5.35L57.19 90.2A3 3 0 0153 87.42z">
                                     </path>
                                 </svg>
-                            </a>
+                            </a> */}
+                            <video playsinline autoPlay muted loop class="bannerImage" id="bannerImage">
+                                <source src="./assets/img/landing-page-top-video.mp4" type="video/mp4" />
+                            </video>
                         </div>
                     </article>
                     <article className="about" id="about">
                         <div className="center">
                             <h2 className="hash">About</h2>
-                            <p className="h1">Why Ever.re</p>
+                            <p className="h1">Why Ever</p>
                             <ul className="about__list">
                                 <li className="about__item fade-in--100">
                                     <div className="about__ico"><svg width="72" height="72" viewBox="0 0 72 72">
@@ -123,21 +310,184 @@ export default function Landing() {
                             </ul>
                         </div>
                     </article>
-                    <aside className="try-demo">
+                    <aside className="try-demo" id="demo">
                         <div className="center">
+                            <p class="h1" style={{color:"var(--primary)", textAlign:"center"}}>Demos</p>
+                            <br/>
+                            <br/>
+                            <h2 style={{color:"var(--primary)"}}>Beta</h2>
+                            <br/>
                             <div className="try-demo__box">
-                                <div className="try-demo__content">
-                                    <p className="h2">Try Ever.re demo version</p>
-                                    <div className="try-demo__btn fade-in--100">
-                                        <a href="#" className="btn btn--white" target="_blank" rel="noopener nofollow">Live Demo
-                                        </a>
-                                    </div>
+                                <div className="try-demo__box__each">
+                                    <h2>ILO</h2>
+                                    <br/>
+                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
+                                    <b/>
+                                    <br/>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button">Launch demo</a>
                                 </div>
-                                <div className="try-demo__img fade-in--right fade-in--500">
-                                    <picture>
-                                        <img src="./assets/img/img.png" alt="" loading="lazy" width="748" height="440" />
-                                    </picture>
+                                <div className="try-demo__box__each">
+                                    <h2>Classic</h2>
+                                    <br/>
+                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
+                                    <b/>
+                                    <br/>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button">Launch demo</a>
                                 </div>
+                                <div className="try-demo__box__each">
+                                    <h2>EverDEX</h2>
+                                    <br/>
+                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
+                                    <b/>
+                                    <br/>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button">Launch demo</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>Perpetual</h2>
+                                    <br/>
+                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
+                                    <b/>
+                                    <br/>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button">Launch demo</a>
+                                </div>
+
+                            </div>
+
+                            <br/>
+                            <br/>
+
+                            <h2 style={{color:"var(--primary)"}}>A month away</h2>
+                            <br/>
+                            <div className="try-demo__box">
+                                <div className="try-demo__box__each">
+                                    <h2>Pro</h2>
+                                    <br/>
+                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
+                                    <b/>
+                                    <br/>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>Offerings</h2>
+                                    <br/>
+                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
+                                    <b/>
+                                    <br/>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>CFD</h2>
+                                    <br/>
+                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
+                                    <b/>
+                                    <br/>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>eVault</h2>
+                                    <br/>
+                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
+                                    <b/>
+                                    <br/>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>eWallet</h2>
+                                    <br/>
+                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
+                                    <b/>
+                                    <br/>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Launch demo</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>Crypto Margin</h2>
+                                    <br/>
+                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
+                                    <b/>
+                                    <br/>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>Advanced</h2>
+                                    <br/>
+                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
+                                    <b/>
+                                    <br/>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>P2P</h2>
+                                    <br/>
+                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
+                                    <b/>
+                                    <br/>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>Derivatives</h2>
+                                    <br/>
+                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
+                                    <b/>
+                                    <br/>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>eCrib</h2>
+                                    <br/>
+                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
+                                    <b/>
+                                    <br/>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Launch demo</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>Prime</h2>
+                                    <br/>
+                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
+                                    <b/>
+                                    <br/>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>Demo Trading</h2>
+                                    <br/>
+                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
+                                    <b/>
+                                    <br/>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+
                             </div>
                         </div>
                     </aside>
@@ -148,7 +498,7 @@ export default function Landing() {
                             <div className="roadmap__table">
                                 <div className="roadmap__row roadmap__row--q1-2021">
                                     <div className="roadmap__thead fade-in--left">
-                                        <div className="roadmap__year">2021</div>
+                                        <div className="roadmap__year">2022</div>
                                         <div className="roadmap__quarter">Q1</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
@@ -160,7 +510,7 @@ export default function Landing() {
                                 </div>
                                 <div className="roadmap__row roadmap__row--q2-2021">
                                     <div className="roadmap__thead fade-in--left">
-                                        <div className="roadmap__year">2021</div>
+                                        <div className="roadmap__year">2022</div>
                                         <div className="roadmap__quarter">Q2</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
@@ -172,7 +522,7 @@ export default function Landing() {
                                 </div>
                                 <div className="roadmap__row roadmap__row--q3-2021">
                                     <div className="roadmap__thead fade-in--left">
-                                        <div className="roadmap__year">2021</div>
+                                        <div className="roadmap__year">2022</div>
                                         <div className="roadmap__quarter">Q3</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
@@ -184,7 +534,7 @@ export default function Landing() {
                                 </div>
                                 <div className="roadmap__row roadmap__row--q4-2021">
                                     <div className="roadmap__thead fade-in--left">
-                                        <div className="roadmap__year">2021</div>
+                                        <div className="roadmap__year">2022</div>
                                         <div className="roadmap__quarter">Q4</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
@@ -196,7 +546,7 @@ export default function Landing() {
                                 </div>
                                 <div className="roadmap__row roadmap__row--q1-2022">
                                     <div className="roadmap__thead fade-in--left">
-                                        <div className="roadmap__year">2022</div>
+                                        <div className="roadmap__year">2023</div>
                                         <div className="roadmap__quarter">Q1</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
@@ -209,7 +559,7 @@ export default function Landing() {
                                 </div>
                                 <div className="roadmap__row roadmap__row--q2-2022">
                                     <div className="roadmap__thead fade-in--left">
-                                        <div className="roadmap__year">2022</div>
+                                        <div className="roadmap__year">2023</div>
                                         <div className="roadmap__quarter">Q2</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
@@ -225,7 +575,8 @@ export default function Landing() {
                     <article className="token" id="token">
                         <div className="center">
                             <h2 className="hash">Token</h2>
-                            <p className="h1">Token details</p><img className="token__pic" src="./assets/img/pic.svg" width="379" height="322" loading="lazy" alt="" />
+                            <p className="h1">Token details</p>
+                            {/* <img className="token__pic" src="./assets/img/brandLogo/faviconTransparent-normal.png" width="379" height="auto" loading="lazy" alt="" /> */}
                             <div className="token__tabs"><button className="token__btn-tab button is-active" type="button">Distribution</button> <button className="token__btn-tab button" type="button">Funds Raised</button></div>
                             <div className="token__row">
                                 <div className="token__col is-active">
@@ -255,7 +606,7 @@ export default function Landing() {
                                 </div>
                                 <div className="join-demo__img fade-in--left fade-in--500">
                                     <picture>
-                                        <img src="./assets/img/img(1).png" alt="" loading="lazy" width="572" height="488" />
+                                        <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="" loading="lazy" width="572" height="auto" />
                                     </picture>
                                 </div>
                             </div>
@@ -265,136 +616,221 @@ export default function Landing() {
                         <div className="center team__center">
                             <h2 className="hash">Team</h2>
                             <p className="h1">Team members</p>
-                            <ul className="team__list">
-                                <li className="team__item fade-in--100">
-                                    <div className="team__head">
-                                        <div className="team__photo">
-                                            <picture>
-                                                <img src="./assets/img/team/pieter_founder.jpg" alt="Pieter" loading="lazy" width="200" />
-                                            </picture>
-                                        </div>
-                                        <a href="https://t.me/pieter_ever" target="_blank" rel="noopener nofollow" className="team__linkedin">
-                                            Telegram Pieter
-                                        </a>
+                            <div className="team__list" id="team__list" onTouchStart={(e)=>{touchStart(e)}} onTouchMove={(e)=>{touchMove(e)}} onTouchEnd={(e)=>{touchEnd(e)}}>
+                                
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/pieter_founder.jpg"/>
                                     </div>
-                                    <div className="team__body">
-                                        <h3 className="team__name h3">Pieter</h3>
-                                        <p className="team__status">Founder</p>
+                                    <p className="team_member_name">Pieter</p>
+                                    <p className="team_member_title">Founder</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/ginni_ceo.jpg"/>
                                     </div>
-                                </li>
-                                <li className="team__item fade-in--200">
-                                    <div className="team__head">
-                                        <div className="team__photo">
-                                            <picture>
-                                                <img src="./assets/img/team/ginni_ceo.jpg" alt="Ginni" loading="lazy" width="200" />
-                                            </picture>
-                                        </div>
-                                        <a href="#" target="_blank" rel="noopener nofollow" className="team__linkedin">
-                                            Telegram Ginni
-                                        </a>
+                                    <p className="team_member_name">Ginni</p>
+                                    <p className="team_member_title">CEO</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/david_cio.jpg"/>
                                     </div>
-                                    <div className="team__body">
-                                        <h3 className="team__name h3">Ginni</h3>
-                                        <p className="team__status">CEO</p>
+                                    <p className="team_member_name">David</p>
+                                    <p className="team_member_title">CIO</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/bill_cmo.jpg"/>
                                     </div>
-                                </li>
-                                <li className="team__item fade-in--300">
-                                    <div className="team__head">
-                                        <div className="team__photo">
-                                            <picture>
-                                                <img src="./assets/img/team/david_cio.jpg" alt="David" loading="lazy" width="200" />
-                                            </picture>
-                                        </div>
-                                        <a href="https://t.me/david_ever" target="_blank" rel="noopener nofollow" className="team__linkedin">
-                                            Telegram David
-                                        </a>
+                                    <p className="team_member_name">William</p>
+                                    <p className="team_member_title">CMO</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/safra_chief_economist.jpg"/>
                                     </div>
-                                    <div className="team__body">
-                                        <h3 className="team__name h3">David</h3>
-                                        <p className="team__status">CIO</p>
+                                    <p className="team_member_name">Safra</p>
+                                    <p className="team_member_title">Chief Economist</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/chanchal_lead_developer.jpg"/>
                                     </div>
-                                </li>
-                                <li className="team__item fade-in--400">
-                                    <div className="team__head">
-                                        <div className="team__photo">
-                                            <picture>
-                                                <img src="./assets/img/team/bill_cmo.jpg" alt="William" loading="lazy" width="200" />
-                                            </picture>
-                                        </div>
-                                        <a href="https://www.linkedin.com/in/michael-medrish-6a2ab749/" target="_blank" rel="noopener nofollow" className="team__linkedin">
-                                            Telegram William
-                                        </a>
+                                    <p className="team_member_name">Chanchal</p>
+                                    <p className="team_member_title">Lead Developer</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/alexander_lead_developer.jpg"/>
                                     </div>
-                                    <div className="team__body">
-                                        <h3 className="team__name h3">William</h3>
-                                        <p className="team__status">CMO</p>
+                                    <p className="team_member_name">Alexander</p>
+                                    <p className="team_member_title">Lead Developer</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/lisa_lead_designer.jpg"/>
                                     </div>
-                                </li>
-                                <li className="team__item fade-in--400">
-                                    <div className="team__head">
-                                        <div className="team__photo">
-                                            <picture>
-                                                <img src="./assets/img/team/safra_chief_economist.jpg" alt="Safra" loading="lazy" width="200" />
-                                            </picture>
-                                        </div>
-                                        <a href="#" target="_blank" rel="noopener nofollow" className="team__linkedin">
-                                            Telegram Safra
-                                        </a>
+                                    <p className="team_member_name">Lisa</p>
+                                    <p className="team_member_title">Graphic Designer</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
                                     </div>
-                                    <div className="team__body">
-                                        <h3 className="team__name h3">Safra</h3>
-                                        <p className="team__status">Chief Economist</p>
+                                    <p className="team_member_name">Demo</p>
+                                    <p className="team_member_title">Demo</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
                                     </div>
-                                </li>
-                                <li className="team__item fade-in--400">
-                                    <div className="team__head">
-                                        <div className="team__photo">
-                                            <picture>
-                                                <img src="./assets/img/team/chanchal_lead_developer.jpg" alt="Chanchal" loading="lazy" width="200" />
-                                            </picture>
-                                        </div>
-                                        <a href="#" target="_blank" rel="noopener nofollow" className="team__linkedin">
-                                            Telegram Chanchal
-                                        </a>
+                                    <p className="team_member_name">Demo</p>
+                                    <p className="team_member_title">Demo</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
                                     </div>
-                                    <div className="team__body">
-                                        <h3 className="team__name h3">Chanchal</h3>
-                                        <p className="team__status">Lead Developer</p>
+                                    <p className="team_member_name">Demo</p>
+                                    <p className="team_member_title">Demo</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
                                     </div>
-                                </li>
-                                <li className="team__item fade-in--400">
-                                    <div className="team__head">
-                                        <div className="team__photo">
-                                            <picture>
-                                                <img src="./assets/img/team/alexander_lead_developer.jpg" alt="Alexander" loading="lazy" width="200" />
-                                            </picture>
-                                        </div>
-                                        <a href="#" target="_blank" rel="noopener nofollow" className="team__linkedin">
-                                            Telegram Alexander
-                                        </a>
+                                    <p className="team_member_name">Demo</p>
+                                    <p className="team_member_title">Demo</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
                                     </div>
-                                    <div className="team__body">
-                                        <h3 className="team__name h3">Alexander</h3>
-                                        <p className="team__status">Lead Developer</p>
+                                    <p className="team_member_name">Demo</p>
+                                    <p className="team_member_title">Demo</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
                                     </div>
-                                </li>
-                                <li className="team__item fade-in--400">
-                                    <div className="team__head">
-                                        <div className="team__photo">
-                                            <picture>
-                                                <img src="./assets/img/team/lisa_lead_designer.jpg" alt="Lisa" loading="lazy" width="200" />
-                                            </picture>
-                                        </div>
-                                        <a href="#" target="_blank" rel="noopener nofollow" className="team__linkedin">
-                                            Telegram Lisa
-                                        </a>
+                                    <p className="team_member_name">Demo</p>
+                                    <p className="team_member_title">Demo</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
                                     </div>
-                                    <div className="team__body">
-                                        <h3 className="team__name h3">Lisa</h3>
-                                        <p className="team__status">Graphic Designer</p>
+                                    <p className="team_member_name">Demo</p>
+                                    <p className="team_member_title">Demo</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
                                     </div>
-                                </li>
-                            </ul>
+                                    <p className="team_member_name">Demo</p>
+                                    <p className="team_member_title">Demo</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                    </div>
+                                    <p className="team_member_name">Demo</p>
+                                    <p className="team_member_title">Demo</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                    </div>
+                                    <p className="team_member_name">Demo</p>
+                                    <p className="team_member_title">Demo</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                    </div>
+                                    <p className="team_member_name">Demo</p>
+                                    <p className="team_member_title">Demo</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                    </div>
+                                    <p className="team_member_name">Demo</p>
+                                    <p className="team_member_title">Demo</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                    </div>
+                                    <p className="team_member_name">Demo</p>
+                                    <p className="team_member_title">Demo</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                    </div>
+                                    <p className="team_member_name">Demo</p>
+                                    <p className="team_member_title">Demo</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                    </div>
+                                    <p className="team_member_name">Demo</p>
+                                    <p className="team_member_title">Demo</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                <div className="team__member">
+                                    <div className="team__member__image-container">
+                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                    </div>
+                                    <p className="team_member_name">Demo</p>
+                                    <p className="team_member_title">Demo</p>
+                                    <a className="team_member_url" href="#"></a>
+                                </div>
+                                
+                            </div>
+                            <div className="team__scroll">
+                                <div class="range-slider">
+                                    <div class="range-slider__slider">
+                                        <input
+                                            type="range"
+                                            min="0"
+                                            max="100"
+                                            step=".1"
+                                            value={sliderVal}
+                                            className="slider"
+                                            id="rangeSlider"
+                                            onInput={(element)=>{sliderInput(element.target.value)}}
+                                            onMouseUp={(element)=>{fitSlider(element.target.value)}}
+                                            onTouchEnd={(element)=>{fitSlider(element.target.value)}}
+                                            
+                                        />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </article>
                     <aside className="cases" id="cases">
@@ -413,15 +849,13 @@ export default function Landing() {
                             <div className="mobile-app__box">
                                 <div className="mobile-app__content">
                                     <h2 className="hash">Coming soon</h2>
-                                    <p className="h2">Ever.re Mobile App</p>
+                                    <p className="h2">Ever Mobile Apps</p>
                                     <p className="mobile-app__text fade-in--100">Сonvenient platform is always with you.</p>
                                 </div>
                                 <div className="mobile-app__img fade-in--right fade-in--500">
-                                    <picture>
-                                        <img className="mobile-app__img-phone" src="./assets/img/app.png" alt="" loading="lazy" height="527" />
-                                    </picture>
-                                    <img className="mobile-app__img-purpur" src="./assets/img/coin-purpur.svg" alt="" loading="lazy" width="177" height="158" /> 
-                                    <img className="mobile-app__img-gold" src="./assets/img/coin-gold.svg" alt="" loading="lazy" width="145" height="138" />
+                                    <video  height="527" playsinline autoPlay muted loop class="mobile-app__img-phone" id="bannerImage">
+                                        <source src="./assets/img/landing-page-top-video.mp4" type="video/mp4" />
+                                    </video>
                                 </div>
                             </div>
                         </div>
@@ -429,44 +863,24 @@ export default function Landing() {
                     <aside className="subscribe">
                         <div className="center">
                             <div className="subscribe__box">
-                                <div className="subscribe__img fade-in--left"><img src="./assets/img/pic(1).svg" alt="" width="381" height="390" loading="eager" /></div>
+                                <div className="subscribe__img fade-in--left"><img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="" width="381" loading="eager" /></div>
                                 <form className="subscribe__form fade-in--right form" action="https://laqiwf2orj.execute-api.eu-central-1.amazonaws.com/dev/subscribe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" noValidate="novalidate" autoComplete="off" encType="text/plain"><input type="hidden" value="Subscribe" name="subject" />
-                                    <h3 className="subscribe__title h2">Join our subscribers list to get the latest news, updates
-                                        and announcements directly<br />in your inbox.</h3>
+                                    <h3 className="subscribe__title h2">STAY UP TO DATE ON ALL THINGS, EVER</h3>
                                     <div className="subscribe__fieldset">
-                                        <input type="email" name="email" placeholder="Enter your email" aria-label="enter email" required="required" className="input input--invalid" autoComplete="off" id="mce-EMAIL" />
+                                        <input type="email" name="email" placeholder="E-mail" aria-label="enter email" required="required" className="input input--invalid" autoComplete="off" id="mce-EMAIL" />
                                         <div id="mce-responses" className="clear">
                                             <div className="response" id="mce-error-response" style={{display: "none" }}></div>
                                             <div className="response" id="mce-success-response" style={{display: "none" }}></div>
                                         </div>
                                         {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
-                                        <button className="btn btn--violet form__submit" type="submit" id="mc-embedded-subscribe">Send</button>
+                                        <button className="btn btn--black form__submit" type="submit" id="mc-embedded-subscribe">Subscribe</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </aside>
                 </main>
-                <footer className="footer">
-                    <div className="center">
-                        <div className="footer__logo">
-                            <img className="header__logo_image" src="assets/img/brandLogo/everlogo.png" alt=""/>
-                            <p className="footer__copyright">Copyright © 2021 Ever Corp. All Rights Reserved.</p>
-                        </div>
-                        <div className="footer__menu">
-                            <ul className="menu">
-                                <li className="menu__item"><a href="#about" className="menu__link">About</a></li>
-                                <li className="menu__item"><a href="#roadmap" className="menu__link">Roadmap</a></li>
-                                <li className="menu__item"><a href="#token" className="menu__link">Token</a></li>
-                                <li className="menu__item"><a href="#team" className="menu__link">Team</a></li>
-                                <li className="menu__item"><a href="#cases" className="menu__link">Backed by</a></li>
-                            </ul>
-                        </div>
-                        <div className="footer__social">
-
-                        </div>
-                    </div>
-                </footer>
+                <Footer/>
             </div>
             <div className="modal" id="modal">
                 <div className="modal__box">
