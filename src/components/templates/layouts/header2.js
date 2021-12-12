@@ -6,7 +6,8 @@ export default function Header() {
             <div className="center" style={{paddingTop: "1rem", paddingBottom: "1rem"}}>
                 <div className="header__logo">
                     <a href="https://www.ever.re/" className="logo" title="Ever Corp">
-                        <img className="header__logo_image" src="assets/img/brandLogo/ever_all_black.png" alt=""/>
+                        <img className="header__logo_image desktop" src="assets/img/brandLogo/ever_all_white.png" alt=""/>
+                        <img className="header__logo_image mobile" src="assets/img/brandLogo/favicon_white.png" alt=""/>
                     </a>
                 </div>
                 <nav className="header__menu">

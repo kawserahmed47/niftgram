@@ -49,7 +49,7 @@ export default function Signin() {
                     <section className="each-section first">
                         <div className="center center-content">
                             <div className="auth-form">
-                                <h1 className="auth-form__title">Sign in to Ever.re</h1>
+                                <h1 className="auth-form__title">Sign in to EVER</h1>
                                 <div className="auth-form__body">
                                     <div className="auth-form__input-container">
                                         <input id="email" name="email" type="email" placeholder="Email" require onInput={(e)=>{emailInput(e)}}/>

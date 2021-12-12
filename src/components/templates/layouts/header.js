@@ -4,7 +4,7 @@ export default function Header() {
 
     useEffect(() => {
         changeArrowWithLink("menu__link_with_arrow")
-        changeArrowWithLink("menu__link_with_arrow2")
+        // changeArrowWithLink("menu__link_with_arrow2")
     });
 
     function changeArrowWithLink(id){
@@ -62,13 +62,14 @@ export default function Header() {
             <div className="center" style={{paddingTop: "1rem", paddingBottom: "1rem"}}>
                 <div className="header__logo">
                     <a href="https://www.ever.re/" className="logo" title="Ever Corp">
-                        <img className="header__logo_image" src="assets/img/brandLogo/ever_all_black.png" alt=""/>
+                        <img className="header__logo_image desktop" src="assets/img/brandLogo/ever_all_black.png" alt=""/>
+                        <img className="header__logo_image mobile" src="assets/img/brandLogo/favicon_all_black.png" alt=""/>
                     </a>
                 </div>
-                <li className="menu__item menu__item_with_arrow getStartedBtn2">
+                {/* <li className="menu__item menu__item_with_arrow getStartedBtn2">
                     <a href="#" className="menu__link menu__link_with_arrow" id="menu__link_with_arrow2">Get started</a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="9" viewBox="0 0 50 9" fill="none" class="css-yb3uov menu__item_arrow" style={{color:"yellow"}} arrowWidth="15"><path fillRule="evenodd" clipRule="evenodd" d="M46 0C47.5 4 50 4 50 4V5C50 5 47.5 5 46 9H45C45 8.27907 46.0395 6.2588 47.369 5H0V4H47.369C46.0395 2.7412 45 0.720928 45 0H46Z" fill="white"></path></svg>
-                </li>
+                </li> */}
                 <nav className="header__menu desktop">
                     <ul className="menu">
                         <li className="menu__item"><a href="./#about" className="menu__link">About</a></li>
@@ -96,8 +97,8 @@ export default function Header() {
                         <li className="menu__item"><a href="./#token" className="menu__link">Token</a></li>
                         <li className="menu__item"><a href="./#token" className="menu__link">Team</a></li>
                         <div className="menu__item_signAndGetStart">
-                            <li className="menu__item fill"><a href="./#token" className="menu__link">Get Started</a></li>
-                            <li className="menu__item"><a href="./#token" className="menu__link">Sgn In</a></li>
+                            <li className="menu__item fill"><a href="./signup" className="menu__link">Get Started</a></li>
+                            <li className="menu__item"><a href="./signin" className="menu__link">Sgn In</a></li>
                         </div>
                         <ul class="social">
                             <li class="social__item">

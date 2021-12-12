@@ -151,7 +151,7 @@ export default function Landing() {
             "Open a free bank account in minutes",
             "Deposit or Invest as little as $5 and start earning +18% APR, paid out daily",
             "Trade 1000s of cryptos and securities at one place",
-            "Deposit, buy, and sell cryptos and securities with over 160 supported fiat currencies",
+            "Deposit, buy, and sell cryptos and securities with over 160 supported fiat currency",
             "Free demo trading account with $10,000 to perfect your trading skills",
             "Make your money go further"
         ]
@@ -214,7 +214,7 @@ export default function Landing() {
                             <div className="first-screen__btns fade-in--400">
                                 <a href="./#demo" className="btn btn--grad btn--demo" rel="noopener nofollow">
                                     <span>Live Demo</span>
-                                    <img src="./assets/img/brandLogo/favicon_white.png" alt="" />
+                                    {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
                                 </a>
                                 <a href="./assets/pdf/Wolpaper.pdf" download="Whitepaper v1.pdf" className="btn btn--grad btn--demo" rel="noopener nofollow">
                                     <span style={{paddingLeft:0}}>Whitepaper v1</span>
@@ -223,7 +223,7 @@ export default function Landing() {
                             </div>
                             <div className="fade-in--400">
                                 <p className="first-screen__intro_deck">
-                                    Auditing by CERTIK <img style={{marginLeft:"8px", marginRight:"8px"}} src="./assets/img/certik_logo.svg" height="20" alt="CERTIK"/> in progress
+                                    Auditing by <img style={{marginLeft:"8px", marginRight:"8px"}} src="./assets/img/certik_logo.svg" height="20" alt="CERTIK"/> in progress
                                 </p>
                             </div>
                         </div>
@@ -449,7 +449,7 @@ export default function Landing() {
                                     <div className="roadmap__tbody fade-in--000">
                                         <div className="roadmap__td"><span>Project<br />Project started</span></div>
                                         <div className="roadmap__td"><span>Concept<br />Concept clarified</span></div>
-                                        <div className="roadmap__td"><span>Ever.re Functionality Defined</span></div>
+                                        <div className="roadmap__td"><span>EVER Functionality Defined</span></div>
                                         <div className="roadmap__td"><span>Team assembled</span></div>
                                     </div>
                                 </div>
@@ -510,7 +510,7 @@ export default function Landing() {
                                     <div className="roadmap__tbody fade-in--000">
                                         <div className="roadmap__td"><span>Gamification</span></div>
                                         <div className="roadmap__td"><span>AI Algo-Trading</span></div>
-                                        <div className="roadmap__td"><span>Multi Node Ever.re protocol</span></div>
+                                        <div className="roadmap__td"><span>Multi Node EVER protocol</span></div>
                                         <div className="roadmap__td"><span>Top crypto exchanges listing</span></div>
                                     </div>
                                 </div>
