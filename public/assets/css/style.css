@@ -221,7 +221,7 @@ img {
 
 .btn--grad span {
     display: block;
-    padding-left: 32px;
+    /* padding-left: 32px; */
     position: relative;
     overflow: hidden;
     border-radius: 34px;
