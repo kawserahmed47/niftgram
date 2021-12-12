@@ -223,7 +223,7 @@ export default function Landing() {
                             </div>
                             <div className="fade-in--400">
                                 <p className="first-screen__intro_deck">
-                                    Auditing by <img style={{marginLeft:"8px", marginRight:"8px"}} src="./assets/img/certik_logo.svg" height="20" alt="CERTIK"/> CERTIK in progress
+                                    Auditing by CERTIK <img style={{marginLeft:"8px", marginRight:"8px"}} src="./assets/img/certik_logo.svg" height="20" alt="CERTIK"/> in progress
                                 </p>
                             </div>
                         </div>
@@ -319,20 +319,7 @@ export default function Landing() {
                             <br/>
                             <div className="try-demo__box">
                                 <div className="try-demo__box__each">
-                                    <h2>ILO</h2>
-                                    <br/>
-                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
-                                    <b/>
-                                    <br/>
-                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
-                                    <br/>
-                                    <a href="#" className="try-demo__button">Launch demo</a>
-                                </div>
-                                <div className="try-demo__box__each">
                                     <h2>Classic</h2>
-                                    <br/>
-                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
-                                    <b/>
                                     <br/>
                                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                                     <br/>
@@ -341,18 +328,12 @@ export default function Landing() {
                                 <div className="try-demo__box__each">
                                     <h2>EverDEX</h2>
                                     <br/>
-                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
-                                    <b/>
-                                    <br/>
                                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                                     <br/>
                                     <a href="#" className="try-demo__button">Launch demo</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Perpetual</h2>
-                                    <br/>
-                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
-                                    <b/>
                                     <br/>
                                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                                     <br/>
@@ -370,18 +351,12 @@ export default function Landing() {
                                 <div className="try-demo__box__each">
                                     <h2>Pro</h2>
                                     <br/>
-                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
-                                    <b/>
-                                    <br/>
                                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Offerings</h2>
-                                    <br/>
-                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
-                                    <b/>
                                     <br/>
                                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                                     <br/>
@@ -390,18 +365,12 @@ export default function Landing() {
                                 <div className="try-demo__box__each">
                                     <h2>CFD</h2>
                                     <br/>
-                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
-                                    <b/>
-                                    <br/>
                                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>eVault</h2>
-                                    <br/>
-                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
-                                    <b/>
                                     <br/>
                                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                                     <br/>
@@ -410,18 +379,12 @@ export default function Landing() {
                                 <div className="try-demo__box__each">
                                     <h2>eWallet</h2>
                                     <br/>
-                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
-                                    <b/>
-                                    <br/>
                                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Launch demo</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Crypto Margin</h2>
-                                    <br/>
-                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
-                                    <b/>
                                     <br/>
                                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                                     <br/>
@@ -430,18 +393,12 @@ export default function Landing() {
                                 <div className="try-demo__box__each">
                                     <h2>Advanced</h2>
                                     <br/>
-                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
-                                    <b/>
-                                    <br/>
                                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>P2P</h2>
-                                    <br/>
-                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
-                                    <b/>
                                     <br/>
                                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                                     <br/>
@@ -450,18 +407,12 @@ export default function Landing() {
                                 <div className="try-demo__box__each">
                                     <h2>Derivatives</h2>
                                     <br/>
-                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
-                                    <b/>
-                                    <br/>
                                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>eCrib</h2>
-                                    <br/>
-                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
-                                    <b/>
                                     <br/>
                                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                                     <br/>
@@ -470,18 +421,12 @@ export default function Landing() {
                                 <div className="try-demo__box__each">
                                     <h2>Prime</h2>
                                     <br/>
-                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
-                                    <b/>
-                                    <br/>
                                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Demo Trading</h2>
-                                    <br/>
-                                    <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="Demo image"/>
-                                    <b/>
                                     <br/>
                                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                                     <br/>
@@ -577,19 +522,24 @@ export default function Landing() {
                             <h2 className="hash">Token</h2>
                             <p className="h1">Token details</p>
                             {/* <img className="token__pic" src="./assets/img/brandLogo/faviconTransparent-normal.png" width="379" height="auto" loading="lazy" alt="" /> */}
-                            <div className="token__tabs"><button className="token__btn-tab button is-active" type="button">Distribution</button> <button className="token__btn-tab button" type="button">Funds Raised</button></div>
+                            <div className="token__tabs">
+                                <button className="token__btn-tab button is-active" type="button">Metrics</button>
+                                <button className="token__btn-tab button" type="button">Distribution</button>
+                                <button className="token__btn-tab button" type="button">Schedule</button>
+                                <button className="token__btn-tab button" type="button">Governance</button>
+                            </div>
                             <div className="token__row">
                                 <div className="token__col is-active">
-                                    <img src="assets/img/token-distribution.jpg" alt=""/>
+                                    <img src="assets/img/token/token1.jpg" alt=""/>
                                 </div>
                                 <div className="token__col fade-in--100">
-                                    <img style={{maxHeight: "400px" }} src="assets/img/token-metrics.jpg" alt=""/>
+                                    <img src="assets/img/token/token2.jpg" alt=""/>
                                 </div>
                                 <div className="token__col fade-in--100">
-                                    <img style={{maxHeight: "400px" }} src="assets/img/token-release.jpg" alt=""/>
+                                    <img src="assets/img/token/token3.jpg" alt=""/>
                                 </div>
                                 <div className="token__col fade-in--100">
-                                    <img style={{maxHeight: "400px" }} src="assets/img/community-led.jpg" alt=""/>
+                                    <img src="assets/img/token/token4.jpg" alt=""/>
                                 </div>
                             </div>
                         </div>
@@ -598,16 +548,11 @@ export default function Landing() {
                         <div className="center">
                             <div className="join-demo__box">
                                 <div className="join-demo__content">
-                                    <p className="h2">Join Ever.re right now and see for yourself</p>
+                                    <p className="join-demo__text">Join EVER right now and start earning</p>
                                     <div className="join-demo__btn fade-in--100">
-                                        <a href="#" className="btn btn--white" target="_blank" rel="noopener nofollow">Live Demo
+                                        <a href="./sigup" className="btn btn--white" target="_blank" rel="noopener nofollow">Get Started
                                         </a>
                                     </div>
-                                </div>
-                                <div className="join-demo__img fade-in--left fade-in--500">
-                                    <picture>
-                                        <img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="" loading="lazy" width="572" height="auto" />
-                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -684,7 +629,7 @@ export default function Landing() {
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
                                     <p className="team_member_name">Demo</p>
                                     <p className="team_member_title">Demo</p>
@@ -692,7 +637,7 @@ export default function Landing() {
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
                                     <p className="team_member_name">Demo</p>
                                     <p className="team_member_title">Demo</p>
@@ -700,7 +645,7 @@ export default function Landing() {
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
                                     <p className="team_member_name">Demo</p>
                                     <p className="team_member_title">Demo</p>
@@ -708,7 +653,7 @@ export default function Landing() {
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
                                     <p className="team_member_name">Demo</p>
                                     <p className="team_member_title">Demo</p>
@@ -716,7 +661,7 @@ export default function Landing() {
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
                                     <p className="team_member_name">Demo</p>
                                     <p className="team_member_title">Demo</p>
@@ -724,7 +669,7 @@ export default function Landing() {
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
                                     <p className="team_member_name">Demo</p>
                                     <p className="team_member_title">Demo</p>
@@ -732,7 +677,7 @@ export default function Landing() {
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
                                     <p className="team_member_name">Demo</p>
                                     <p className="team_member_title">Demo</p>
@@ -740,7 +685,7 @@ export default function Landing() {
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
                                     <p className="team_member_name">Demo</p>
                                     <p className="team_member_title">Demo</p>
@@ -748,7 +693,7 @@ export default function Landing() {
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
                                     <p className="team_member_name">Demo</p>
                                     <p className="team_member_title">Demo</p>
@@ -756,7 +701,7 @@ export default function Landing() {
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
                                     <p className="team_member_name">Demo</p>
                                     <p className="team_member_title">Demo</p>
@@ -764,7 +709,7 @@ export default function Landing() {
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
                                     <p className="team_member_name">Demo</p>
                                     <p className="team_member_title">Demo</p>
@@ -772,7 +717,7 @@ export default function Landing() {
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
                                     <p className="team_member_name">Demo</p>
                                     <p className="team_member_title">Demo</p>
@@ -780,7 +725,7 @@ export default function Landing() {
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
                                     <p className="team_member_name">Demo</p>
                                     <p className="team_member_title">Demo</p>
@@ -788,7 +733,7 @@ export default function Landing() {
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
                                     <p className="team_member_name">Demo</p>
                                     <p className="team_member_title">Demo</p>
@@ -796,7 +741,7 @@ export default function Landing() {
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
                                     <p className="team_member_name">Demo</p>
                                     <p className="team_member_title">Demo</p>
@@ -804,7 +749,7 @@ export default function Landing() {
                                 </div>
                                 <div className="team__member">
                                     <div className="team__member__image-container">
-                                        <img className="team__member__image" src="./assets/img/team/demo.png"/>
+                                        <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
                                     </div>
                                     <p className="team_member_name">Demo</p>
                                     <p className="team_member_title">Demo</p>
@@ -833,7 +778,7 @@ export default function Landing() {
                             </div>
                         </div>
                     </article>
-                    <aside className="cases" id="cases">
+                    {/* <aside className="cases" id="cases">
                         <div className="center">
                             <h2 className="hash">Investment Funds</h2>
                             <p className="h1">Backed by</p>
@@ -843,7 +788,7 @@ export default function Landing() {
                                 </picture>
                             </div>
                         </div>
-                    </aside>
+                    </aside> */}
                     <aside className="mobile-app">
                         <div className="center">
                             <div className="mobile-app__box">

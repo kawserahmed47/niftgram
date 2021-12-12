@@ -5,7 +5,7 @@ export default function Header() {
         <footer className="footer">
             <div className="center">
                 <div className="footer__logo">
-                    <img className="header__logo_image" src="assets/img/brandLogo/ever_all_white.png" alt=""/>
+                    {/* <img className="header__logo_image" src="assets/img/brandLogo/ever_all_white.png" alt=""/> */}
                     <div className="footer__copyright">
                         © 2021 
                         <img src="./assets/img/brandLogo/ever_all_white.png" height="16"/>
@@ -13,12 +13,12 @@ export default function Header() {
                 </div>
                 <div className="footer__menu">
                     <ul className="menu">
-                        <li className="menu__item"><a href="#about" className="menu__link">About</a></li>
-                        <li className="menu__item"><a href="#demo" className="menu__link">Demos</a></li>
-                        <li className="menu__item"><a href="#roadmap" className="menu__link">Roadmap</a></li>
-                        <li className="menu__item"><a href="#token" className="menu__link">Token</a></li>
-                        <li className="menu__item"><a href="#team" className="menu__link">Team</a></li>
-                        <li className="menu__item"><a href="#team" className="menu__link">Get Started</a></li>
+                        <li className="menu__item"><a href="./#about" className="menu__link">About</a></li>
+                        <li className="menu__item"><a href="./#demo" className="menu__link">Demos</a></li>
+                        <li className="menu__item"><a href="./#roadmap" className="menu__link">Roadmap</a></li>
+                        <li className="menu__item"><a href="./#token" className="menu__link">Token</a></li>
+                        <li className="menu__item"><a href="./#team" className="menu__link">Team</a></li>
+                        <li className="menu__item"><a href="./#team" className="menu__link">Get Started</a></li>
                     </ul>
                 </div>
                 <div className="footer__social">

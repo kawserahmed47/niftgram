@@ -48,7 +48,7 @@ export default function Signup() {
        
     }
 
-    document.querySelector("body").style.backgroundColor = "#1652f0"
+    document.querySelector("body").style.backgroundColor = "#02ac02"
     return(
         <div>
             <div className="wrapper">

@@ -67,14 +67,15 @@ export default function Header() {
                 </div>
                 <li className="menu__item menu__item_with_arrow getStartedBtn2">
                     <a href="#" className="menu__link menu__link_with_arrow" id="menu__link_with_arrow2">Get started</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="9" viewBox="0 0 50 9" fill="none" class="css-yb3uov menu__item_arrow" style={{color:"yellow"}} arrowWidth="15"><path fillRule="evenodd" clipRule="evenodd" d="M46 0C47.5 4 50 4 50 4V5C50 5 47.5 5 46 9H45C45 8.27907 46.0395 6.2588 47.369 5H0V4H47.369C46.0395 2.7412 45 0.720928 45 0H46Z" fill="var(--secondary)"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="9" viewBox="0 0 50 9" fill="none" class="css-yb3uov menu__item_arrow" style={{color:"yellow"}} arrowWidth="15"><path fillRule="evenodd" clipRule="evenodd" d="M46 0C47.5 4 50 4 50 4V5C50 5 47.5 5 46 9H45C45 8.27907 46.0395 6.2588 47.369 5H0V4H47.369C46.0395 2.7412 45 0.720928 45 0H46Z" fill="white"></path></svg>
                 </li>
                 <nav className="header__menu desktop">
                     <ul className="menu">
                         <li className="menu__item"><a href="./#about" className="menu__link">About</a></li>
-                        <li className="menu__item"><a href="./#demo" className="menu__link">demo</a></li>
+                        <li className="menu__item"><a href="./#demo" className="menu__link">Demo</a></li>
                         <li className="menu__item"><a href="./#roadmap" className="menu__link">Roadmap</a></li>
                         <li className="menu__item"><a href="./#token" className="menu__link">Token</a></li>
+                        <li className="menu__item"><a href="./#team" className="menu__link">Team</a></li>
                     </ul>
                 </nav>
                 <nav className="header__menu desktop">
@@ -82,18 +83,18 @@ export default function Header() {
                         <li className="menu__item"><a href="./signin" className="menu__link">Sign In</a></li>
                         <li className="menu__item menu__item_with_arrow getStartedBtn">
                             <a href="#" className="menu__link menu__link_with_arrow" id="menu__link_with_arrow">Get started</a>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="9" viewBox="0 0 50 9" fill="none" class="css-yb3uov menu__item_arrow" style={{color:"yellow"}} arrowWidth="15"><path fillRule="evenodd" clipRule="evenodd" d="M46 0C47.5 4 50 4 50 4V5C50 5 47.5 5 46 9H45C45 8.27907 46.0395 6.2588 47.369 5H0V4H47.369C46.0395 2.7412 45 0.720928 45 0H46Z" fill="var(--secondary)"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="9" viewBox="0 0 50 9" fill="none" class="css-yb3uov menu__item_arrow" style={{color:"yellow"}} arrowWidth="15"><path fillRule="evenodd" clipRule="evenodd" d="M46 0C47.5 4 50 4 50 4V5C50 5 47.5 5 46 9H45C45 8.27907 46.0395 6.2588 47.369 5H0V4H47.369C46.0395 2.7412 45 0.720928 45 0H46Z" fill="#000"></path></svg>
                         </li>
                     </ul>
                 </nav>
 
                 <nav className="header__menu mobile">
                     <ul className="menu">
-                        <li className="menu__item"><a href="./#about" className="menu__link">Products</a></li>
-                        <li className="menu__item"><a href="./#demo" className="menu__link">Exchanges</a></li>
-                        <li className="menu__item"><a href="./#roadmap" className="menu__link">Prices</a></li>
-                        <li className="menu__item"><a href="./#token" className="menu__link">Help</a></li>
-                        <li className="menu__item"><a href="./#token" className="menu__link">Company</a></li>
+                        <li className="menu__item"><a href="./#about" className="menu__link">About</a></li>
+                        <li className="menu__item"><a href="./#demo" className="menu__link">Demo</a></li>
+                        <li className="menu__item"><a href="./#roadmap" className="menu__link">Roadmap</a></li>
+                        <li className="menu__item"><a href="./#token" className="menu__link">Token</a></li>
+                        <li className="menu__item"><a href="./#token" className="menu__link">Team</a></li>
                         <div className="menu__item_signAndGetStart">
                             <li className="menu__item fill"><a href="./#token" className="menu__link">Get Started</a></li>
                             <li className="menu__item"><a href="./#token" className="menu__link">Sgn In</a></li>
@@ -118,7 +119,11 @@ export default function Header() {
                     </ul>
                 </nav>
 
-                <button className="button btn-menu-toggle" type="button" aria-label="открыть меню"><span className="btn-menu-toggle__line btn-menu-toggle__line--top"></span> <span className="btn-menu-toggle__line btn-menu-toggle__line--center"></span> <span className="btn-menu-toggle__line btn-menu-toggle__line--bottom"></span></button>
+                <button className="button btn-menu-toggle" type="button" aria-label="открыть меню">
+                    <span className="btn-menu-toggle__line btn-menu-toggle__line--top"></span>
+                    <span className="btn-menu-toggle__line btn-menu-toggle__line--center"></span>
+                    <span className="btn-menu-toggle__line btn-menu-toggle__line--bottom"></span>
+                </button>
             </div>
         </header>
     )

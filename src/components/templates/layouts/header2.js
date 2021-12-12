@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 export default function Header() {
     return(
-        <header className="header" id="header_block">
+        <header className="header header2" id="header_block">
             <div className="center" style={{paddingTop: "1rem", paddingBottom: "1rem"}}>
                 <div className="header__logo">
                     <a href="https://www.ever.re/" className="logo" title="Ever Corp">
@@ -12,7 +12,7 @@ export default function Header() {
                 <nav className="header__menu">
                     <ul className="menu">
                         <li className="menu__item">
-                            <a href="#" className="menu__link">Products</a>
+                            <a className="menu__link">Products <b class="caret"></b></a>
                             <div className="menu__hidden_items">
                                 <ul className="menu">
                                     <li className="menu__item"><a href="#" className="menu__link">Banking</a></li>
@@ -26,7 +26,7 @@ export default function Header() {
                             </div>
                         </li>
                         <li className="menu__item">
-                            <a href="#" className="menu__link">Exchage</a>
+                            <a className="menu__link">Exchage <b class="caret"></b></a>
                             <div className="menu__hidden_items">
                                 <ul className="menu">
                                     <li className="menu__item"><a href="#" className="menu__link">Demo</a></li>
@@ -43,7 +43,7 @@ export default function Header() {
                             </div>    
                         </li>
                         <li className="menu__item">
-                            <a href="#" className="menu__link">Prices</a>
+                            <a className="menu__link">Prices <b class="caret"></b></a>
                             <div className="menu__hidden_items">
                                 <ul className="menu">
                                     <li className="menu__item"><a href="#" className="menu__link">Banking</a></li>
@@ -55,8 +55,9 @@ export default function Header() {
                             </div>
                         </li>
                         <li className="menu__item">
-                            <a href="#" className="menu__link">
-                                <img src="assets/img/support.svg" width="30" alt="Support"/>
+                            <a className="menu__link" style={{display: "flex"}}>
+                                <img src="assets/img/support-white.svg" width="30" alt="Support"/>
+                                <b class="caret" style={{marginTop: "16px"}}></b>
                             </a>
                             <div className="menu__hidden_items">
                                 <ul className="menu">
@@ -66,8 +67,8 @@ export default function Header() {
                                 </ul>
                             </div>
                         </li>
-                        <li className="menu__item"><a href="./signin" className="menu__link buttonT1">Sign In</a></li>
-                        <li className="menu__item"><a href="./signup" className="menu__link buttonT1">Sign Up</a></li>
+                        <li className="menu__item"><a href="./signin" className="menu__link">Sign In</a></li>
+                        <li className="menu__item"><a href="./signup" className="menu__link">Sign Up</a></li>
                     </ul>
                 </nav>
                 <button className="button btn-menu-toggle" type="button" aria-label="открыть меню"><span className="btn-menu-toggle__line btn-menu-toggle__line--top"></span> <span className="btn-menu-toggle__line btn-menu-toggle__line--center"></span> <span className="btn-menu-toggle__line btn-menu-toggle__line--bottom"></span></button>
