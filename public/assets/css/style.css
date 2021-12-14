@@ -487,6 +487,15 @@ img {
     margin-left: -10px;
     image-rendering: -webkit-optimize-contrast;
 }
+.header__logo_image.desktop.hover{
+    display: none;
+}
+.logo:hover .header__logo_image.desktop{
+    display: none;
+}
+.logo:hover .header__logo_image.desktop.hover{
+    display: block;
+}
 .header__logo_image.mobile{
     display: none;
     width: 50px;
@@ -850,7 +859,8 @@ img {
 }
 
 .roadmap {
-    padding: 146px 0
+    padding: 146px 0;
+    padding-bottom: 0;
 }
 
 .roadmap__table {
@@ -864,6 +874,9 @@ img {
 .roadmap__row {
     display: flex;
     margin: 71px 0
+}
+.roadmap__row:last-child{
+    margin-bottom: 0;
 }
 
 .roadmap__row--q1-2021 {
@@ -1171,7 +1184,8 @@ img {
 .mobile-app__img-phone {
     position: absolute;
     left: 96px;
-    bottom: 0
+    bottom: 0;
+    max-height: 500px;
 }
 
 .mobile-app__img-purpur {
@@ -1457,7 +1471,8 @@ img {
 
     .roadmap {
         margin: 70px 0 60px;
-        padding: 50px 0
+        padding: 50px 0;
+        padding-bottom: 0;
     }
 
     .roadmap__table {
@@ -1601,7 +1616,7 @@ img {
         position: absolute;
         top: -128px;
         left: 310px;
-        right: -100vw;
+        right: 0;
         bottom: 0;
         overflow: hidden
     }
@@ -2151,10 +2166,10 @@ img {
 
     .mobile-app__img-phone {
         position: relative;
-        width: 234px;
+        max-height: 350px;
         height: auto;
         margin: auto;
-        left: 42px
+        left: 0;
     }
 
     .mobile-app__img-purpur {
@@ -2214,8 +2229,20 @@ img {
     .header__logo_image.mobile{
         display: block;
     }
+    .header__logo_image.mobile.hover{
+        display: none;
+    }
     .header__logo_image.desktop{
         display: none;
+    }
+    .logo:hover .header__logo_image.mobile{
+        display: none;
+    }
+    .logo:hover .header__logo_image.mobile.hover{
+        display: block;
+    }
+    .header__logo_image.desktop.hover{
+        display: none !important;
     }
 }
 

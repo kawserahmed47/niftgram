@@ -61,9 +61,11 @@ export default function Header() {
         <header className="header" id="header_block">
             <div className="center" style={{paddingTop: "1rem", paddingBottom: "1rem"}}>
                 <div className="header__logo">
-                    <a href="https://www.ever.re/" className="logo" title="Ever Corp">
+                    <a href="./" className="logo" title="Ever Corp">
                         <img className="header__logo_image desktop" src="assets/img/brandLogo/ever_all_black.png" alt=""/>
+                        <img className="header__logo_image desktop hover" src="assets/img/brandLogo/ever_all_color.png" alt=""/>
                         <img className="header__logo_image mobile" src="assets/img/brandLogo/favicon_all_black.png" alt=""/>
+                        <img className="header__logo_image mobile hover" src="assets/img/brandLogo/faviconTransparent.png" alt=""/>
                     </a>
                 </div>
                 {/* <li className="menu__item menu__item_with_arrow getStartedBtn2">

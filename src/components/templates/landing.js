@@ -197,7 +197,6 @@ export default function Landing() {
             },50)
         }
     }
-
     return(
         <div>
             <div className="wrapper">
@@ -776,29 +775,47 @@ export default function Landing() {
                                     <p className="mobile-app__text fade-in--100">Сonvenient platform is always with you.</p>
                                 </div>
                                 <div className="mobile-app__img fade-in--right fade-in--500">
-                                    <video  height="527" playsinline autoPlay muted loop class="mobile-app__img-phone" id="bannerImage">
+                                    {/* <video  height="527" playsinline autoPlay muted loop class="mobile-app__img-phone" id="bannerImage">
                                         <source src="./assets/img/landing-page-top-video.mp4" type="video/mp4" />
-                                    </video>
+                                    </video> */}
+                                    <img className="mobile-app__img-phone" src="./assets/img/mobileApp.svg"/>
                                 </div>
                             </div>
                         </div>
                     </aside>
                     <aside className="subscribe">
                         <div className="center">
-                            <div className="subscribe__box">
-                                {/* <div className="subscribe__img fade-in--left"><img src="./assets/img/brandLogo/faviconTransparent-normal.png" alt="" width="381" loading="eager" /></div> */}
-                                <form className="subscribe__form fade-in--right form" action="https://laqiwf2orj.execute-api.eu-central-1.amazonaws.com/dev/subscribe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" noValidate="novalidate" autoComplete="off" encType="text/plain"><input type="hidden" value="Subscribe" name="subject" />
+                            <div className="subscribe__box mc_embed_signup">
+                                <form className="subscribe__form fade-in--right form" action="https://ever.us20.list-manage.com/subscribe/post?u=56934695d4f357d705d9e1283&amp;id=171eeb594f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" noValidate="novalidate" autoComplete="off" encType="text/plain">
+                                    <input type="hidden" value="Subscribe" name="subject" />
                                     <h3 className="subscribe__title h2">STAY UP TO DATE ON ALL THINGS, EVER</h3>
                                     <div className="subscribe__fieldset">
-                                        <input type="email" name="email" placeholder="E-mail" aria-label="enter email" required="required" className="input input--invalid" autoComplete="off" id="mce-EMAIL" />
+                                        <input type="email" name="EMAIL" placeholder="E-mail" aria-label="enter email" required="required" className="required email input input--invalid" autoComplete="off" id="mce-EMAIL" />
                                         <div id="mce-responses" className="clear">
                                             <div className="response" id="mce-error-response" style={{display: "none" }}></div>
                                             <div className="response" id="mce-success-response" style={{display: "none" }}></div>
                                         </div>
                                         {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
-                                        <button className="btn btn--black form__submit" type="submit" id="mc-embedded-subscribe">Subscribe</button>
+                                        <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_56934695d4f357d705d9e1283_171eeb594f" tabIndex="-1" /></div>
+                                        <button className="btn btn--black form__submit" type="submit" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
                                     </div>
                                 </form>
+
+                                {/* <div id="mc_embed_signup">
+                                    <form className="subscribe__form fade-in--right form" action="https://ever.us20.list-manage.com/subscribe/post?u=56934695d4f357d705d9e1283&amp;id=171eeb594f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank"  rel="noopener noreferrer" noValidate style={{height : "100%"}}>
+                                        <div id="mc_embed_signup_scroll subscribe__fieldset">
+                                            <div className="mc-field-group" style={{height : "100%"}}>
+                                                <input type="email" name="EMAIL" className="newsLetterInput required email" id="mce-EMAIL" placeholder="Enter your email"/>
+                                            </div>
+                                            <div id="mce-responses" className="clear">
+                                                <div className="response" id="mce-error-response" style={{display: "none"}}></div>
+                                                <div className="response" id="mce-success-response" style={{display: "none"}}></div>
+                                            </div>   
+                                            <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_56934695d4f357d705d9e1283_171eeb594f" tabIndex="-1" /></div>
+                                            <div className="clear btn btn--black form__submit"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className=""/></div>
+                                        </div>
+                                    </form>
+                                </div> */}
                             </div>
                         </div>
                     </aside>
