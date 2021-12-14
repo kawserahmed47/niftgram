@@ -83,7 +83,7 @@ export default function Header() {
                     <ul className="menu">
                         <li className="menu__item"><a href="./signin" className="menu__link">Sign In</a></li>
                         <li className="menu__item menu__item_with_arrow getStartedBtn">
-                            <a href="#" className="menu__link menu__link_with_arrow" id="menu__link_with_arrow">Get started</a>
+                            <a href="./signup" className="menu__link menu__link_with_arrow" id="menu__link_with_arrow">Get started</a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="9" viewBox="0 0 50 9" fill="none" class="css-yb3uov menu__item_arrow" style={{color:"yellow"}} arrowWidth="15"><path fillRule="evenodd" clipRule="evenodd" d="M46 0C47.5 4 50 4 50 4V5C50 5 47.5 5 46 9H45C45 8.27907 46.0395 6.2588 47.369 5H0V4H47.369C46.0395 2.7412 45 0.720928 45 0H46Z" fill="#000"></path></svg>
                         </li>
                     </ul>

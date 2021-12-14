@@ -27,7 +27,7 @@ export default function Header() {
                             </div>
                         </li>
                         <li className="menu__item">
-                            <a className="menu__link">Exchage <b class="caret"></b></a>
+                            <a className="menu__link">Exchanges <b class="caret"></b></a>
                             <div className="menu__hidden_items">
                                 <ul className="menu">
                                     <li className="menu__item"><a href="#" className="menu__link">Demo</a></li>

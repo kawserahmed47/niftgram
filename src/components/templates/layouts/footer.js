@@ -18,7 +18,7 @@ export default function Header() {
                         <li className="menu__item"><a href="./#roadmap" className="menu__link">Roadmap</a></li>
                         <li className="menu__item"><a href="./#token" className="menu__link">Token</a></li>
                         <li className="menu__item"><a href="./#team" className="menu__link">Team</a></li>
-                        <li className="menu__item"><a href="./#team" className="menu__link">Get Started</a></li>
+                        <li className="menu__item"><a href="./signup" className="menu__link">Get Started</a></li>
                     </ul>
                 </div>
                 <div className="footer__social">

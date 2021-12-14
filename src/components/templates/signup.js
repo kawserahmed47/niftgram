@@ -53,7 +53,7 @@ export default function Signup() {
         <div>
             <div className="wrapper">
                 <Header/>
-                <main class="main">
+                <main class="main" style={{minHeight:"100vh"}}>
                     <section class="each-section first">
                         <div class="center center-content">
                             <div class="auth-form">
@@ -92,7 +92,7 @@ export default function Signup() {
                                     <button class="auth-form__submit-button large" type="button" onClick={()=>{authentication()}}>Create account</button>
                                 </div>
                                 <div class="auth-form__footer signup-page">
-                                    <p>Already have a Coinbase account?</p>
+                                    <p>Already have a EVER account?</p>
                                     <a href="./signin">Log in</a>
                                 </div>
                             </div>

@@ -45,7 +45,7 @@ export default function Signin() {
         <div>
             <div className="wrapper">
                 <Header/>
-                <main className="main" style={{height:"100vh"}}>
+                <main className="main" style={{minHeight:"100vh"}}>
                     <section className="each-section first">
                         <div className="center center-content">
                             <div className="auth-form">

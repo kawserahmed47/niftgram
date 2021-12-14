@@ -151,7 +151,7 @@ export default function Landing() {
             "Open a free bank account in minutes",
             "Deposit or Invest as little as $5 and start earning +18% APR, paid out daily",
             "Trade 1000s of cryptos and securities at one place",
-            "Deposit, buy, and sell cryptos and securities with over 160 supported fiat currency",
+            "Deposit, buy, and sell cryptos and securities with over 160 supported fiat currencies",
             "Free demo trading account with $10,000 to perfect your trading skills",
             "Make your money go further"
         ]
@@ -207,8 +207,11 @@ export default function Landing() {
                         <div className="center">
                             <h1 className="first-screen__title h1">One hub, all things money.</h1>
                             <div className="fade-in--200">
-                                <p className="first-screen__desc typewriter" id="typewriter" style={{minHeight:"28px"}}>
+                                <p className="typewriterContainer" style={{minHeight:"28px"}}>
+                                    <span className="first-screen__desc typewriter" id="typewriter">
                                     
+                                    </span>
+                                    <span className="typyingCursor"></span>
                                 </p>
                             </div>
                             <div className="first-screen__btns fade-in--400">
@@ -216,7 +219,7 @@ export default function Landing() {
                                     <span>Live Demo</span>
                                     {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
                                 </a>
-                                <a href="./assets/pdf/Wolpaper.pdf" download="Whitepaper v1.pdf" className="btn btn--grad btn--demo" rel="noopener nofollow">
+                                <a href="#" className="btn btn--grad btn--demo" rel="noopener nofollow">
                                     <span style={{paddingLeft:0}}>Whitepaper v1</span>
                                     {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
                                 </a>
@@ -255,39 +258,39 @@ export default function Landing() {
                     <article className="about" id="about">
                         <div className="center">
                             <h2 className="hash">About</h2>
-                            <p className="h1">Why Ever</p>
+                            <p className="h1">Why EVER</p>
                             <ul className="about__list">
                                 <li className="about__item fade-in--100">
                                     <div className="about__ico"><svg width="72" height="72" viewBox="0 0 72 72">
                                             <path d="M30.64 27.43h-3.96c2.65-2.96 5.56-4.02 9.46-4.02 6.83 0 12.37 5.4 12.37 12.05 0 6.66-5.54 12.06-12.37 12.06-6.83 0-12.37-5.4-12.37-12.06h-2.75c0 8.14 6.77 14.73 15.12 14.73s15.12-6.6 15.12-14.73-6.77-14.73-15.12-14.73c-4.41 0-7.92 1.22-11 4.36v-3.03H22.4v8.05h8.24v-2.68zm12.37 6.7h-5.5v-6.7h-2.74v9.37H43v-2.68z">
                                             </path>
                                         </svg></div>
-                                    <h3 className="about__head">Actively managed&nbsp;funds</h3>
-                                    <p>Consistent portfolio rebalancing by&nbsp;experienced asset managers.</p>
+                                    <h3 className="about__head">Actively managed funds</h3>
+                                    <p>Consistent portfolio rebalancing by experienced asset managers.</p>
                                 </li>
                                 <li className="about__item fade-in--200">
                                     <div className="about__ico"><svg width="72" height="72" viewBox="0 0 72 72">
                                             <path d="M25.22 23.01h21.14c1.3 0 2.35 1.29 2.35 2.87v20.1c0 1.58-1.05 2.87-2.35 2.87H25.22c-1.3 0-2.35-1.29-2.35-2.87v-20.1c0-1.58 1.06-2.87 2.35-2.87zm.24 14.21v9.04h20.66v-9.04h-5.8l-2.93-3.9-3.75 8.75-4.84-4.85h-3.34zm0-2.58h4.4l2.91 2.9 4-9.34 4.83 6.44h4.52V25.6H25.46v9.04z">
                                             </path>
                                         </svg></div>
-                                    <h3 className="about__head">Asset and strategy diversification</h3>
-                                    <p>Underlying assets such as crypto, NFTs,&nbsp;stocks, and commodities.</p>
+                                    <h3 className="about__head">Asset diversification</h3>
+                                    <p>Underlying assets such as crypto, NFTs, stocks, forex, indices, etfs, bonds, and commodities.</p>
                                 </li>
                                 <li className="about__item fade-in--300">
                                     <div className="about__ico"><svg width="72" height="72" viewBox="0 0 72 72">
                                             <path d="M24.77 46.82c-1.3-1.3-1.68-3.3-1.27-5.92-2.15-1.57-3.3-3.24-3.3-5.1 0-1.85 1.15-3.52 3.3-5.09-.41-2.62-.04-4.61 1.27-5.92 1.31-1.31 3.3-1.69 5.93-1.28 1.56-2.14 3.24-3.29 5.1-3.29 1.84 0 3.52 1.15 5.08 3.3 2.62-.42 4.62-.04 5.93 1.27 1.31 1.3 1.69 3.3 1.27 5.92 2.15 1.57 3.3 3.24 3.3 5.1 0 1.85-1.15 3.52-3.3 5.09.42 2.62.04 4.61-1.27 5.92-1.3 1.31-3.3 1.69-5.93 1.28-1.56 2.14-3.24 3.29-5.09 3.29-1.85 0-3.53-1.15-5.1-3.3-2.61.42-4.6.04-5.92-1.27zm6.28-1.67c.57-.12 1.17.12 1.49.62 1.24 1.93 2.36 2.78 3.25 2.78.9 0 2.01-.85 3.26-2.78.32-.5.9-.74 1.48-.62 2.25.48 3.64.3 4.28-.33.63-.63.8-2.03.33-4.27-.12-.58.12-1.17.61-1.49 1.93-1.25 2.8-2.36 2.8-3.26 0-.9-.87-2-2.8-3.25-.49-.32-.73-.91-.61-1.49.48-2.24.3-3.64-.33-4.27-.64-.63-2.03-.81-4.28-.33a1.42 1.42 0 01-1.48-.62c-1.25-1.93-2.36-2.79-3.26-2.79-.9 0-2 .86-3.25 2.8-.32.49-.92.73-1.5.6-2.24-.47-3.63-.3-4.26.34-.64.63-.82 2.03-.34 4.27.13.58-.12 1.17-.61 1.49-1.93 1.25-2.79 2.36-2.79 3.25 0 .9.86 2.01 2.79 3.26.5.32.74.91.61 1.49-.48 2.24-.3 3.64.34 4.27.63.63 2.02.81 4.27.33zm9.4-14.6l-6.08 6.08-3.24-3.24-2 2 5.24 5.25 8.09-8.08-2-2z">
                                             </path>
                                         </svg></div>
-                                    <h3 className="about__head">Security &amp;&nbsp;transparency</h3>
-                                    <p>DAO governance based approval for&nbsp;portfolio assets whitelist.</p>
+                                    <h3 className="about__head">Security & transparency</h3>
+                                    <p>DAO governance based approval for portfolio assets whitelist.</p>
                                 </li>
                                 <li className="about__item fade-in--600">
                                     <div className="about__ico"><svg width="72" height="72" viewBox="0 0 72 72">
                                             <path fillRule="evenodd" d="M37.37 46.89v-1.7a11.08 11.08 0 007.58-4.72c4.3-.59 6.67-4.31 6.67-9.41V26.3a3.17 3.17 0 00-3.16-3.17h-2a3.17 3.17 0 00-2.75-1.59H27.87c-1.17 0-2.2.64-2.74 1.59h-2a3.17 3.17 0 00-3.17 3.16v4.75c0 5.1 2.38 8.83 6.68 9.42a11.08 11.08 0 007.57 4.72v1.7h-1.59a3.17 3.17 0 00-3.16 3.16h12.66a3.17 3.17 0 00-3.16-3.16h-1.59zM23.12 26.3h1.59v7.92c0 .73.07 1.44.2 2.12-1.17-1.05-1.79-2.86-1.79-5.29V26.3zm23.75 0v7.92c0 .73-.06 1.44-.2 2.12 1.17-1.05 1.79-2.86 1.79-5.29V26.3h-1.59zm-19 7.92v-9.5h15.84v9.5a7.92 7.92 0 01-15.84 0z">
                                             </path>
                                         </svg></div>
-                                    <h3 className="about__head">Performance Based&nbsp;Rewards</h3>
-                                    <p>Earn more on successful strategies with&nbsp;our progressive incentive system.</p>
+                                    <h3 className="about__head">Performance Based Rewards</h3>
+                                    <p>Earn more from comprehensive and advance trading tools.</p>
                                 </li>
                                 <li className="about__item fade-in--500">
                                     <div className="about__ico"><svg width="72" height="72" viewBox="0 0 72 72">
@@ -296,16 +299,16 @@ export default function Landing() {
                                             <path d="M34.59 25.45c0-2.28 3.74-3.69 8.28-3.69 4.55 0 8.3 1.4 8.3 3.69V36.5c0 2.2-3.52 3.6-7.87 3.68v-1.85c3.39-.08 6.02-1.1 6.02-1.83v-3.12c-1.44.77-3.6 1.22-6.02 1.27v-1.84c3.39-.08 6.02-1.1 6.02-1.84v-3.11c-1.44.77-3.6 1.22-6.03 1.27a3.98 3.98 0 00-.64-1.84h.22c3.6 0 6.45-1.07 6.45-1.84s-2.85-1.85-6.45-1.85c-3.59 0-6.44 1.08-6.44 1.85v.03H34.6v-.03z">
                                             </path>
                                         </svg></div>
-                                    <h3 className="about__head">Variety of Investment Tools</h3>
-                                    <p>Rebalance portfolio using unique strategies with any possible asset.</p>
+                                    <h3 className="about__head">Variety of Products and Services</h3>
+                                    <p>With 200+ products and services in banking, investing, insurance, and finance all in one hub.</p>
                                 </li>
                                 <li className="about__item fade-in--400">
                                     <div className="about__ico"><svg width="72" height="72" viewBox="0 0 72 72">
                                             <path d="M35.8 51.51c-8.5-3.78-12.76-7.56-12.76-11.33V26.01c0-1.08.42-1.34 1.57-2.04.35-.2.77-.46 1.26-.79.23-.15 5.05-2.83 9.92-2.83 4.24 0 7.8 1.41 9.92 2.83.5.33.9.58 1.26.8 1.15.7 1.57.95 1.57 2.03a979.95 979.95 0 010 14.17c0 3.78-4.25 7.56-12.75 11.33zm9.9-11.33l.01-1.76v-2.77a6314.8 6314.8 0 00.01-9.11l-.2-.12-1.38-.88a15.5 15.5 0 00-8.35-2.36c-3.06 0-7.04 1.49-8.34 2.36l-1.4.88-.18.1v13.66c0 2.14 3.16 5.06 9.92 8.22 6.76-3.16 9.92-6.08 9.92-8.22zm-5.24-9.5l-6.09 6.08-3.24-3.25-2 2 5.24 5.26 8.09-8.09-2-2z">
                                             </path>
                                         </svg></div>
-                                    <h3 className="about__head">Strategy protection</h3>
-                                    <p>No need to reveal the portfolio structure or investment strategies.</p>
+                                    <h3 className="about__head">Economics of Scale</h3>
+                                    <p>Shared products and technology, which also enables continued investment in product innovation, creating a virtuous circle.</p>
                                 </li>
                             </ul>
                         </div>
@@ -321,21 +324,21 @@ export default function Landing() {
                                 <div className="try-demo__box__each">
                                     <h2>Classic</h2>
                                     <br/>
-                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <p>Instant buying and selling of over 7000 cryptos</p>
                                     <br/>
                                     <a href="#" className="try-demo__button">Launch demo</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>EverDEX</h2>
                                     <br/>
-                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <p>Swap, stake, and farm 1000+ tokens on the go</p>
                                     <br/>
                                     <a href="#" className="try-demo__button">Launch demo</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Perpetual</h2>
                                     <br/>
-                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <p>Instant recurrent buying and selling of over 7000 cryptos</p>
                                     <br/>
                                     <a href="#" className="try-demo__button">Launch demo</a>
                                 </div>
@@ -345,90 +348,90 @@ export default function Landing() {
                             <br/>
                             <br/>
 
-                            <h2 style={{color:"var(--primary)"}}>A month away</h2>
+                            <h2 style={{color:"var(--primary)"}}>Pre-Beta</h2>
                             <br/>
                             <div className="try-demo__box">
                                 <div className="try-demo__box__each">
                                     <h2>Pro</h2>
                                     <br/>
-                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <p>Instant crypto trading on layer 2</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Offerings</h2>
                                     <br/>
-                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <p>Advanced crypto launcher, token placing, and direct auctions</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>CFD</h2>
                                     <br/>
-                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <p>Trade over 90,000 stocks, cryptos, forex pairings, commodities, bonds, etfs, and indices on one platform</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>eVault</h2>
                                     <br/>
-                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <p>Invest as little as $5 and earn 18% APR, paid out daily</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>eWallet</h2>
                                     <br/>
-                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <p>Advance multi cross-chain wallet available online (web), mobile, paper, desktop, and hardware</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Launch demo</a>
                                 </div>
                                 <div className="try-demo__box__each">
-                                    <h2>Crypto Margin</h2>
+                                    <h2>Margin</h2>
                                     <br/>
-                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <p>Advance crypto trading platform to increase your trading profits by leverage</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Advanced</h2>
                                     <br/>
-                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <p>Trade on the most advanced, comprehensive, and fasters crypto trading platform</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>P2P</h2>
                                     <br/>
-                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <p>With 300+ payment methods supporting instant crypto trading with people who are ready to trade with you</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Derivatives</h2>
                                     <br/>
-                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <p>Options and futures trading of cryptos and securities</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
-                                    <h2>eCrib</h2>
+                                    <h2>Crab</h2>
                                     <br/>
-                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <p>The world's first crypto "topup" scratchcard available in your local grocery stores, globally</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Launch demo</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Prime</h2>
                                     <br/>
-                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <p>Secured, advanced, and flexible institutional trading of cryptos</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Demo Trading</h2>
                                     <br/>
-                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                                    <p>Free trading on cryptos and securities with $10,000</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
@@ -447,10 +450,10 @@ export default function Landing() {
                                         <div className="roadmap__quarter">Q1</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
-                                        <div className="roadmap__td"><span>Project<br />Project started</span></div>
-                                        <div className="roadmap__td"><span>Concept<br />Concept clarified</span></div>
-                                        <div className="roadmap__td"><span>EVER Functionality Defined</span></div>
-                                        <div className="roadmap__td"><span>Team assembled</span></div>
+                                        <div className="roadmap__td"><span>EVE token Live on DEXs and CEXs</span></div>
+                                        <div className="roadmap__td"><span>Launch EVER trading exchanges</span></div>
+                                        <div className="roadmap__td"><span>Initiate FINRA and SIPC membership certifications</span></div>
+                                        <div className="roadmap__td"><span>Launch EVER mobile and desktop apps</span></div>
                                     </div>
                                 </div>
                                 <div className="roadmap__row roadmap__row--q2-2021">
@@ -459,10 +462,10 @@ export default function Landing() {
                                         <div className="roadmap__quarter">Q2</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
-                                        <div className="roadmap__td"><span>Architecture<br />&amp; UI Design</span></div>
-                                        <div className="roadmap__td"><span>Legal and structure for token sale</span></div>
-                                        <div className="roadmap__td"><span>Polygon network selected</span></div>
-                                        <div className="roadmap__td"><span>MVP Development</span></div>
+                                        <div className="roadmap__td"><span>Open London and Singapore offices</span></div>
+                                        <div className="roadmap__td"><span>Start Series A funding</span></div>
+                                        <div className="roadmap__td"><span>Launch Ever Wallet</span></div>
+                                        <div className="roadmap__td"><span>Launch EVER bank cards and crypto card</span></div>
                                     </div>
                                 </div>
                                 <div className="roadmap__row roadmap__row--q3-2021">
@@ -471,10 +474,10 @@ export default function Landing() {
                                         <div className="roadmap__quarter">Q3</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
-                                        <div className="roadmap__td"><span>MVP release on Polygon</span></div>
-                                        <div className="roadmap__td"><span>MVP Public Security Audit</span></div>
-                                        <div className="roadmap__td"><span>New features development</span></div>
-                                        <div className="roadmap__td"><span>Law opinion</span></div>
+                                        <div className="roadmap__td"><span>Launch EVER ATMs</span></div>
+                                        <div className="roadmap__td"><span>Initiate Money Transmitter licenses certifications</span></div>
+                                        <div className="roadmap__td"><span>Launch banking and investing products</span></div>
+                                        <div className="roadmap__td"><span>Launch website app v1.2</span></div>
                                     </div>
                                 </div>
                                 <div className="roadmap__row roadmap__row--q4-2021">
@@ -483,35 +486,10 @@ export default function Landing() {
                                         <div className="roadmap__quarter">Q4</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
-                                        <div className="roadmap__td"><span>New features development</span></div>
-                                        <div className="roadmap__td"><span>Public Token sale</span></div>
-                                        <div className="roadmap__td"><span>Sushi swap listing</span></div>
-                                        <div className="roadmap__td"><span>App Development</span></div>
-                                    </div>
-                                </div>
-                                <div className="roadmap__row roadmap__row--q1-2022">
-                                    <div className="roadmap__thead fade-in--left">
-                                        <div className="roadmap__year">2023</div>
-                                        <div className="roadmap__quarter">Q1</div>
-                                    </div>
-                                    <div className="roadmap__tbody fade-in--000">
-                                        <div className="roadmap__td"><span>Flexible portfolio structure and rebalancing
-                                                release</span></div>
-                                        <div className="roadmap__td"><span>Mobile App Development &amp; Deployment</span></div>
+                                        <div className="roadmap__td"><span>Launch EVER Insurance</span></div>
                                         <div className="roadmap__td"><span>DAO Governance</span></div>
-                                        <div className="roadmap__td"><span>Cross-chain bridge</span></div>
-                                    </div>
-                                </div>
-                                <div className="roadmap__row roadmap__row--q2-2022">
-                                    <div className="roadmap__thead fade-in--left">
-                                        <div className="roadmap__year">2023</div>
-                                        <div className="roadmap__quarter">Q2</div>
-                                    </div>
-                                    <div className="roadmap__tbody fade-in--000">
-                                        <div className="roadmap__td"><span>Gamification</span></div>
-                                        <div className="roadmap__td"><span>AI Algo-Trading</span></div>
-                                        <div className="roadmap__td"><span>Multi Node EVER protocol</span></div>
-                                        <div className="roadmap__td"><span>Top crypto exchanges listing</span></div>
+                                        <div className="roadmap__td"><span>Launch EVER POS for merchants</span></div>
+                                        <div className="roadmap__td"><span>Complete Series A funding</span></div>
                                     </div>
                                 </div>
                             </div>
