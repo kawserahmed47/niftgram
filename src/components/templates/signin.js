@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Header from './layouts/header2';
-import Footer from './layouts/footer'
+import Footer from './layouts/FooterNew'
 
 export default function Signin() {
 

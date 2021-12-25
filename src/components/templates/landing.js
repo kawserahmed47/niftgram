@@ -1,6 +1,6 @@
 import React, { useState, useEffect,} from 'react'
 import Header from './layouts/header'
-import Footer from './layouts/footer'
+import Footer from './layouts/FooterNew'
 
 export default function Landing() {
     const [sliderVal, setSliderVal] = useState(0)
@@ -204,11 +204,11 @@ export default function Landing() {
                 <main className="main">
                     <article className="first-screen">
                         <div className="center">
-                            <h1 className="first-screen__title h1">One hub, all things money.</h1>
+                            <h1 className="first-screen__title h1">One platform, all things money.</h1>
                             <div className="fade-in--200">
-                                <p className="typewriterContainer" style={{minHeight:"28px"}}>
+                                <p className="typewriterContainer" style={{minHeight:"56px"}}>
                                     <span className="first-screen__desc typewriter" id="typewriter">
-                                    
+
                                     </span>
                                     <span className="typyingCursor"></span>
                                 </p>
@@ -219,7 +219,7 @@ export default function Landing() {
                                     {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
                                 </a>
                                 <a href="#" className="btn btn--grad btn--demo" rel="noopener nofollow">
-                                    <span style={{paddingLeft:0}}>Whitepaper v1</span>
+                                    <span style={{paddingLeft:0}}>Whitepaper</span>
                                     {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
                                 </a>
                             </div>
@@ -299,7 +299,7 @@ export default function Landing() {
                                             </path>
                                         </svg></div>
                                     <h3 className="about__head">Variety of Products and Services</h3>
-                                    <p>With 200+ products and services in banking, investing, insurance, and finance all in one hub.</p>
+                                    <p>Varying products and services in banking, investing, trading, insurance, and finance all in one hub.</p>
                                 </li>
                                 <li className="about__item fade-in--400">
                                     <div className="about__ico"><svg width="72" height="72" viewBox="0 0 72 72">
@@ -325,21 +325,21 @@ export default function Landing() {
                                     <br/>
                                     <p>Instant buying and selling of over 7000 cryptos</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button">Launch demo</a>
+                                    <a href="https://app.ever.re/classic" target="_blank" className="try-demo__button">Launch demo</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>EverDEX</h2>
                                     <br/>
                                     <p>Swap, stake, and farm 1000+ tokens on the go</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button">Launch demo</a>
+                                    <a href="https://app.ever.re/dex" target="_blank" className="try-demo__button">Launch demo</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Perpetual</h2>
                                     <br/>
                                     <p>Instant recurrent buying and selling of over 7000 cryptos</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button">Launch demo</a>
+                                    <a href="https://app.ever.re/perpetual" target="_blank" className="try-demo__button">Launch demo</a>
                                 </div>
 
                             </div>
@@ -372,23 +372,23 @@ export default function Landing() {
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
-                                    <h2>eVault</h2>
+                                    <h2>Crib</h2>
                                     <br/>
                                     <p>Invest as little as $5 and earn 18% APR, paid out daily</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
-                                    <h2>eWallet</h2>
+                                    <h2>Wallet</h2>
                                     <br/>
-                                    <p>Advance multi cross-chain wallet available online (web), mobile, paper, desktop, and hardware</p>
+                                    <p>Advanced multi cross-chain wallet available online (web), mobile, paper, desktop, and hardware</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Launch demo</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Margin</h2>
                                     <br/>
-                                    <p>Advance crypto trading platform to increase your trading profits by leverage</p>
+                                    <p>Advanced crypto trading platform to increase your trading profits by leverage</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
@@ -449,9 +449,9 @@ export default function Landing() {
                                         <div className="roadmap__quarter">Q1</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
-                                        <div className="roadmap__td"><span>EVE token Live on DEXs and CEXs</span></div>
+                                        <div className="roadmap__td"><span>Assemble executive and development team</span></div>
+                                        <div className="roadmap__td"><span>EVE token Live trading on serveral DEXs and CEXs</span></div>
                                         <div className="roadmap__td"><span>Launch EVER trading exchanges</span></div>
-                                        <div className="roadmap__td"><span>Initiate FINRA and SIPC membership certifications</span></div>
                                         <div className="roadmap__td"><span>Launch EVER mobile and desktop apps</span></div>
                                     </div>
                                 </div>
@@ -461,10 +461,10 @@ export default function Landing() {
                                         <div className="roadmap__quarter">Q2</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
-                                        <div className="roadmap__td"><span>Open London and Singapore offices</span></div>
+                                        <div className="roadmap__td"><span>Initiate FINRA and SIPC membership certifications</span></div>
                                         <div className="roadmap__td"><span>Start Series A funding</span></div>
-                                        <div className="roadmap__td"><span>Launch Ever Wallet</span></div>
-                                        <div className="roadmap__td"><span>Launch EVER bank cards and crypto card</span></div>
+                                        <div className="roadmap__td"><span>Launch EVER Wallet and EVER Crab (Topup scratchcard)</span></div>
+                                        <div className="roadmap__td"><span>Launch EVER bank cards and crypto cards</span></div>
                                     </div>
                                 </div>
                                 <div className="roadmap__row roadmap__row--q3-2021">
@@ -473,10 +473,10 @@ export default function Landing() {
                                         <div className="roadmap__quarter">Q3</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
-                                        <div className="roadmap__td"><span>Launch EVER ATMs</span></div>
+                                        <div className="roadmap__td"><span>Open London and Singapore offices</span></div>
+                                        <div className="roadmap__td"><span>Start EVER ATMs installations</span></div>
                                         <div className="roadmap__td"><span>Initiate Money Transmitter licenses certifications</span></div>
                                         <div className="roadmap__td"><span>Launch banking and investing products</span></div>
-                                        <div className="roadmap__td"><span>Launch website app v1.2</span></div>
                                     </div>
                                 </div>
                                 <div className="roadmap__row roadmap__row--q4-2021">
@@ -485,10 +485,10 @@ export default function Landing() {
                                         <div className="roadmap__quarter">Q4</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
-                                        <div className="roadmap__td"><span>Launch EVER Insurance</span></div>
+                                        <div className="roadmap__td"><span>Launch website app v1.2</span></div>
+                                        <div className="roadmap__td"><span>Launch EVER POS and EVER Pay for merchants</span></div>
                                         <div className="roadmap__td"><span>DAO Governance</span></div>
-                                        <div className="roadmap__td"><span>Launch EVER POS for merchants</span></div>
-                                        <div className="roadmap__td"><span>Complete Series A funding</span></div>
+                                        <div className="roadmap__td"><span>End Series A funding</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -507,16 +507,16 @@ export default function Landing() {
                             </div>
                             <div className="token__row">
                                 <div className="token__col is-active">
-                                    <img src="assets/img/token/token1.jpg" alt=""/>
+                                    <img src="/assets/img/token/token1.svg" alt=""/>
                                 </div>
                                 <div className="token__col fade-in--100">
-                                    <img src="assets/img/token/token2.jpg" alt=""/>
+                                    <img src="/assets/img/token/token2.svg" alt=""/>
                                 </div>
                                 <div className="token__col fade-in--100">
-                                    <img src="assets/img/token/token3.jpg" alt=""/>
+                                    <img src="/assets/img/token/token3.svg" alt=""/>
                                 </div>
                                 <div className="token__col fade-in--100">
-                                    <img src="assets/img/token/token4.jpg" alt=""/>
+                                    <img src="/assets/img/token/token4.svg" alt=""/>
                                 </div>
                             </div>
                         </div>
@@ -527,7 +527,7 @@ export default function Landing() {
                                 <div className="join-demo__content">
                                     <p className="join-demo__text">Join EVER right now and start earning</p>
                                     <div className="join-demo__btn fade-in--100">
-                                        <a href="./sigup" className="btn btn--white" target="_blank" rel="noopener nofollow">Get Started
+                                        <a href="./signup" className="btn btn--white" target="_blank" rel="noopener nofollow">Get Started
                                         </a>
                                     </div>
                                 </div>
@@ -538,8 +538,20 @@ export default function Landing() {
                         <div className="center team__center">
                             <h2 className="hash">Team</h2>
                             <p className="h1">Team members</p>
-                            <div className="team__list" id="team__list" onTouchStart={(e)=>{touchStart(e)}} onTouchMove={(e)=>{touchMove(e)}} onTouchEnd={(e)=>{touchEnd(e)}}>
-                                
+                            <p style={{marginTop: "16px"}}>EVER is hiring a group of c-suit, top and mid-level executives, programmers, customer services, etc to join the team. Please visit our <a href="https://careers.ever.re" target="_blank" className="referenceLink">Careers</a> page to learn more.</p>
+                            <div className="teamFounderContainer">
+                                <div className="founderImageContainer">
+                                    <img src="/assets/img/founder.png" alt="Founder Image"/>
+                                    <p className="founderName">Pieter Plange, PhD</p>
+                                    <p className="founderTitle">Founder</p>
+                                </div>
+                                <div className="founderContentContainer">
+                                    <p>Pieter Plange has been working in the banking and finance industrial for past 16 and half years. An alumna of both Oxford University and Harvard University, Pieter started his banking career in 2005 at Standard Chartered as an analyst. He rose through the ranks to be the head of Research in Financial and Emerging Markets. He left Standard Chartered to up start EVER.</p>
+                                    <p>Pieter has been involved in crypto since 2017 when bought his first Bitcoin. He is experienced in several crypto businesses ranging from a crypto-focused startup fund to arbitrage amongst a few others.</p>
+                                </div>
+                            </div>
+                            <div className="team__list hide" id="team__list" onTouchStart={(e)=>{touchStart(e)}} onTouchMove={(e)=>{touchMove(e)}} onTouchEnd={(e)=>{touchEnd(e)}}>
+
                                 <div className="team__member">
                                     <div className="team__member__image-container">
                                         <img className="team__member__image" src="./assets/img/team/demo.jpg"/>
@@ -732,9 +744,9 @@ export default function Landing() {
                                     <p className="team_member_title">Technical Staff</p>
                                     <a className="team_member_url" href="#"></a>
                                 </div>
-                                
+
                             </div>
-                            <div className="team__scroll">
+                            <div className="team__scroll hide">
                                 <div class="range-slider">
                                     <div class="range-slider__slider">
                                         <input
@@ -748,7 +760,7 @@ export default function Landing() {
                                             onInput={(element)=>{sliderInput(element.target.value)}}
                                             onMouseUp={(element)=>{fitSlider(element.target.value)}}
                                             onTouchEnd={(element)=>{fitSlider(element.target.value)}}
-                                            
+
                                         />
                                     </div>
                                 </div>
@@ -771,8 +783,8 @@ export default function Landing() {
                             <div className="mobile-app__box">
                                 <div className="mobile-app__content">
                                     <h2 className="hash">Coming soon</h2>
-                                    <p className="h2">Ever Mobile Apps</p>
-                                    <p className="mobile-app__text fade-in--100">Сonvenient platform is always with you.</p>
+                                    <p className="h2">Ever Mobile</p>
+                                    <p className="mobile-app__text fade-in--100">The convenient way to bank, invest, trade, and earn on the go.</p>
                                 </div>
                                 <div className="mobile-app__img fade-in--right fade-in--500">
                                     {/* <video  height="527" playsinline autoPlay muted loop class="mobile-app__img-phone" id="bannerImage">
@@ -810,7 +822,7 @@ export default function Landing() {
                                             <div id="mce-responses" className="clear">
                                                 <div className="response" id="mce-error-response" style={{display: "none"}}></div>
                                                 <div className="response" id="mce-success-response" style={{display: "none"}}></div>
-                                            </div>   
+                                            </div>
                                             <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_56934695d4f357d705d9e1283_171eeb594f" tabIndex="-1" /></div>
                                             <div className="clear btn btn--black form__submit"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className=""/></div>
                                         </div>
