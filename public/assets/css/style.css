@@ -2607,13 +2607,13 @@ img {
     text-align: center;
 }
 .founderImageContainer img{
-    max-width: 300px;
+    max-width: 170px;
     width: 100%;
 }
 .founderName{
     font-weight: bold;
-    font-size: 24px;
-    margin-top: 16px;
+    font-size: 18px;
+    margin-top: 8px;
 }
 .founderContentContainer{
     flex: 1;

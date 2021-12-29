@@ -1,6 +1,6 @@
 import React, { useState, useEffect,} from 'react'
 import Header from './layouts/header'
-import Footer from './layouts/FooterNew'
+import Footer from './layouts/footer'
 
 export default function Landing() {
     const [sliderVal, setSliderVal] = useState(0)
@@ -218,7 +218,7 @@ export default function Landing() {
                                     <span>Live Demo</span>
                                     {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
                                 </a>
-                                <a href="#" className="btn btn--grad btn--demo" rel="noopener nofollow">
+                                <a href="/assets/pdf/EverWhitepaper.pdf" className="btn btn--grad btn--demo" download="Ever Whitepaper.pdf" rel="noopener nofollow">
                                     <span style={{paddingLeft:0}}>Whitepaper</span>
                                     {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
                                 </a>
@@ -540,14 +540,14 @@ export default function Landing() {
                             <p className="h1">Team members</p>
                             <p style={{marginTop: "16px"}}>EVER is hiring a group of c-suit, top and mid-level executives, programmers, customer services, etc to join the team. Please visit our <a href="https://careers.ever.re" target="_blank" className="referenceLink">Careers</a> page to learn more.</p>
                             <div className="teamFounderContainer">
-                                <div className="founderImageContainer">
+                                <div className="founderImageContainer center-x-with-flex-column">
                                     <img src="/assets/img/founder.png" alt="Founder Image"/>
-                                    <p className="founderName">Pieter Plange, PhD</p>
+                                    <p className="founderName">Peter M. Plange, PhD, Esq.</p>
                                     <p className="founderTitle">Founder</p>
                                 </div>
                                 <div className="founderContentContainer">
-                                    <p>Pieter Plange has been working in the banking and finance industrial for past 16 and half years. An alumna of both Oxford University and Harvard University, Pieter started his banking career in 2005 at Standard Chartered as an analyst. He rose through the ranks to be the head of Research in Financial and Emerging Markets. He left Standard Chartered to up start EVER.</p>
-                                    <p>Pieter has been involved in crypto since 2017 when bought his first Bitcoin. He is experienced in several crypto businesses ranging from a crypto-focused startup fund to arbitrage amongst a few others.</p>
+                                    <p>Peter Plange has been working in the banking industrial for the past 16 and half years. An alumna from both Oxford University and Harvard University, Peter started his banking career in 2005 at Standard Chartered as an analyst. He rose through the ranks to be the head of Research in Financial and Emerging Markets till he left Standard Chartered to up start EVER in 2021.</p>
+                                    <p>Peter has been involved in crypto since 2017. He is experienced in several crypto businesses ranging from a crypto-focused startup fund to arbitrage among a few others.</p>
                                 </div>
                             </div>
                             <div className="team__list hide" id="team__list" onTouchStart={(e)=>{touchStart(e)}} onTouchMove={(e)=>{touchMove(e)}} onTouchEnd={(e)=>{touchEnd(e)}}>
@@ -798,36 +798,21 @@ export default function Landing() {
                     <aside className="subscribe">
                         <div className="center">
                             <div className="subscribe__box mc_embed_signup">
-                                <form className="subscribe__form fade-in--right form" action="https://ever.us20.list-manage.com/subscribe/post?u=56934695d4f357d705d9e1283&amp;id=171eeb594f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" noValidate="novalidate" autoComplete="off" encType="text/plain">
-                                    <input type="hidden" value="Subscribe" name="subject" />
+                                <form className="subscribe__form fade-in--right form validate" action="https://ever.us20.list-manage.com/subscribe/post?u=56934695d4f357d705d9e1283&amp;id=171eeb594f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"  rel="noopener noreferrer" noValidate autoComplete="off">
+                                    {/*<input type="hidden" value="Subscribe" name="subject" />*/}
                                     <h3 className="subscribe__title h2">STAY UP TO DATE ON ALL THINGS, EVER</h3>
-                                    <div className="subscribe__fieldset">
-                                        <input type="email" name="EMAIL" placeholder="E-mail" aria-label="enter email" required="required" className="required email input input--invalid" autoComplete="off" id="mce-EMAIL" />
-                                        <div id="mce-responses" className="clear">
-                                            <div className="response" id="mce-error-response" style={{display: "none" }}></div>
-                                            <div className="response" id="mce-success-response" style={{display: "none" }}></div>
+                                    <div className="mc_embed_signup_scroll subscribe__fieldset">
+                                        <div className="mc-field-group" style={{height : "100%"}}>
+                                            <input type="email" name="EMAIL" placeholder="E-mail" aria-label="enter email" required="required" className="required email input input--invalid" autoComplete="off" id="mce-EMAIL" />
                                         </div>
-                                        {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
+                                        <div id="mce-responses" className="clear">
+                                            <div className="response" id="mce-error-response" style={{display: "none"}}></div>
+                                            <div className="response" id="mce-success-response" style={{display: "none"}}></div>
+                                        </div>
                                         <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_56934695d4f357d705d9e1283_171eeb594f" tabIndex="-1" /></div>
-                                        <button className="btn btn--black form__submit" type="submit" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+                                        <div className="clear btn btn--black form__submit"><button className="btn btn--black form__submit" type="submit" name="subscribe" id="mc-embedded-subscribe">Subscribe</button></div>
                                     </div>
                                 </form>
-
-                                {/* <div id="mc_embed_signup">
-                                    <form className="subscribe__form fade-in--right form" action="https://ever.us20.list-manage.com/subscribe/post?u=56934695d4f357d705d9e1283&amp;id=171eeb594f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank"  rel="noopener noreferrer" noValidate style={{height : "100%"}}>
-                                        <div id="mc_embed_signup_scroll subscribe__fieldset">
-                                            <div className="mc-field-group" style={{height : "100%"}}>
-                                                <input type="email" name="EMAIL" className="newsLetterInput required email" id="mce-EMAIL" placeholder="Enter your email"/>
-                                            </div>
-                                            <div id="mce-responses" className="clear">
-                                                <div className="response" id="mce-error-response" style={{display: "none"}}></div>
-                                                <div className="response" id="mce-success-response" style={{display: "none"}}></div>
-                                            </div>
-                                            <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_56934695d4f357d705d9e1283_171eeb594f" tabIndex="-1" /></div>
-                                            <div className="clear btn btn--black form__submit"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className=""/></div>
-                                        </div>
-                                    </form>
-                                </div> */}
                             </div>
                         </div>
                     </aside>

@@ -19,10 +19,12 @@ export default function Header() {
                             <div className="menu__hidden_items">
                                 <ul className="menu">
                                     <li className="menu__item"><a href="#" className="menu__link">Banking</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">Insurance</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Investing</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Trading</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Offerings</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Cryptos</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">Coinset</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">NFTs</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Ever Wallet</a></li>
                                 </ul>

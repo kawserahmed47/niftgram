@@ -86,11 +86,11 @@ export default class FooterNew extends Component {
                             </a>
                             <a href="#" className="footerEachRow">
                                 <p>Coinset</p>
-                                <p className="footerEachRowSubTitle">Portfolio of multi-chain tokens developed by Ever</p>
+                                <p className="footerEachRowSubTitle">Portfolio of multi-chain tokens developed by EVER</p>
                             </a>
                             <a href="#" className="footerEachRow">
                                 <p>Investor Relations</p>
-                                <p className="footerEachRowSubTitle">Check how you can invest in Ever Corp</p>
+                                <p className="footerEachRowSubTitle">Check how you can invest in EVER Corp</p>
                             </a>
                             <a href="#" className="footerEachRow">
                                 <p>Launchpad</p>
@@ -101,8 +101,8 @@ export default class FooterNew extends Component {
                                 <p className="footerEachRowSubTitle">Raise additional funds after after listing</p>
                             </a>
                             <a href="#" className="footerEachRow">
-                                <p>+18% APR with eCrib</p>
-                                <p className="footerEachRowSubTitle">Earn +18% APR on your savings in eCrib</p>
+                                <p>+18% APR with Crib</p>
+                                <p className="footerEachRowSubTitle">+18% APR with Crib (Earn +18% APR on your savings in Crib</p>
                             </a>
                             <a href="#" className="footerEachRow">
                                 <p>Staking</p>
@@ -114,7 +114,7 @@ export default class FooterNew extends Component {
                             </a>
                             <a href="#" className="footerEachRow">
                                 <p>Earn</p>
-                                <p className="footerEachRowSubTitle">Explore new and old ways of earning on Ever </p>
+                                <p className="footerEachRowSubTitle">Explore new and old ways of earning on EVER </p>
                             </a>
                         </div>
                         <div className="footerEachColumn">
@@ -152,7 +152,7 @@ export default class FooterNew extends Component {
                             </a>
                             <a href="#" className="footerEachRow">
                                 <p>Demo Trading</p>
-                                <p className="footerEachRowSubTitle">Free trading on Ever with $10,000</p>
+                                <p className="footerEachRowSubTitle">Free trading on EVER with $10,000</p>
                             </a>
                             <a href="#" className="footerEachRow">
                                 <p>Lend</p>
@@ -186,15 +186,15 @@ export default class FooterNew extends Component {
                             </a>
                             <a href="#" className="footerEachRow">
                                 <p>Fees</p>
-                                <p className="footerEachRowSubTitle">Check how so cheap it cost to trade and use Ever</p>
+                                <p className="footerEachRowSubTitle">Check how so cheap it cost to trade and use EVER</p>
                             </a>
                             <a href="#" className="footerEachRow">
                                 <p>Supported Cryptos & Fiats</p>
-                                <p className="footerEachRowSubTitle">Explore the over 160 fiats and 7000 cryptos traded on Ever</p>
+                                <p className="footerEachRowSubTitle">Explore the over 160 fiats and 7000 cryptos traded on EVER</p>
                             </a>
                             <a href="#" className="footerEachRow">
                                 <p>Prepay Cards</p>
-                                <p className="footerEachRowSubTitle">Get free Ever Visa, MasterCards, and Crypto cards</p>
+                                <p className="footerEachRowSubTitle">Get free EVER Visa, MasterCards, and Crypto cards</p>
                             </a>
                             <a href="#" className="footerEachRow">
                                 <p>Funds</p>
@@ -202,7 +202,7 @@ export default class FooterNew extends Component {
                             </a>
                             <a href="#" className="footerEachRow">
                                 <p>Products & Services</p>
-                                <p className="footerEachRowSubTitle">Explore the 200+ products and services on Ever</p>
+                                <p className="footerEachRowSubTitle">Explore the 200+ products and services on EVER</p>
                             </a>
                         </div>
                         <div className="footerEachColumn">

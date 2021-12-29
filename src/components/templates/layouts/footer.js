@@ -14,7 +14,7 @@ export default function Header() {
                 <div className="footer__menu">
                     <ul className="menu">
                         <li className="menu__item"><a href="./#about" className="menu__link">About</a></li>
-                        <li className="menu__item"><a href="./#demo" className="menu__link">Demos</a></li>
+                        <li className="menu__item"><a href="./#demo" className="menu__link">Demo</a></li>
                         <li className="menu__item"><a href="./#roadmap" className="menu__link">Roadmap</a></li>
                         <li className="menu__item"><a href="./#token" className="menu__link">Token</a></li>
                         <li className="menu__item"><a href="./#team" className="menu__link">Team</a></li>
