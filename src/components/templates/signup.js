@@ -1,8 +1,14 @@
 import React, { useState } from 'react'
 import Header from './layouts/header2';
-import Footer from './layouts/FooterNew'
+import Footer from './layouts/FooterNew';
+
+import axios from 'axios';
+
+
 
 export default function Signup() {
+
+
     const [firstName, setFirstName] = useState();
     const [lastName, setLastName] = useState();
     const [emailVal, setEmailVal] = useState();
@@ -39,14 +45,48 @@ export default function Signup() {
         let value = e.target.value
         setPasswordVal(value)
     }
-    let authentication = () => {
+
+    
+    let authentication = async () => {
+        //  e.preventDefault();
         if(firstName && lastName && emailVal && passwordVal){
-            setFormWarning("Signup is under developmet!")
+            // setFormWarning("Signup is under developmet!")
+            // const userData = await axios.get('api/users/get-all-users');
+            
+            const data = {
+                first_name : firstName,
+                last_name : lastName,
+                email: emailVal,
+                password : passwordVal
+            }
+
+            await axios.post('/api/users/create-user', data).then(function (response) {
+                console.log(response);
+                setFormWarning("Account Created Successfully.");
+                setFirstName("");
+                setLastName("");
+                setEmailVal("");
+                setPasswordVal("");
+                window.location.href = "/signin"
+
+
+              })
+              .catch(function (error) {
+                console.log(error);
+                setFormWarning("Someting went wrong.")
+              });
+
+
+
         }else{
             setFormWarning("Please all the required both field!")
         }
        
     }
+
+
+
+
 
     document.querySelector("body").style.backgroundColor = "#02ac02"
     return(

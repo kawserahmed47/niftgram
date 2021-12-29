@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import Header from './layouts/header2';
 import Footer from './layouts/FooterNew'
+import axios from 'axios';
 
 export default function Signin() {
+
+  
 
     const [emailVal, setEmailVal] = useState();
     const [passwordVal, setPasswordVal] = useState();
@@ -30,10 +33,45 @@ export default function Signin() {
         let value = e.target.value
         setPasswordVal(value)
     }
-    let authentication = () => {
-        if(emailVal=="demo" && passwordVal=="demo"){
-            setFormWarning(null)
-            window.location.href = "https://app.ever.re"
+
+
+
+     let authentication = async () => {
+        // if(emailVal=="demo" && passwordVal=="demo"){
+            // setFormWarning(null)
+            // login-check
+        if(emailVal && passwordVal){
+
+           const data ={
+               email: emailVal,
+               password : passwordVal
+           } 
+
+            await axios.post('/api/users/login-check', data).then(function (response) {
+                console.log(response);
+                if(response.data){
+
+                    if(response.data.status){
+                        setFormWarning(response.data.message + " Redirecting..." );
+                        setEmailVal("");
+                        setPasswordVal("");
+                        window.location.href = "https://app.ever.re"
+                    }else{
+                        setFormWarning(response.data.message);
+                    }
+                    
+
+                }else{
+                    setFormWarning("Email or Password does not match");
+                }
+                
+
+              })
+              .catch(function (error) {
+                console.log(error);
+                setFormWarning("Someting went wrong.")
+              });
+
         }else{
             setFormWarning("Please fill both field!")
         }
@@ -63,13 +101,13 @@ export default function Signin() {
                                     <div className="auth-form__body__footer">
                                         <div className="remember-login-container">
                                             <input type="checkbox" id="remember"/>
-                                            <label htmlFor="remember">Keep me signed in on this computer</label>
+                                            <label htmlFor="remember">Remember me</label>
                                         </div>
                                         <button className="auth-form__submit-button" type="button" onClick={()=>{authentication()}}>SIGN IN</button>
                                     </div>
                                 </div>
                                 <div className="auth-form__footer">
-                                    <a href="#">Forgot password?</a>
+                                    <a href="./forget-password">Forgot password?</a>
                                     <a href="./signup">Don't have an account?</a>
                                     <a href="#">Privacy Policy</a>
                                 </div>
