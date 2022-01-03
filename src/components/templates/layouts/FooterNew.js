@@ -218,6 +218,18 @@ export default class FooterNew extends Component {
                                 <p>Status</p>
                                 <p className="footerEachRowSubTitle">Monitor exchange reliability</p>
                             </a>
+                            <a href="#" className="footerEachRow">
+                                <p>Dx</p>
+                                <p className="footerEachRowSubTitle">Trade 50k+ stocks and 120+ currency pairings with greater visibility and speed</p>
+                            </a>
+                            <a href="#" className="footerEachRow">
+                                <p>SpreadBet</p>
+                                <p className="footerEachRowSubTitle">Trade 34k+ markets tax free. Trade securities, and commodities with the lowest spreads</p>
+                            </a>
+                            <a href="#" className="footerEachRow">
+                                <p>Binaries</p>
+                                <p className="footerEachRowSubTitle">Trade with as little as $1 USD on major currencies, cryptocurrencies, stocks and commodities</p>
+                            </a>
                         </div>
                         <div className="footerEachColumn">
                             <a href="#" className="footerEachRow">

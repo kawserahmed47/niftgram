@@ -36,6 +36,9 @@ export default function Header() {
                                 <ul className="menu">
                                     <li className="menu__item"><a href="#" className="menu__link">Demo</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">CFD</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">DX</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">SpreadBet</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">Binaries</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Classic</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">P2P</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Perpetual</a></li>

@@ -250,7 +250,7 @@ export default function Landing() {
                                 </svg>
                             </a> */}
                             <video playsinline autoPlay muted loop class="bannerImage" id="bannerImage">
-                                <source src="./assets/img/landing-page-top-video.mp4" type="video/mp4" />
+                                <source src="./assets/img/landing-page-top-video-new.mp4" type="video/mp4" />
                             </video>
                         </div>
                     </article>
@@ -325,21 +325,21 @@ export default function Landing() {
                                     <br/>
                                     <p>Instant buying and selling of over 7000 cryptos</p>
                                     <br/>
-                                    <a href="https://app.ever.re/classic" target="_blank" className="try-demo__button">Launch demo</a>
+                                    <a href="https://app.ever.re/classic" target="_blank" className="try-demo__button">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>EverDEX</h2>
                                     <br/>
                                     <p>Swap, stake, and farm 1000+ tokens on the go</p>
                                     <br/>
-                                    <a href="https://app.ever.re/dex" target="_blank" className="try-demo__button">Launch demo</a>
+                                    <a href="https://app.ever.re/dex" target="_blank" className="try-demo__button">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Perpetual</h2>
                                     <br/>
                                     <p>Instant recurrent buying and selling of over 7000 cryptos</p>
                                     <br/>
-                                    <a href="https://app.ever.re/perpetual" target="_blank" className="try-demo__button">Launch demo</a>
+                                    <a href="https://app.ever.re/perpetual" target="_blank" className="try-demo__button">Start trading</a>
                                 </div>
 
                             </div>
@@ -362,12 +362,12 @@ export default function Landing() {
                                     <br/>
                                     <p>Advanced crypto launcher, token placing, and direct auctions</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                    <a href="#" className="try-demo__button dim">Launch token</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>CFD</h2>
                                     <br/>
-                                    <p>Trade over 90,000 stocks, cryptos, forex pairings, commodities, bonds, etfs, and indices on one platform</p>
+                                    <p>Lowest forex CFD fees, commission-free stocks/ETFs and providing access to 21k+ financial markets including FX, indices, shares, commodities, and more. Trade, deposit, and withdraw only in cryptos</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
@@ -376,7 +376,7 @@ export default function Landing() {
                                     <br/>
                                     <p>Invest as little as $5 and earn 18% APR, paid out daily</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                    <a href="#" className="try-demo__button dim">Open account</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Wallet</h2>
@@ -418,7 +418,7 @@ export default function Landing() {
                                     <br/>
                                     <p>The world's first crypto "topup" scratchcard available in your local grocery stores, globally</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Launch demo</a>
+                                    <a href="#" className="try-demo__button dim">Learn more</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Prime</h2>
@@ -431,6 +431,27 @@ export default function Landing() {
                                     <h2>Demo Trading</h2>
                                     <br/>
                                     <p>Free trading on cryptos and securities with $10,000</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>DX</h2>
+                                    <br/>
+                                    <p>Trade 50k+ stocks and 120+ currency pairings with greater visibility of the market, speed of execution, and aggregates prices from multiple exchanges worldwide. Trade, deposit, and withdraw only in cryptos</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>SpreadBet</h2>
+                                    <br/>
+                                    <p>Start trading 34k+ markets tax free. Trade forex, indices, commodities, bonds and shares with the lowest spreads and without taking ownership of the underlying asset. Trade, deposit, and withdraw only in cryptos</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>Binaries</h2>
+                                    <br/>
+                                    <p>Trade with as little as $1 USD on major currencies, cryptocurrencies, stocks and commodities. Each EVER contract traded costs $1 to enter and $1 to exit. Trade, deposit, and withdraw only in cryptos</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
@@ -790,7 +811,7 @@ export default function Landing() {
                                     {/* <video  height="527" playsinline autoPlay muted loop class="mobile-app__img-phone" id="bannerImage">
                                         <source src="./assets/img/landing-page-top-video.mp4" type="video/mp4" />
                                     </video> */}
-                                    <img className="mobile-app__img-phone" src="./assets/img/mobileApp.svg"/>
+                                    <img className="mobile-app__img-phone" src="./assets/img/mobileApp.png"/>
                                 </div>
                             </div>
                         </div>
