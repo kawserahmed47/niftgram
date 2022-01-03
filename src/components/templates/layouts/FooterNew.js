@@ -230,6 +230,18 @@ export default class FooterNew extends Component {
                                 <p>Binaries</p>
                                 <p className="footerEachRowSubTitle">Trade with as little as $1 USD on major currencies, cryptocurrencies, stocks and commodities</p>
                             </a>
+                            <a href="#" className="footerEachRow">
+                                <p>Escrow</p>
+                                <p className="footerEachRowSubTitle">Escrow gateway securing GameFi, Metaverse, Marketplaces and beyond</p>
+                            </a>
+                            <a href="#" className="footerEachRow">
+                                <p>ScoreFi</p>
+                                <p className="footerEachRowSubTitle">Identity Passports and credit scoring for Metaverse and Web 3.0</p>
+                            </a>
+                            <a href="#" className="footerEachRow">
+                                <p>Staking</p>
+                                <p className="footerEachRowSubTitle">Providing a decentralized crowd computing network CPU-based Dev(Ops) solutions</p>
+                            </a>
                         </div>
                         <div className="footerEachColumn">
                             <a href="#" className="footerEachRow">

@@ -2625,3 +2625,15 @@ img {
 .founderContentContainer p{
     margin-bottom: 16px;
 }
+.products{
+    padding-top: 150px;
+}
+.mt-2{
+    margin-top: 1em;
+}
+.headline-2{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    margin: 16px 0 10px 0;
+}

@@ -25,7 +25,6 @@ export default function Header() {
                                     <li className="menu__item"><a href="#" className="menu__link">Offerings</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Cryptos</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Coinset</a></li>
-                                    <li className="menu__item"><a href="#" className="menu__link">NFTs</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Ever Wallet</a></li>
                                 </ul>
                             </div>
@@ -41,12 +40,25 @@ export default function Header() {
                                     <li className="menu__item"><a href="#" className="menu__link">Binaries</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Classic</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">P2P</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">EverDEX</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Perpetual</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Pro</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Advanced</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Margins</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Derivatives</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Prime</a></li>
+                                </ul>
+                            </div>    
+                        </li>
+                        <li className="menu__item">
+                            <a className="menu__link">NFT<b class="caret"></b></a>
+                            <div className="menu__hidden_items">
+                                <ul className="menu">
+                                    <li className="menu__item"><a href="#" className="menu__link">Explore</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">Create</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">Sell</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">NFTures</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">NFTory</a></li>
                                 </ul>
                             </div>    
                         </li>

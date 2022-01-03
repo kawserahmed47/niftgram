@@ -312,6 +312,14 @@ export default function Landing() {
                             </ul>
                         </div>
                     </article>
+                    <article className="products" id="products">
+                        <div className="center">
+                            <h2 className="hash">Products</h2>
+                            <p className="h1" style={{display: 'flex'}}>Powered by <img height={80} style={{display: 'inline', margin: '0px 12px'}} src="assets/img/brandLogo/favicon_all_black.png" alt="Ever white logo" /> blockchain</p>
+                            <p className='headline-2'>Auditing by CERTIK in progress</p>
+                            <p className='mt-2'>The EVER Ecosystem offers a suite of decentralized applications (dApps) and services to provide multi-chain security solutions for projects and individuals in the DeFi, Metaverse, and WEB3.0 space. Our dApps and services are powered by EVER network and 28 other cross-chain networks.</p>
+                        </div>
+                    </article>
                     <aside className="try-demo" id="demo">
                         <div className="center">
                             <p class="h1" style={{color:"var(--primary)", textAlign:"center"}}>Demos</p>
