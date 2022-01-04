@@ -55,7 +55,8 @@ export default function Signin() {
                         setFormWarning(response.data.message + " Redirecting..." );
                         setEmailVal("");
                         setPasswordVal("");
-                        window.location.href = "https://app.ever.re"
+                        // window.location.href = "https://app.ever.re"
+                        window.location.href  = "http://localhost:3000/?auth="+response.data.token
                     }else{
                         setFormWarning(response.data.message);
                     }
