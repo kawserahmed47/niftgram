@@ -36,7 +36,7 @@ export default function Signin() {
 
 
 
-     let authentication = async () => {
+    let authentication = async () => {
         // if(emailVal=="demo" && passwordVal=="demo"){
             // setFormWarning(null)
             // login-check
@@ -55,7 +55,7 @@ export default function Signin() {
                         setFormWarning(response.data.message + " Redirecting..." );
                         setEmailVal("");
                         setPasswordVal("");
-                        window.location.href = "https://app.ever.re"
+                        window.location.href = "https://app.ever.re/"
                     }else{
                         setFormWarning(response.data.message);
                     }

@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="144e6038-fe8d-4ca8-ad18-6faca49258d8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/style.css" afterPath="$PROJECT_DIR$/public/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/scripts.min.js" afterPath="$PROJECT_DIR$/public/assets/js/scripts.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/templates/landing.js" afterPath="$PROJECT_DIR$/src/components/templates/landing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/templates/layouts/FooterNew.js" afterPath="$PROJECT_DIR$/src/components/templates/layouts/FooterNew.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/templates/layouts/footer.js" afterPath="$PROJECT_DIR$/src/components/templates/layouts/footer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/templates/layouts/header2.js" afterPath="$PROJECT_DIR$/src/components/templates/layouts/header2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/templates/signup.js" afterPath="$PROJECT_DIR$/src/components/templates/signup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,8 +27,8 @@
       <file leaf-file-name="landing.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/templates/landing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1072">
-              <caret line="813" column="26" lean-forward="false" selection-start-line="813" selection-start-column="26" selection-end-line="813" selection-end-column="26" />
+            <state relative-caret-position="9306">
+              <caret line="715" column="20" lean-forward="false" selection-start-line="715" selection-start-column="20" selection-end-line="715" selection-end-column="20" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -105,8 +99,8 @@
       <file leaf-file-name="signin.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/templates/signin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="70" column="56" lean-forward="false" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="56" />
+            <state relative-caret-position="963">
+              <caret line="108" column="56" lean-forward="false" selection-start-line="108" selection-start-column="56" selection-end-line="108" selection-end-column="56" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -119,16 +113,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
               <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signup.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/templates/signup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -193,6 +177,7 @@
         <option value="$PROJECT_DIR$/public/assets/css/style.css" />
         <option value="$PROJECT_DIR$/public/assets/js/scripts.min.js" />
         <option value="$PROJECT_DIR$/src/components/templates/landing.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -329,16 +314,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640338954327</updated>
-      <workItem from="1640338956365" duration="23542000" />
+      <workItem from="1640338956365" duration="24385000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23542000" />
+    <option name="totallyTimeSpent" value="24385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -346,7 +331,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23975904" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23975904" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -414,9 +399,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/templates/signup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+            <marker date="1640821666542" expanded="true" signature="2564:6500" ph="{...}" />
+            <marker date="1640821666542" expanded="true" signature="2655:6492" ph="&lt;div/&gt;" />
+            <marker date="1640821666542" expanded="true" signature="2673:6464" ph="&lt;div/&gt;" />
+            <marker date="1640821666542" expanded="true" signature="2741:6402" ph="&lt;main/&gt;" />
+            <marker date="1640821666542" expanded="true" signature="2809:6378" ph="&lt;section/&gt;" />
+            <marker date="1640821666542" expanded="true" signature="2870:6347" ph="&lt;div/&gt;" />
+            <marker date="1640821666542" expanded="true" signature="2934:6316" ph="&lt;div/&gt;" />
+            <marker date="1640821666542" expanded="true" signature="3076:6028" ph="&lt;div/&gt;" />
+            <marker date="1640821666542" expanded="true" signature="3245:4094" ph="&lt;div/&gt;" />
+            <marker date="1640821666542" expanded="true" signature="3336:3676" ph="&lt;div/&gt;" />
+            <marker date="1640821666542" expanded="true" signature="3717:4051" ph="&lt;div/&gt;" />
+            <marker date="1640821666542" expanded="true" signature="4131:4434" ph="&lt;div/&gt;" />
+            <marker date="1640821666542" expanded="true" signature="4471:5266" ph="&lt;div/&gt;" />
+            <marker date="1640821666542" expanded="true" signature="4632:5223" ph="&lt;div/&gt;" />
+            <marker date="1640821666542" expanded="true" signature="5385:5835" ph="&lt;div/&gt;" />
+            <marker date="1640821666542" expanded="true" signature="5463:5792" ph="&lt;div/&gt;" />
+            <marker date="1640821666542" expanded="true" signature="6061:6281" ph="&lt;div/&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -446,8 +450,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/templates/signin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="70" column="56" lean-forward="false" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="56" />
+        <state relative-caret-position="963">
+          <caret line="108" column="56" lean-forward="false" selection-start-line="108" selection-start-column="56" selection-end-line="108" selection-end-column="56" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -502,10 +506,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/templates/landing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1072">
-          <caret line="813" column="26" lean-forward="false" selection-start-line="813" selection-start-column="26" selection-end-line="813" selection-end-column="26" />
+        <state relative-caret-position="9306">
+          <caret line="715" column="20" lean-forward="false" selection-start-line="715" selection-start-column="20" selection-end-line="715" selection-end-column="20" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>

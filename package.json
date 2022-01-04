@@ -1,7 +1,7 @@
 {
   "name": "landing",
   "version": "0.1.0",
-  "proxy": "http://localhost:8080",
+  "proxy": "https://api.kawserahmed.xyz",
   "private": true,
   "homepage": "https://www.ever.re",
   "dependencies": {

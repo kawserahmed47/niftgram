@@ -62,14 +62,18 @@ export default function Signup() {
 
             await axios.post('/api/users/create-user', data).then(function (response) {
                 console.log(response);
-                setFormWarning("Account Created Successfully.");
+                setFormWarning("Account Created Successfully. Loging in...");
+                
+                let email = emailVal
+                let password = passwordVal
+
                 setFirstName("");
                 setLastName("");
                 setEmailVal("");
                 setPasswordVal("");
-                window.location.href = "/signin"
+                // window.location.href = "/signin"
 
-
+                authenticationLogin(email, password)
               })
               .catch(function (error) {
                 console.log(error);
@@ -80,6 +84,46 @@ export default function Signup() {
 
         }else{
             setFormWarning("Please all the required both field!")
+        }
+       
+    }
+
+    let authenticationLogin = async (email, password) => {
+
+        if(email && password){
+
+           const data ={
+               email: email,
+               password : password
+           } 
+
+            await axios.post('/api/users/login-check', data).then(function (response) {
+                console.log(response);
+                if(response.data){
+
+                    if(response.data.status){
+                        setFormWarning(response.data.message + " Redirecting..." );
+                        setEmailVal("");
+                        setPasswordVal("");
+                        window.location.href = "https://app.ever.re"
+                    }else{
+                        setFormWarning(response.data.message);
+                    }
+                    
+
+                }else{
+                    setFormWarning("Email or Password does not match");
+                }
+                
+
+              })
+              .catch(function (error) {
+                console.log(error);
+                setFormWarning("Someting went wrong.")
+              });
+
+        }else{
+            setFormWarning("Please fill both field!")
         }
        
     }
