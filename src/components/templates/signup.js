@@ -60,7 +60,7 @@ export default function Signup() {
                 password : passwordVal
             }
 
-            await axios.post('/api/users/create-user', data).then(function (response) {
+            await axios.post('https://api.kawserahmed.xyz/api/users/create-user', data).then(function (response) {
                 console.log(response);
                 setFormWarning("Account Created Successfully. Loging in...");
                 
@@ -97,7 +97,7 @@ export default function Signup() {
                password : password
            } 
 
-            await axios.post('/api/users/login-check', data).then(function (response) {
+            await axios.post('https://api.kawserahmed.xyz/api/users/login-check', data).then(function (response) {
                 console.log(response);
                 if(response.data){
 

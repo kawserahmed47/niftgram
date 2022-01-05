@@ -47,7 +47,7 @@ export default function Signin() {
                password : passwordVal
            } 
 
-            await axios.post('/api/users/login-check', data).then(function (response) {
+            await axios.post('https://api.kawserahmed.xyz/api/users/login-check', data).then(function (response) {
                 console.log(response);
                 if(response.data){
 
