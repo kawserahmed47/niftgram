@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Header from './layouts/header2';
 import Footer from './layouts/FooterNew'
-import axios from 'axios';
+import api from '../../config';
 
 export default function Otp_check() {
 
@@ -37,20 +37,37 @@ export default function Otp_check() {
 
 
 
-            await axios.post('/api/users/check-otp', data).then(function (response) {
+            fetch(api.url+`/api/users/check-otp`, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            })
+            .then((response) => {
+                return response.json();
+            }) 
+            
+            .then((response)=>{
+    
                 console.log(response);
-                setFormWarning(response.data.message);
+                setFormWarning(response.message);
                 setEmailVal("");
-                if(response.data.status){
+                if(response.status){
                     window.localStorage.setItem("token", otpVal);
                     window.location.href = "/reset-password"
                 }
 
-              })
-              .catch(function (error) {
+    
+            }).catch((error)=>{
+    
                 console.log(error);
                 setFormWarning("Someting went wrong.")
-              });
+    
+            })
+
+
+
 
         }else{
             setFormWarning("Please all the required both field!")

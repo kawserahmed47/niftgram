@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import Header from './layouts/header2';
 import Footer from './layouts/FooterNew'
-import axios from 'axios';
-import { Navigate } from 'react-router'
+
+import api from '../../config';
+
+
 export default function Forget_password() {
 
 
@@ -24,23 +26,40 @@ export default function Forget_password() {
 
             const data = { email: emailVal }
 
-            await axios.post('/api/users/send-otp', data).then(function (response) {
+
+
+            fetch(api.url+`/api/users/send-otp`, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            })
+            .then((response) => {
+                return response.json();
+            }) 
+            
+            .then((response)=>{
+                
                 console.log(response);
-                setFormWarning(response.data.message);
+                setFormWarning(response.message);
                 setEmailVal("");
                 
                  
-                if(response.data.status){
-                    window.localStorage.setItem("forget_email", response.data.email);
-                    window.localStorage.setItem("token", response.data.token);
+                if(response.status){
+                    window.localStorage.setItem("forget_email", response.email);
+                    window.localStorage.setItem("token", response.token);
                     window.location.href = "/otp-check"
                 }
-                
-              })
-              .catch(function (error) {
+             
+    
+            }).catch((error)=>{
+    
                 console.log(error);
                 setFormWarning("Someting went wrong.")
-              });
+    
+            })
+
 
         }else{
             setFormWarning("Please all the required both field!")

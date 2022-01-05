@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Header from './layouts/header2';
 import Footer from './layouts/FooterNew'
 import axios from 'axios';
+import api from '../../config';
 
 export default function Signin() {
 
@@ -47,32 +48,44 @@ export default function Signin() {
                password : passwordVal
            } 
 
-            await axios.post('/api/users/login-check', data).then(function (response) {
+           fetch(api.url+`/api/users/login-check`, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            })
+            .then((response) => {
+                return response.json();
+            }) 
+            
+            .then((response)=>{
+                // response.json().then((res)=>{
+                //     console.log(res);
+                // })
                 console.log(response);
-                if(response.data){
+                if(response.status){
 
-                    if(response.data.status){
-                        setFormWarning(response.data.message + " Redirecting..." );
+                    if(response.status){
+                        setFormWarning(response.message + " Redirecting..." );
                         setEmailVal("");
                         setPasswordVal("");
-                        // window.location.href = "https://app.ever.re"
-                        window.location.href  = "https://app.ever.re/?auth="+response.data.token
+                        window.location.href = "https://app.ever.re?auth="+response.token
                     }else{
-                        setFormWarning(response.data.message);
+                        setFormWarning(response.message);
                     }
-                    
                     
 
                 }else{
                     setFormWarning("Email or Password does not match");
                 }
-                
 
-              })
-              .catch(function (error) {
+            }).catch((error)=>{
+
                 console.log(error);
                 setFormWarning("Someting went wrong.")
-              });
+
+            })
 
         }else{
             setFormWarning("Please fill both field!")
@@ -92,10 +105,10 @@ export default function Signin() {
                                 <h1 className="auth-form__title">Sign in to EVER</h1>
                                 <div className="auth-form__body">
                                     <div className="auth-form__input-container">
-                                        <input id="email" name="email" type="email" placeholder="Email" require onInput={(e)=>{emailInput(e)}}/>
+                                        <input id="email" name="email" value={emailVal} type="email" placeholder="Email" require onInput={(e)=>{emailInput(e)}}/>
                                     </div>
                                     <div className="auth-form__input-container">
-                                        <input id="password" name="password" type="password" placeholder="Password" require  onInput={(e)=>{passwordInput(e)}}/>
+                                        <input id="password" name="password" value={passwordVal} type="password" placeholder="Password" require  onInput={(e)=>{passwordInput(e)}}/>
                                         <img className="auth-form__input__img showpass" onClick={() => passwordVisibilityToggle(true)} src="assets/img/eye.png"/>
                                         <img className="auth-form__input__img hidepass hide" onClick={() => passwordVisibilityToggle(false)} src="assets/img/hidden.png"/>
                                     </div>
