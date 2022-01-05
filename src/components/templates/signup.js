@@ -105,7 +105,7 @@ export default function Signup() {
                         setFormWarning(response.data.message + " Redirecting..." );
                         setEmailVal("");
                         setPasswordVal("");
-                        window.location.href = "https://app.ever.re"
+                        window.location.href = "https://app.ever.re?auth="+response.data.token
                     }else{
                         setFormWarning(response.data.message);
                     }

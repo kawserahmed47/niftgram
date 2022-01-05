@@ -56,7 +56,7 @@ export default function Signin() {
                         setEmailVal("");
                         setPasswordVal("");
                         // window.location.href = "https://app.ever.re"
-                        window.location.href  = "http://localhost:3000/?auth="+response.data.token
+                        window.location.href  = "https://app.ever.re/?auth="+response.data.token
                     }else{
                         setFormWarning(response.data.message);
                     }
