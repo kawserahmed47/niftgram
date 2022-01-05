@@ -3,7 +3,7 @@ import Header from './layouts/header2';
 import Footer from './layouts/FooterNew';
 
 import axios from 'axios';
-
+import api from '../../config';
 
 
 export default function Signup() {
@@ -60,7 +60,19 @@ export default function Signup() {
                 password : passwordVal
             }
 
-            await axios.post('https://api.kawserahmed.xyz/api/users/create-user', data).then(function (response) {
+            fetch(api.url+`/api/users/create-user`, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            })
+            .then((response) => {
+                return response.json();
+            }) 
+            
+            .then((response)=>{
+
                 console.log(response);
                 setFormWarning("Account Created Successfully. Loging in...");
                 
@@ -74,13 +86,13 @@ export default function Signup() {
                 // window.location.href = "/signin"
 
                 authenticationLogin(email, password)
-              })
-              .catch(function (error) {
+
+            }).catch((error)=>{
+
                 console.log(error);
                 setFormWarning("Someting went wrong.")
-              });
 
-
+            })
 
         }else{
             setFormWarning("Please all the required both field!")
@@ -97,30 +109,45 @@ export default function Signup() {
                password : password
            } 
 
-            await axios.post('https://api.kawserahmed.xyz/api/users/login-check', data).then(function (response) {
-                console.log(response);
-                if(response.data){
+           
+           fetch(api.url+`/api/users/login-check`, {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+        .then((response) => {
+            return response.json();
+        }) 
+        
+        
+        .then((response)=>{
 
-                    if(response.data.status){
-                        setFormWarning(response.data.message + " Redirecting..." );
-                        setEmailVal("");
-                        setPasswordVal("");
-                        window.location.href = "https://app.ever.re?auth="+response.data.token
-                    }else{
-                        setFormWarning(response.data.message);
-                    }
-                    
+            console.log(response);
+            if(response){
 
+                if(response.status){
+                    setFormWarning(response.message + " Redirecting..." );
+                    setEmailVal("");
+                    setPasswordVal("");
+                    window.location.href = "https://app.ever.re?auth="+response.token
                 }else{
-                    setFormWarning("Email or Password does not match");
+                    setFormWarning(response.message);
                 }
                 
 
-              })
-              .catch(function (error) {
-                console.log(error);
-                setFormWarning("Someting went wrong.")
-              });
+            }else{
+                setFormWarning("Email or Password does not match");
+            }
+
+        }).catch((error)=>{
+
+            console.log(error);
+            setFormWarning("Someting went wrong.")
+
+        })
+
 
         }else{
             setFormWarning("Please fill both field!")
@@ -147,21 +174,21 @@ export default function Signup() {
                                     <div class="auth-form__mutlitple-input-container">
                                         <div class="auth-form__input-container">
                                             <label for="firstName">First name*</label>
-                                            <input id="firstName" name="firstName" type="text" placeholder="First name" require  onInput={(e)=>{firstNameInput(e)}}/>
+                                            <input id="firstName" name="firstName" value={firstName} type="text" placeholder="First name" require  onInput={(e)=>{firstNameInput(e)}}/>
                                         </div>
                                         <div class="auth-form__input-container">
                                             <label for="lastName">Last name*</label>
-                                            <input id="lastName" name="lastName" type="text" placeholder="Last name" require  onInput={(e)=>{lastNameInput(e)}}/>
+                                            <input id="lastName" name="lastName" value={lastName} type="text" placeholder="Last name" require  onInput={(e)=>{lastNameInput(e)}}/>
                                         </div>
                                     </div>
                                     <div class="auth-form__input-container">
                                         <label for="email">Email*</label>
-                                        <input id="email" name="email" type="email" placeholder="Email" require  onInput={(e)=>{emailInput(e)}}/>
+                                        <input id="email" name="email" type="email" value={emailVal} placeholder="Email" require  onInput={(e)=>{emailInput(e)}}/>
                                     </div>
                                     <div class="auth-form__input-container">
                                         <label for="password">Password*</label>
                                         <div class="auth-form__input-with-img">
-                                            <input id="password" name="password" type="password" placeholder="Choose password" require  onInput={(e)=>{passwordInput(e)}}/>
+                                            <input id="password" name="password" value={passwordVal} type="password" placeholder="Choose password" require  onInput={(e)=>{passwordInput(e)}}/>
                                             <img class="auth-form__input__img showpass" onClick={() => passwordVisibilityToggle(true)} src="assets/img/eye.png"/>
                                             <img class="auth-form__input__img hidepass hide" onClick={() => passwordVisibilityToggle(false)} src="assets/img/hidden.png"/>
                                         </div>

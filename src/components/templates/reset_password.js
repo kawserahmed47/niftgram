@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import Header from './layouts/header2';
 import Footer from './layouts/FooterNew'
-import axios from 'axios';
+
+import api from '../../config';
+
 export default function Reset_password() {
 
     let forgetEmail = window.localStorage.getItem("forget_email");
@@ -41,22 +43,40 @@ export default function Reset_password() {
                 
              }
 
-            await axios.post('/api/users/reset-password', data).then(function (response) {
+
+             fetch(api.url+`/api/users/reset-password`, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            })
+            .then((response) => {
+                return response.json();
+            }) 
+            .then((response)=>{
+
+
                 console.log(response);
-                setFormWarning(response.data.message);
+                setFormWarning(response.message);
                 
                  
-                if(response.data.status){
+                if(response.status){
                     window.localStorage.setItem("forget_email", "");
                     window.localStorage.setItem("token", "");
                     window.location.href = "/signin"
                 }
+    
                 
-              })
-              .catch(function (error) {
+    
+            }).catch((error)=>{
+    
                 console.log(error);
                 setFormWarning("Someting went wrong.")
-              });
+    
+            })
+
+
 
         }else{
             setFormWarning("Please all the required both field!")
