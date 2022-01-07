@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Header from './layouts/header2';
 import Footer from './layouts/FooterNew';
 
-import axios from 'axios';
 import api from '../../config';
 
 
