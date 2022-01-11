@@ -5,6 +5,8 @@ import api from '../../config';
 
 export default function Signin() {
 
+    document.body.title = 'Sign in to your EVER account | EVER - one platform, all things money'
+
   
 
     const [emailVal, setEmailVal] = useState();

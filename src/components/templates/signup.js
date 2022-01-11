@@ -6,6 +6,7 @@ import api from '../../config';
 
 
 export default function Signup() {
+    document.body.title = 'Create an account on EVER | EVER - one platform, all things money'
 
 
     const [firstName, setFirstName] = useState();
@@ -195,8 +196,8 @@ export default function Signup() {
                                     <p className="form-warning">{formWarning}</p>
                                     <div class="auth-form__body__footer">
                                         <div class="i-agree-container">
-                                            <input type="checkbox" id="iAgree"/>
-                                            <label for="iAgree">I certify that I am 18 years of age or older, and agree to the User Agreement and Privacy Policy.</label>
+                                            <input className='isAdultCheck' type="checkbox" id="iAgree"/>
+                                            <label for="iAgree">I certify that I am 18 years of age or older, and agree to the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>.</label>
                                         </div>
                                     </div>
                                     <button class="auth-form__submit-button large" type="button" onClick={()=>{authentication()}}>Create account</button>

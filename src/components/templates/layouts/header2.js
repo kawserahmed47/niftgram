@@ -20,11 +20,11 @@ export default function Header() {
                                 <ul className="menu">
                                     <li className="menu__item"><a href="#" className="menu__link">Banking</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Insurance</a></li>
-                                    <li className="menu__item"><a href="#" className="menu__link">Investing</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">Asset Management</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Trading</a></li>
-                                    <li className="menu__item"><a href="#" className="menu__link">Offerings</a></li>
-                                    <li className="menu__item"><a href="#" className="menu__link">Cryptos</a></li>
-                                    <li className="menu__item"><a href="#" className="menu__link">Coinset</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">Underwriting</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">Cyptocurrency</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">Protocol</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Ever Wallet</a></li>
                                 </ul>
                             </div>
@@ -43,10 +43,12 @@ export default function Header() {
                                     <li className="menu__item"><a href="#" className="menu__link">EverDEX</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Perpetual</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Pro</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">XPO</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Advanced</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Margins</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Derivatives</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Prime</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">CDx</a></li>
                                 </ul>
                             </div>    
                         </li>
@@ -69,8 +71,20 @@ export default function Header() {
                                     <li className="menu__item"><a href="#" className="menu__link">Banking</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Crypto</a></li>
                                     <li className="menu__item"><a href="#" className="menu__link">Trading</a></li>
-                                    <li className="menu__item"><a href="#" className="menu__link">Investing</a></li>
-                                    <li className="menu__item"><a href="#" className="menu__link">Offerings</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">Asset Management</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">Underwriting</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li className="menu__item">
+                            <a className="menu__link">Fees <b class="caret"></b></a>
+                            <div className="menu__hidden_items">
+                                <ul className="menu">
+                                    <li className="menu__item"><a href="#" className="menu__link">Banking</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">Crypto</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">Trading</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">Asset Management</a></li>
+                                    <li className="menu__item"><a href="#" className="menu__link">Underwriting</a></li>
                                 </ul>
                             </div>
                         </li>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 export default class FooterNew extends Component {
+    
     render() {
         return (
             <section className="eachSection footerSection" id="footer">
@@ -66,6 +67,10 @@ export default class FooterNew extends Component {
                                 <p>NFTory</p>
                                 <p className="footerEachRowSubTitle">Create and display your NTFs for public view for free or for a fee</p>
                             </a>
+                            <a href="#" className="footerEachRow">
+                                <p>eDollar</p>
+                                <p className="footerEachRowSubTitle">The 1:1 USD-backed stablecoin built by a secure, reliable, and regulated cryptocurrency exchange</p>
+                            </a>
                         </div>
                         <div className="footerEachColumn">
                             <a href="#" className="footerEachRow">
@@ -101,12 +106,12 @@ export default class FooterNew extends Component {
                                 <p className="footerEachRowSubTitle">Raise additional funds after after listing</p>
                             </a>
                             <a href="#" className="footerEachRow">
-                                <p>+18% APR with Crib</p>
-                                <p className="footerEachRowSubTitle">+18% APR with Crib (Earn +18% APR on your savings in Crib</p>
+                                <p>Vault</p>
+                                <p className="footerEachRowSubTitle">Earn 18% APR pay out on a daily basis with your current account deposit with EVER</p>
                             </a>
                             <a href="#" className="footerEachRow">
-                                <p>Staking</p>
-                                <p className="footerEachRowSubTitle">Put your crypto to work and earn rewards on it</p>
+                                <p>Custody</p>
+                                <p className="footerEachRowSubTitle">Store and manage your digital assets and LPs using the most secure, compliant, and user-friendly custody solution on the market</p>
                             </a>
                             <a href="#" className="footerEachRow">
                                 <p>Promos</p>
@@ -204,6 +209,14 @@ export default class FooterNew extends Component {
                                 <p>Products & Services</p>
                                 <p className="footerEachRowSubTitle">Explore the 200+ products and services on EVER</p>
                             </a>
+                            <a href="#" className="footerEachRow">
+                                <p>Underwriting</p>
+                                <p className="footerEachRowSubTitle">Launchpad, token placing, direct/fair listing, and auction listing of tokens and coins</p>
+                            </a>
+                            <a href="#" className="footerEachRow">
+                                <p>EVER cards</p>
+                                <p className="footerEachRowSubTitle">Earn $200 buybacks on EVER Debit cards and up to 5% instant crypto rewards in the cryptocurrency of your choice with EVER Credit cards</p>
+                            </a>
                         </div>
                         <div className="footerEachColumn">
                             <a href="#" className="footerEachRow">
@@ -239,8 +252,12 @@ export default class FooterNew extends Component {
                                 <p className="footerEachRowSubTitle">Identity Passports and credit scoring for Metaverse and Web 3.0</p>
                             </a>
                             <a href="#" className="footerEachRow">
-                                <p>Staking</p>
-                                <p className="footerEachRowSubTitle">Providing a decentralized crowd computing network CPU-based Dev(Ops) solutions</p>
+                                <p>Custody</p>
+                                <p className="footerEachRowSubTitle">Store and manage your digital assets and LPs using the most secure, compliant, and user-friendly custody solution on the market</p>
+                            </a>
+                            <a href="#" className="footerEachRow">
+                                <p>Protocol</p>
+                                <p className="footerEachRowSubTitle">Explore the most extensive, scalable, usable, and flexible blockchain in the cryptocurrency space</p>
                             </a>
                         </div>
                         <div className="footerEachColumn">
@@ -315,7 +332,7 @@ export default class FooterNew extends Component {
                 <div className="footerBottom">
                     <div className="footerBottomEach">
                         <div className="center-y">
-                            <p>© 2021</p>
+                            <p>© 2022</p>
                             <img className="copyrightLogo" src="/assets/img/brandLogo/ever_all_white.png"/>
                         </div>
                         <p style={{marginTop:"8px", fontSize: "14px"}}>Use of this Site is subject to express terms of use. By using this site, you signify that you agree to be bound by these <a href="#" style={{textDecoration:"underline"}}>Terms of Service</a>.</p>

@@ -395,6 +395,17 @@ textarea.contactFormInput{
 /* end */
 
 
+@media screen and (max-width:1400px) {
+    .mobile-app__img-phone{
+        max-height: 400px;
+    }
+}
+@media screen and (max-width:1249px) {
+    .mobile-app__img-phone{
+        max-height: 200px;
+    }
+}
+
 
 @media screen and (max-width: 768px){
     .cookiesContainer, .addToHomeScreenContainer{

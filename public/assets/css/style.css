@@ -2168,10 +2168,11 @@ img {
 
     .mobile-app__img-phone {
         position: relative;
-        max-height: 350px;
+        max-height: 350px !important;
         height: auto;
         margin: auto;
         left: 0;
+        margin-bottom: 20px;
     }
 
     .mobile-app__img-purpur {
@@ -2430,6 +2431,9 @@ img {
     margin-left: .5rem;
     cursor: pointer;
 }
+.i-agree-container label a{
+    color: #02ac02;
+}
 
 .form-warning{
     color: red;
@@ -2448,7 +2452,7 @@ img {
 }
 .menu__hidden_items .menu{
     display: block;
-    width: 200px;
+    width: 220px;
     height: fit-content;
     background-color: white;
     box-shadow: 0 0 6px #d6d6d6;

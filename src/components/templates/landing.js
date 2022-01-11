@@ -313,11 +313,11 @@ export default function Landing() {
                         </div>
                     </article>
                     <article className="products" id="products">
-                        <div className="center">
+                        <div className="center" style={{width: '1280px'}}>
                             <h2 className="hash">Products</h2>
-                            <p className="h1" style={{display: 'flex'}}>Powered by <img height={80} style={{display: 'inline', margin: '0px 12px'}} src="assets/img/brandLogo/favicon_all_black.png" alt="Ever white logo" /> blockchain</p>
-                            <p className='headline-2'>Auditing by CERTIK in progress</p>
-                            <p className='mt-2'>The EVER Ecosystem offers a suite of decentralized applications (dApps) and services to provide multi-chain security solutions for projects and individuals in the DeFi, Metaverse, and WEB3.0 space. Our dApps and services are powered by EVER network and 28 other cross-chain networks.</p>
+                            <p className="h1" style={{display: 'flex', alignItems: 'center'}}>Powered by <img height={40} style={{display: 'inline', margin: '0px 12px'}} src="assets/img/brandLogo/ever_all_black.png" alt="Ever white logo" /> blockchain</p>
+                            {/* <p className='headline-2'>Auditing by CERTIK in progress</p> */}
+                            <p className='mt-2'>The EVER Ecosystem offers suites of decentralized applications (dApps) and services to provide multi-chain security solutions for projects and individuals in the DeFi, Metaverse, and WEB3.0 space. Our dApps and services are powered by EVER and other networks.</p>
                         </div>
                     </article>
                     <aside className="try-demo" id="demo">
@@ -325,27 +325,29 @@ export default function Landing() {
                             <p class="h1" style={{color:"var(--primary)", textAlign:"center"}}>Demos</p>
                             <br/>
                             <br/>
-                            <h2 style={{color:"var(--primary)"}}>Beta</h2>
+
+                            {/* Gamma */}
+                            <h2 style={{color:"var(--primary)"}}>Gamma</h2>
                             <br/>
                             <div className="try-demo__box">
                                 <div className="try-demo__box__each">
                                     <h2>Classic</h2>
                                     <br/>
-                                    <p>Instant buying and selling of over 7000 cryptos</p>
+                                    <p>Instant buying and selling of over 9k+ cryptos on the world's #1 and largest Instant Exchanger</p>
                                     <br/>
                                     <a href="https://app.ever.re/classic" target="_blank" className="try-demo__button">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>EverDEX</h2>
                                     <br/>
-                                    <p>Swap, stake, and farm 1000+ tokens on the go</p>
+                                    <p>Swap, pool, and farm 12k+ tokens built on 25+ cross-chain networks on the world's largest and most liquid DEX.</p>
                                     <br/>
-                                    <a href="https://app.ever.re/dex" target="_blank" className="try-demo__button">Start trading</a>
+                                    <a href="https://app.ever.re/dex" target="_blank" className="try-demo__button">Site Maintenance</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Perpetual</h2>
                                     <br/>
-                                    <p>Instant recurrent buying and selling of over 7000 cryptos</p>
+                                    <p>One-off and recurrent trading of 7k+ cryptos with intuitive charts and risk scores of each crypto on the world's #1 retail crypto exchanger</p>
                                     <br/>
                                     <a href="https://app.ever.re/perpetual" target="_blank" className="try-demo__button">Start trading</a>
                                 </div>
@@ -355,36 +357,16 @@ export default function Landing() {
                             <br/>
                             <br/>
 
-                            <h2 style={{color:"var(--primary)"}}>Pre-Beta</h2>
+                            {/* Beta */}
+                            <h2 style={{color:"var(--primary)"}}>Beta</h2>
                             <br/>
                             <div className="try-demo__box">
                                 <div className="try-demo__box__each">
-                                    <h2>Pro</h2>
+                                    <h2>Crab</h2>
                                     <br/>
-                                    <p>Instant crypto trading on layer 2</p>
+                                    <p>The world's first crypto "topup" scratchcard available in your local grocery stores, globally</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
-                                </div>
-                                <div className="try-demo__box__each">
-                                    <h2>Offerings</h2>
-                                    <br/>
-                                    <p>Advanced crypto launcher, token placing, and direct auctions</p>
-                                    <br/>
-                                    <a href="#" className="try-demo__button dim">Launch token</a>
-                                </div>
-                                <div className="try-demo__box__each">
-                                    <h2>CFD</h2>
-                                    <br/>
-                                    <p>Lowest forex CFD fees, commission-free stocks/ETFs and providing access to 21k+ financial markets including FX, indices, shares, commodities, and more. Trade, deposit, and withdraw only in cryptos</p>
-                                    <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
-                                </div>
-                                <div className="try-demo__box__each">
-                                    <h2>Crib</h2>
-                                    <br/>
-                                    <p>Invest as little as $5 and earn 18% APR, paid out daily</p>
-                                    <br/>
-                                    <a href="#" className="try-demo__button dim">Open account</a>
+                                    <a href="#" className="try-demo__button dim">Learn more</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Wallet</h2>
@@ -394,6 +376,68 @@ export default function Landing() {
                                     <a href="#" className="try-demo__button dim">Launch demo</a>
                                 </div>
                                 <div className="try-demo__box__each">
+                                    <h2>ScoreFi</h2>
+                                    <br/>
+                                    <p>Identity Passports and credit scoring for Metaverse and Web 3.0</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>Escrow</h2>
+                                    <br/>
+                                    <p>Escrow gateway securing GameFi, Metaverse, Marketplaces and beyond</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>Staking</h2>
+                                    <br/>
+                                    <p>Providing a decentralized crowd computing network CPU-based Dev(Ops) solutions</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>P2P exchange</h2>
+                                    <br/>
+                                    <p>With 300+ payment methods supporting instant crypto trading with people who are ready to trade with you</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>NFT</h2>
+                                    <br/>
+                                    <p>Mint, sell, rent, and buy NFTs from 12+  blockchains in one place</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>XPO</h2>
+                                    <br/>
+                                    <p>Decentralized options trading of 1k+ cryptos with no fixed maturity and no exercise limitation with a deposit of just $1 to get started</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>Underwriting</h2>
+                                    <br/>
+                                    <p>Advanced crypto launcher, token placing, direct (fair launch) lsiting, and auction listing</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Launch token</a>
+                                </div>
+                            </div>
+
+                            {/* Alpha */}
+                            <h2 style={{color:"var(--primary)", marginTop: "40px"}}>Alpha</h2>
+                            <br/>
+                            <div className="try-demo__box">
+                            <div className="try-demo__box__each">
+                                    <h2>CFD</h2>
+                                    <br/>
+                                    <p>Lowest forex CFD fees, commission-free stocks/ETFs and providing access to 21k+ financial markets including FX, indices, shares, commodities, and more. Trade, deposit, and withdraw only in cryptos</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
                                     <h2>Margin</h2>
                                     <br/>
                                     <p>Advanced crypto trading platform to increase your trading profits by leverage</p>
@@ -401,16 +445,30 @@ export default function Landing() {
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
-                                    <h2>Advanced</h2>
+                                    <h2>SpreadBet</h2>
                                     <br/>
-                                    <p>Trade on the most advanced, comprehensive, and fasters crypto trading platform</p>
+                                    <p>Start trading 34k+ markets tax free. Trade 1k+ cryptos, stocks, forex, indices, commodities, bonds and shares with the lowest spreads and without taking ownership of the underlying asset</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
-                                    <h2>P2P</h2>
+                                    <h2>Binaries</h2>
                                     <br/>
-                                    <p>With 300+ payment methods supporting instant crypto trading with people who are ready to trade with you</p>
+                                    <p>Trade with as little as $1 USD on major currencies, cryptocurrencies, stocks and commodities. Each EVER contract traded costs $1 to enter and $1 to exit.</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>Pro</h2>
+                                    <br/>
+                                    <p>Trade 4k+ cryptos in 7k+ markets on the world's largest high-frequency spot trading platform</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>DX</h2>
+                                    <br/>
+                                    <p>Trade 50k+ stocks and 120+ currency pairings with greater visibility of the market, speed of execution, and aggregates prices from multiple exchanges worldwide on one platform</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
@@ -422,11 +480,11 @@ export default function Landing() {
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
-                                    <h2>Crab</h2>
+                                    <h2>CDx</h2>
                                     <br/>
-                                    <p>The world's first crypto "topup" scratchcard available in your local grocery stores, globally</p>
+                                    <p>Trade 100+ commodities such as gold, crude oil in CFDs, futures, options, spreadbets, DMA, binaries, and spot pairs on the go. Trade, deposit, and withdraw only in cryptos</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Learn more</a>
+                                    <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Prime</h2>
@@ -435,35 +493,6 @@ export default function Landing() {
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start trading</a>
                                 </div>
-                                <div className="try-demo__box__each">
-                                    <h2>Demo Trading</h2>
-                                    <br/>
-                                    <p>Free trading on cryptos and securities with $10,000</p>
-                                    <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
-                                </div>
-                                <div className="try-demo__box__each">
-                                    <h2>DX</h2>
-                                    <br/>
-                                    <p>Trade 50k+ stocks and 120+ currency pairings with greater visibility of the market, speed of execution, and aggregates prices from multiple exchanges worldwide. Trade, deposit, and withdraw only in cryptos</p>
-                                    <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
-                                </div>
-                                <div className="try-demo__box__each">
-                                    <h2>SpreadBet</h2>
-                                    <br/>
-                                    <p>Start trading 34k+ markets tax free. Trade forex, indices, commodities, bonds and shares with the lowest spreads and without taking ownership of the underlying asset. Trade, deposit, and withdraw only in cryptos</p>
-                                    <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
-                                </div>
-                                <div className="try-demo__box__each">
-                                    <h2>Binaries</h2>
-                                    <br/>
-                                    <p>Trade with as little as $1 USD on major currencies, cryptocurrencies, stocks and commodities. Each EVER contract traded costs $1 to enter and $1 to exit. Trade, deposit, and withdraw only in cryptos</p>
-                                    <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
-                                </div>
-
                             </div>
                         </div>
                     </aside>
@@ -478,10 +507,10 @@ export default function Landing() {
                                         <div className="roadmap__quarter">Q1</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
-                                        <div className="roadmap__td"><span>Assemble executive and development team</span></div>
-                                        <div className="roadmap__td"><span>EVE token Live trading on serveral DEXs and CEXs</span></div>
-                                        <div className="roadmap__td"><span>Launch EVER trading exchanges</span></div>
-                                        <div className="roadmap__td"><span>Launch EVER mobile and desktop apps</span></div>
+                                        <div className="roadmap__td"><span>End TGE and list Eve token on DEX and CEX</span></div>
+                                        <div className="roadmap__td"><span>Assemble executives and development team</span></div>
+                                        <div className="roadmap__td"><span>Launch EVER's Gamma and Beta products</span></div>
+                                        <div className="roadmap__td"><span>Launch Ever blockchain, mobile apps, Desktop apps, and Linux version</span></div>
                                     </div>
                                 </div>
                                 <div className="roadmap__row roadmap__row--q2-2021">
@@ -491,8 +520,8 @@ export default function Landing() {
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
                                         <div className="roadmap__td"><span>Initiate FINRA and SIPC membership certifications</span></div>
-                                        <div className="roadmap__td"><span>Start Series A funding</span></div>
-                                        <div className="roadmap__td"><span>Launch EVER Wallet and EVER Crab (Topup scratchcard)</span></div>
+                                        <div className="roadmap__td"><span>Launch EVER's Alpha products</span></div>
+                                        <div className="roadmap__td"><span>Launch Ever Interest-bearing current account (Vault)- 18% APR</span></div>
                                         <div className="roadmap__td"><span>Launch EVER bank cards and crypto cards</span></div>
                                     </div>
                                 </div>
@@ -517,7 +546,7 @@ export default function Landing() {
                                         <div className="roadmap__td"><span>Launch website app v1.2</span></div>
                                         <div className="roadmap__td"><span>Launch EVER POS and EVER Pay for merchants</span></div>
                                         <div className="roadmap__td"><span>DAO Governance</span></div>
-                                        <div className="roadmap__td"><span>End Series A funding</span></div>
+                                        <div className="roadmap__td"><span>Launch Series A funding</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -567,12 +596,20 @@ export default function Landing() {
                         <div className="center team__center">
                             <h2 className="hash">Team</h2>
                             <p className="h1">Team members</p>
-                            <p style={{marginTop: "16px"}}>EVER is hiring a group of c-suit, top and mid-level executives, programmers, customer services, etc to join the team. Please visit our <a href="https://careers.ever.re" target="_blank" className="referenceLink">Careers</a> page to learn more.</p>
+                            <p style={{marginTop: "16px"}}>EVER is hiring c-suit, top and mid-level executives, programmers, customer services, etc to join our team. <a href="https://careers.ever.re" target="_blank" className="referenceLink" style={{textDecoration: 'none'}}>Careers</a> page to learn more.</p>
                             <div className="teamFounderContainer">
                                 <div className="founderImageContainer center-x-with-flex-column">
                                     <img src="/assets/img/founder.png" alt="Founder Image"/>
                                     <p className="founderName">Peter M. Plange, PhD, Esq.</p>
-                                    <p className="founderTitle">Founder</p>
+                                    <div className="founderTitle" style={{display: 'flex', alignItems: 'center'}}>
+                                        <p>Founder</p>
+                                        <a href="http://t.me/pieter_ever" target="_blank">
+                                            <img style={{width: '24px', marginLeft: '16px'}} src="/assets/img/socialLogos/telegram.svg" alt="telegram" />
+                                        </a>
+                                        <a href="mailto:peter.plange@ever.re" target="_blank">
+                                            <img style={{width: '30px', marginLeft: '16px'}} src="/assets/img/socialLogos/email.svg" alt="mail" />
+                                        </a>
+                                    </div>
                                 </div>
                                 <div className="founderContentContainer">
                                     <p>Peter Plange has been working in the banking industrial for the past 16 and half years. An alumna from both Oxford University and Harvard University, Peter started his banking career in 2005 at Standard Chartered as an analyst. He rose through the ranks to be the head of Research in Financial and Emerging Markets till he left Standard Chartered to up start EVER in 2021.</p>
