@@ -2,60 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 export default function Header() {
 
-    useEffect(() => {
-        changeArrowWithLink("menu__link_with_arrow")
-        // changeArrowWithLink("menu__link_with_arrow2")
-    });
-
-    function changeArrowWithLink(id){
-        let element = document.getElementById(id)
-        
-        let all = [
-            {
-                text: "Get started",
-                link: "./signup"
-            },
-            {
-                text: "Start trading",
-                link: "./signup"
-            },
-            {
-                text: "Start earning",
-                link: "./signup"
-            },
-            {
-                text: "Launch demos",
-                link: "./signup"
-            }
-        ]
-
-        let interval
-        let index = 0
-        typeChar()
-        function typeChar(){
-            element.href = all[index].link
-
-            let charIndex = 0
-            let textTemp = ""
-            interval = setInterval(function(){
-                textTemp += all[index].text[charIndex]
-                element.innerText = textTemp
-                if(charIndex === all[index].text.length-1){
-                    if(index === all.length-1){
-                        index=0
-                    }else{
-                        index++;
-                    }
-                    clearInterval(interval)
-                    setTimeout(function(){
-                        typeChar()
-                    }, 3000)
-                }
-                charIndex++
-
-            },50)
-        }
-    }
+    
     
     function showHeaderMenu(){
         let menu = document.querySelector(".header__menu.mobile")
@@ -69,6 +16,15 @@ export default function Header() {
 
     return(
         <header className="header" id="header_block">
+            <div className='topInfo d-flex'>
+                <a href='https://www.ever.re/'>https://www.ever.re/</a>
+                <a href='mailto:invest@ever.re'>invest@ever.re</a>
+                <div className='center-y'>
+                    <a class="disabled" href="#" style={{marginRight: "8px"}}><img width="20px" src="assets/img/socialLogos/telegram.svg" alt=""/></a>
+                    <a class="disabled" href="#" style={{marginRight: "8px"}}><img width="20px" src="assets/img/socialLogos/twitter.svg"/></a>
+                    <a href="https://eblog.medium.com/" target="_blank"><img width="20px" src="assets/img/socialLogos/medium.svg"/></a>
+                </div>
+            </div>
             <div className="center" style={{paddingTop: "1rem", paddingBottom: "1rem"}}>
                 <div className="header__logo">
                     <a href="./" className="logo" title="Ever Corp">
@@ -84,32 +40,34 @@ export default function Header() {
                 </li> */}
                 <nav className="header__menu desktop">
                     <ul className="menu">
+                        <li className="menu__item"><a href="#about" className="menu__link">About</a></li>
+                        <li className="menu__item"><a href="#tge" className="menu__link"> TGE</a></li>
                         <li className="menu__item"><a href="https://careers.ever.re" className="menu__link" target="_blank">Careers <sup style={{fontStyle: "italic", color:'black'}}>We're Hiring</sup> </a></li>
-                        <li className="menu__item"><a href="./#about" className="menu__link">About</a></li>
-                        <li className="menu__item"><a href="./#demo" className="menu__link">Products</a></li>
-                        <li className="menu__item"><a href="./#roadmap" className="menu__link">Roadmap</a></li>
-                        <li className="menu__item"><a href="./#token" className="menu__link">Token</a></li>
-                        <li className="menu__item"><a href="./#team" className="menu__link">Team</a></li>
-                        <li className="menu__item"><a href="https://www.ever.re/get_listed" className="menu__link">List Token <sup style={{fontStyle: "italic", color:'black'}}>FREE</sup></a></li>
+                        <li className="menu__item"><a href="#products" className="menu__link">Products</a></li>
+                        <li className="menu__item"><a href="#roadmap" className="menu__link">Roadmap</a></li>
+                        <li className="menu__item"><a href="#token" className="menu__link">Token</a></li>
+                        <li className="menu__item"><a href="#team" className="menu__link">Team</a></li>
                     </ul>
                 </nav>
                 <nav className="header__menu desktop">
                     <ul className="menu">
                         <li className="menu__item"><a href="./signin" className="menu__link">Sign In</a></li>
-                        <li className="menu__item menu__item_with_arrow getStartedBtn">
-                            <a href="./signup" className="menu__link menu__link_with_arrow" id="menu__link_with_arrow">Get started</a>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="9" viewBox="0 0 50 9" fill="none" class="css-yb3uov menu__item_arrow" style={{color:"yellow"}} arrowWidth="15"><path fillRule="evenodd" clipRule="evenodd" d="M46 0C47.5 4 50 4 50 4V5C50 5 47.5 5 46 9H45C45 8.27907 46.0395 6.2588 47.369 5H0V4H47.369C46.0395 2.7412 45 0.720928 45 0H46Z" fill="#000"></path></svg>
+                        <li className="menu__item getStartedBtn">
+                            <a href="./signup" className="menu__link ">Get started</a>
                         </li>
                     </ul>
                 </nav>
 
                 <nav className="header__menu mobile">
                     <ul className="menu">
-                        <li className="menu__item"><a href="./#about" className="menu__link">About</a></li>
-                        <li className="menu__item"><a href="./#demo" className="menu__link">Products</a></li>
-                        <li className="menu__item"><a href="./#roadmap" className="menu__link">Roadmap</a></li>
-                        <li className="menu__item"><a href="./#token" className="menu__link">Token</a></li>
-                        <li className="menu__item"><a href="./#token" className="menu__link">Team</a></li>
+                        <li className="menu__item"><a href="#about" className="menu__link">About</a></li>
+                        <li className="menu__item"><a href="#tge" className="menu__link"> TGE</a></li>
+                        <li className="menu__item"><a href="https://careers.ever.re" className="menu__link" target="_blank">Careers <sup style={{fontStyle: "italic", color:'black'}}>We're Hiring</sup> </a></li>
+                        <li className="menu__item"><a href="#products" className="menu__link">Products</a></li>
+                        <li className="menu__item"><a href="#roadmap" className="menu__link">Roadmap</a></li>
+                        <li className="menu__item"><a href="#token" className="menu__link">Token</a></li>
+                        <li className="menu__item"><a href="#team" className="menu__link">Team</a></li>
+                    
                         <div className="menu__item_signAndGetStart">
                             <li className="menu__item fill"><a href="./signup" className="menu__link">Get Started</a></li>
                             <li className="menu__item"><a href="./signin" className="menu__link">Sgn In</a></li>
