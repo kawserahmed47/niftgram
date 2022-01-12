@@ -74,8 +74,8 @@ export default function Header() {
                 </li> */}
                 <nav className="header__menu desktop">
                     <ul className="menu">
-                        <li className="menu__item"><a href="https://careers.ever.re" className="menu__link" target="_blank">Careers <sup style={{fontStyle: "italic", color:'black'}}>We're Hiring</sup> </a></li>
                         <li className="menu__item"><a href="./#about" className="menu__link">About</a></li>
+                        <li className="menu__item"><a href="https://careers.ever.re" className="menu__link" target="_blank">Careers <sup style={{fontStyle: "italic", color:'black'}}>We're Hiring</sup> </a></li>
                         <li className="menu__item"><a href="./#demo" className="menu__link">Products</a></li>
                         <li className="menu__item"><a href="./#roadmap" className="menu__link">Roadmap</a></li>
                         <li className="menu__item"><a href="./#token" className="menu__link">Token</a></li>

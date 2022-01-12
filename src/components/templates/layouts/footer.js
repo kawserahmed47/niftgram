@@ -13,17 +13,23 @@ export default function Header() {
                         <img src="./assets/img/brandLogo/ever_all_white.png" height="16"/>
                     </div>
                 </div>
-                <div className="footer__menu">
-                    <ul className="menu">
-                        <li className="menu__item"><a href="./#about" className="menu__link">About</a></li>
-                        <li className="menu__item"><a href="https://careers.ever.re" className="menu__link" target="_blank">Careers <sup style={{fontStyle: "italic", color:'white'}}>We're Hiring</sup></a></li>
-                        <li className="menu__item"><a href="./#demo" className="menu__link">Products</a></li>
-                        <li className="menu__item"><a href="./#roadmap" className="menu__link">Roadmap</a></li>
-                        <li className="menu__item"><a href="./#token" className="menu__link">Token</a></li>
-                        <li className="menu__item"><a href="./#team" className="menu__link">Team</a></li>
-                        <li className="menu__item"><a href="./signup" className="menu__link">Get Started</a></li>
-                        <li className="menu__item"><a href="https://www.ever.re/get_listed" className="menu__link">List Token <sup style={{fontStyle: "italic", color:'white'}}>FREE</sup> </a></li>
-                    </ul>
+                <div style={{display: 'flex', flexDirection: 'column'}}>
+                    <div className="footer__menu" style={{marginBottom: '20px'}}>
+                        <ul className="menu">
+                            <li className="menu__item"><a href="./#about" className="menu__link">About</a></li>
+                            <li className="menu__item"><a href="https://careers.ever.re" className="menu__link" target="_blank">Careers <sup style={{fontStyle: "italic", color:'white'}}>We're Hiring</sup></a></li>
+                            <li className="menu__item"><a href="./#demo" className="menu__link">Products</a></li>
+                            <li className="menu__item"><a href="./#roadmap" className="menu__link">Roadmap</a></li>
+                        </ul>
+                    </div>
+                    <div className="footer__menu">
+                        <ul className="menu">
+                            <li className="menu__item"><a href="./#token" className="menu__link">Token</a></li>
+                            <li className="menu__item"><a href="./#team" className="menu__link">Team</a></li>
+                            <li className="menu__item"><a href="./signup" className="menu__link">Get Started</a></li>
+                            <li className="menu__item"><a href="https://www.ever.re/get_listed" className="menu__link">List Token <sup style={{fontStyle: "italic", color:'white'}}>FREE</sup> </a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="footer__social">
                     <ul class="social">

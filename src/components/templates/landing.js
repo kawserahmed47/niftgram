@@ -315,9 +315,9 @@ export default function Landing() {
                     <article className="products" id="products">
                         <div className="center" style={{width: '1280px'}}>
                             <h2 className="hash">Products</h2>
-                            <p className="h1" style={{display: 'flex', alignItems: 'center'}}>Powered by <img height={40} style={{display: 'inline', margin: '0px 12px'}} src="assets/img/brandLogo/ever_all_black.png" alt="Ever white logo" /> blockchain</p>
+                            <p className="h1" style={{display: 'flex', alignItems: 'center', fontSize: '20px'}}>Powered by <img height={20} style={{display: 'inline', margin: '0px 12px'}} src="assets/img/brandLogo/ever_all_black.png" alt="Ever white logo" /> blockchain</p>
                             {/* <p className='headline-2'>Auditing by CERTIK in progress</p> */}
-                            <p className='mt-2'>The EVER Ecosystem offers suites of decentralized applications (dApps) and services to provide multi-chain security solutions for projects and individuals in the DeFi, Metaverse, and WEB3.0 space. Our dApps and services are powered by EVER and other networks.</p>
+                            <p className='mt-2'>The product releases of our products have been divided into Gamma, Beta, and Alpha. Gamma products are products in the final testing process and are schedule to be release with a month. Beta products and going through the final development process and Alpha products are late in the planning process.</p>
                         </div>
                     </article>
                     <aside className="try-demo" id="demo">
@@ -342,7 +342,7 @@ export default function Landing() {
                                     <br/>
                                     <p>Swap, pool, and farm 12k+ tokens built on 25+ cross-chain networks on the world's largest and most liquid DEX.</p>
                                     <br/>
-                                    <a href="https://app.ever.re/dex" target="_blank" className="try-demo__button">Site Maintenance</a>
+                                    <a href="#" target="_blank" className="try-demo__button">Re-testing</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Perpetual</h2>
@@ -380,21 +380,21 @@ export default function Landing() {
                                     <br/>
                                     <p>Identity Passports and credit scoring for Metaverse and Web 3.0</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                    <a href="#" className="try-demo__button dim">Check rating</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Escrow</h2>
                                     <br/>
                                     <p>Escrow gateway securing GameFi, Metaverse, Marketplaces and beyond</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                    <a href="#" className="try-demo__button dim">Get Started</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Staking</h2>
                                     <br/>
                                     <p>Providing a decentralized crowd computing network CPU-based Dev(Ops) solutions</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                    <a href="#" className="try-demo__button dim">Start earning</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>P2P exchange</h2>
@@ -408,7 +408,7 @@ export default function Landing() {
                                     <br/>
                                     <p>Mint, sell, rent, and buy NFTs from 12+  blockchains in one place</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                    <a href="#" className="try-demo__button dim">Start shopping</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>XPO</h2>

@@ -513,7 +513,7 @@ img {
 
 .footer .center {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between
 }
 
@@ -2265,6 +2265,7 @@ img {
 
 @media (max-width:1492px) {
     .footer .center {
+        align-items: flex-start;
         flex-wrap: wrap;
         justify-content: space-between;
         padding-top: 38px;
