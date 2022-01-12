@@ -6,6 +6,7 @@ import Signup from './templates/signup'
 import ForgetPassword from './templates/forget_password'
 import CheckOTP from './templates/otp_check'
 import ResetPassword from './templates/reset_password'
+import Invest from './templates/Invest'
 
 const  Main = () => (
     <Routes>
@@ -13,6 +14,7 @@ const  Main = () => (
       <Route exact path="/" element={<Landing />} />
       <Route exact path="/signin" element={<Signin />} />
       <Route exact path="/signup" element={<Signup />} />
+      <Route exact path="/invest_ever" element={<Invest />} />
 
       <Route exact path="/forget-password" element={<ForgetPassword />} />
       <Route exact path="/otp-check" element={<CheckOTP />} />

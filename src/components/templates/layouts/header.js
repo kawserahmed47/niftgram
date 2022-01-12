@@ -56,6 +56,16 @@ export default function Header() {
             },50)
         }
     }
+    
+    function showHeaderMenu(){
+        let menu = document.querySelector(".header__menu.mobile")
+        if(menu.classList.contains("active")){
+            menu.classList.remove("active")
+        }else{
+            menu.classList.add("active")
+        }
+    }
+
 
     return(
         <header className="header" id="header_block">
@@ -124,7 +134,7 @@ export default function Header() {
                     </ul>
                 </nav>
 
-                <button className="button btn-menu-toggle" type="button" aria-label="открыть меню">
+                <button className="button btn-menu-toggle" type="button" onClick={()=>{showHeaderMenu()}}>
                     <span className="btn-menu-toggle__line btn-menu-toggle__line--top"></span>
                     <span className="btn-menu-toggle__line btn-menu-toggle__line--center"></span>
                     <span className="btn-menu-toggle__line btn-menu-toggle__line--bottom"></span>
