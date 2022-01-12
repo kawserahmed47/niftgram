@@ -13,6 +13,7 @@ export default function Signup() {
     const [lastName, setLastName] = useState();
     const [emailVal, setEmailVal] = useState();
     const [passwordVal, setPasswordVal] = useState();
+    const [humanVal, sethumanVal] = useState();
     const [formWarning, setFormWarning] = useState();
     
     let passwordVisibilityToggle = (showOrHide) => {
@@ -45,11 +46,15 @@ export default function Signup() {
         let value = e.target.value
         setPasswordVal(value)
     }
+    let humanInput = (e) => {
+        let value = e.target.value
+        sethumanVal(value)
+    }
 
     
     let authentication = async () => {
         //  e.preventDefault();
-        if(firstName && lastName && emailVal && passwordVal){
+        if(firstName && lastName && emailVal && passwordVal && !humanVal){
             // setFormWarning("Signup is under developmet!")
             // const userData = await axios.get('api/users/get-all-users');
             
@@ -192,6 +197,9 @@ export default function Signup() {
                                             <img class="auth-form__input__img showpass" onClick={() => passwordVisibilityToggle(true)} src="assets/img/eye.png"/>
                                             <img class="auth-form__input__img hidepass hide" onClick={() => passwordVisibilityToggle(false)} src="assets/img/hidden.png"/>
                                         </div>
+                                    </div>
+                                    <div className="auth-form__input-container" style={{display:"none"}}>
+                                        <input id="humman" name="humman" value={humanVal} type="text" placeholder="Human check" onInput={(e)=>{humanInput(e)}}/>
                                     </div>
                                     <p className="form-warning">{formWarning}</p>
                                     <div class="auth-form__body__footer">

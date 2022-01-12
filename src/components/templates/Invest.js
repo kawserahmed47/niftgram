@@ -188,7 +188,7 @@ export default function Landing() {
                                     </path>
                                 </svg>
                             </a> */}
-                            <video playsinline autoPlay muted loop class="bannerImage" id="bannerImage">
+                            <video playsinline autoPlay muted loop class="bannerImage invest" id="bannerImage">
                                 <source src="./assets/img/landing-page-top-video-new.mp4" type="video/mp4" />
                             </video>
                         </div>

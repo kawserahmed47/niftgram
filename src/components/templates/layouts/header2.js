@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from 'react'
 
 export default function Header() {
+
+    function showHeaderMenu(){
+        let menu = document.querySelector(".header__menu")
+        if(menu.classList.contains("active")){
+            menu.classList.remove("active")
+        }else{
+            menu.classList.add("active")
+        }
+    }
     return(
         <header className="header header2" id="header_block">
             <div className="center" style={{paddingTop: "1rem", paddingBottom: "1rem"}}>
@@ -105,7 +114,7 @@ export default function Header() {
                         <li className="menu__item"><a href="./signup" className="menu__link">Sign Up</a></li>
                     </ul>
                 </nav>
-                <button className="button btn-menu-toggle" type="button" aria-label="открыть меню"><span className="btn-menu-toggle__line btn-menu-toggle__line--top"></span> <span className="btn-menu-toggle__line btn-menu-toggle__line--center"></span> <span className="btn-menu-toggle__line btn-menu-toggle__line--bottom"></span></button>
+                <button className="button btn-menu-toggle" type="button" aria-label="открыть меню"  onClick={()=>{showHeaderMenu()}}><span className="btn-menu-toggle__line btn-menu-toggle__line--top"></span> <span className="btn-menu-toggle__line btn-menu-toggle__line--center"></span> <span className="btn-menu-toggle__line btn-menu-toggle__line--bottom"></span></button>
             </div>
         </header>
     )

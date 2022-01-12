@@ -1644,7 +1644,8 @@ img {
     .header .menu__item {
         margin: 40px 0;
         display: flex;
-        justify-content: center
+        justify-content: center;
+        width: auto !important;
     }
 
     .header .menu__link {
@@ -1777,6 +1778,10 @@ img {
         background-color: white;
         z-index: 999;
     }
+
+    .bannerImage.invest{
+        top: 50% !important;
+    }
     
 }
 
@@ -1902,12 +1907,13 @@ img {
 
     .footer__logo {
         width: auto;
-        order: 1;
+        /* order: 1; */
         padding-bottom: 4px
     }
 
     .footer__social {
-        padding: 20px 0
+        padding: 20px 0;
+        width: 100%;
     }
 
     .footer__menu {
@@ -2247,6 +2253,11 @@ img {
        padding: 0 !important;
         padding-top: 16px !important;
     }
+
+    .footer .center{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 @media (max-width:500px) {
@@ -2550,6 +2561,11 @@ img {
     left: 44%;
     transform: translate(-50%, -50%);
 }
+.bannerImage.invest{
+    top: calc(50% + 48px);
+    max-height: 500px;
+}
+
 
 
 

@@ -12,6 +12,7 @@ export default function Signin() {
 
     const [emailVal, setEmailVal] = useState();
     const [passwordVal, setPasswordVal] = useState();
+    const [humanVal, sethumanVal] = useState();
     const [formWarning, setFormWarning] = useState();
     
     let passwordVisibilityToggle = (showOrHide) => {
@@ -37,13 +38,18 @@ export default function Signin() {
         setPasswordVal(value)
     }
 
+    let humanInput = (e) => {
+        let value = e.target.value
+        sethumanVal(value)
+    }
+
 
 
     let authentication = async () => {
         // if(emailVal=="demo" && passwordVal=="demo"){
             // setFormWarning(null)
             // login-check
-        if(emailVal && passwordVal){
+        if(emailVal && passwordVal && !humanVal){
 
            const data ={
                email: emailVal,
@@ -113,6 +119,9 @@ export default function Signin() {
                                         <input id="password" name="password" value={passwordVal} type="password" placeholder="Password" require  onInput={(e)=>{passwordInput(e)}}/>
                                         <img className="auth-form__input__img showpass" onClick={() => passwordVisibilityToggle(true)} src="assets/img/eye.png"/>
                                         <img className="auth-form__input__img hidepass hide" onClick={() => passwordVisibilityToggle(false)} src="assets/img/hidden.png"/>
+                                    </div>
+                                    <div className="auth-form__input-container" style={{display:"none"}}>
+                                        <input id="humman" name="humman" value={humanVal} type="text" placeholder="Human check" onInput={(e)=>{humanInput(e)}}/>
                                     </div>
                                     <p className="form-warning">{formWarning}</p>
                                     <div className="auth-form__body__footer">
