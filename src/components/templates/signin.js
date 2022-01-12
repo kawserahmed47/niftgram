@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 import Header from './layouts/header2';
 import Footer from './layouts/FooterNew'
 import api from '../../config';
@@ -121,6 +122,18 @@ export default function Signin() {
                                         </div>
                                         <button className="auth-form__submit-button" type="button" onClick={()=>{authentication()}}>SIGN IN</button>
                                     </div>
+                                    {/* <GoogleReCaptchaProvider
+                                        reCaptchaKey="[Your recaptcha key]"
+                                        language="[optional_language]"
+                                        useRecaptchaNet="[optional_boolean_value]"
+                                        useEnterprise="[optional_boolean_value]"
+                                        scriptProps={{
+                                        async: false, // optional, default to false,
+                                        defer: false, // optional, default to false
+                                        appendTo: 'head', // optional, default to "head", can be "head" or "body",
+                                        nonce: undefined // optional, default undefined
+                                        }}
+                                    ></GoogleReCaptchaProvider> */}
                                 </div>
                                 <div className="auth-form__footer">
                                     <a href="./forget-password">Forgot password?</a>
