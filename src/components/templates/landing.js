@@ -342,7 +342,7 @@ export default function Landing() {
                                     <br/>
                                     <p>Swap, pool, and farm 12k+ tokens built on 25+ cross-chain networks on the world's largest and most liquid DEX.</p>
                                     <br/>
-                                    <a href="#" target="_blank" className="try-demo__button">Re-testing</a>
+                                    <a href="#" target="_blank" className="try-demo__button dim">Re-testing</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Perpetual</h2>

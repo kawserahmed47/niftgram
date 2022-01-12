@@ -3,6 +3,7 @@ import HeaderForInvest from './layouts/headerForInvest'
 import FooterForInvest from './layouts/footerForInvest'
 
 export default function Landing() {
+    document.body.title = 'Invest in EVER | EVER - one platform, all things money'
     const [sliderVal, setSliderVal] = useState(0)
     useEffect(() => {
         getAllTeamMembers()
@@ -276,28 +277,28 @@ export default function Landing() {
                             <p class="h2">Seed</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 5,040,000</strong> is allocated for seed investors at a price of <strong>$0.45</strong> per token. The seed funding event will start on <strong>Tuesday January 11th</strong> and end on <strong>Monday January 17th</strong> The seed funding will have a vesting schedule as follows: <strong>$10% TGE, 3 months cliff and 15 months vesting</strong>.
+                                An amount of <strong>$EVE 5,040,000</strong> is allocated for seed investors at a price of <strong>$0.45</strong> per token. The seed funding event will start on <strong>Friday January 14th</strong> and end on <strong>Thursday January 20th</strong> The seed funding will have a vesting schedule as follows: <strong>$10% TGE, 3 months cliff and 15 months vesting</strong>.
                                 <br/>
                                 <br/>
-                                You have been given an exclusive invitation to participate in EVER's seed funding. To invest, please drop us an email at invest@ever.re or contact Pieter on Telegram at https://t.me/pieter_ever/. Thank you.
+                                You have been given an exclusive invitation to participate in EVER's seed funding. To invest, please drop us an email at <a href="mailto:invest@ever.re" style={{color: "var(--siteColor2)", textDecoration: 'none'}} target="_blank">invest@ever.re</a> or contact Pieter on Telegram at <a href="https://t.me/pieter_ever/" style={{color: "var(--siteColor2)", textDecoration: 'none'}} target="_blank">https://t.me/pieter_ever/</a>. Thank you.
                             </p>
                             <br/>
                             <p class="h2">Private Sale</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 15,120,000</strong> is allocated for private sale investors at a price of $0.65 per token. The private sale funding event will start on <strong>Tuesday January 18th</strong> and end on <strong>Monday January 24th</strong>. The private sale funding will have a vesting schedule as follows: <strong>$12% TGE, 2 months cliff and 12 month vesting</strong>.
+                                An amount of <strong>$EVE 15,120,000</strong> is allocated for private sale investors at a price of $0.65 per token. The private sale funding event will start on <strong>Friday January 21st</strong> and end on <strong>Thursday January 27th</strong>. The private sale funding will have a vesting schedule as follows: <strong>$12% TGE, 2 months cliff and 12 month vesting</strong>.
                             </p>
                             <br/>
                             <p class="h2">Public Sale</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 2,240,000</strong> is allocated for public (token) sale investors at a price of $0.85 per token. The public sale funding event will start on <strong>Tuesday January 25th</strong> and end on <strong>Monday January 31st</strong>. The public sale funding will have no vesting schedule but will have <strong>$100% TGE</strong>. There will be an Initial DEX Offering (IDO) on Trustpad and an Initial Exchange Offering (IEO) on Gate.io. Both the IDO and IEO will be held on the same date.
+                                An amount of <strong>$EVE 2,240,000</strong> is allocated for public (token) sale investors at a price of $0.85 per token. The public sale funding event will start on <strong>Tuesday February 22nd</strong> and end on <strong>Monday Febraury 28th</strong>. The public sale funding will have no vesting schedule but will have <strong>$100% TGE</strong>. There will be an Initial DEX Offering (IDO) on Trustpad and an Initial Exchange Offering (IEO) on Gate.io. Both the IDO and IEO will be held on the same date.
                             </p>
                             <br/>
                             <p class="h2">Retail Sale</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 4,500,000</strong> is allocated for the retail sale at a price of $1.00 per token. Eve will be listed on both Pancakeswap and Gate.io on February 1st.
+                                An amount of <strong>$EVE 4,500,000</strong> is allocated for the retail sale at a price of $1.00 per token. Eve will be listed on EverDEX, Perpetual exchange, Pancakeswap, and Gate.io on <strong>Tuesday March 1st</strong>
                             </p>
                         </div>
                     </article>
@@ -337,7 +338,7 @@ export default function Landing() {
 
                             <br/>
                             <br/>
-                            <p className='h2'>TGE Events</p>
+                            <p className='h2'>TGE</p>
                             <br/>
                             <div className="eachTableContainer">
                                 <table class="customTable noBold" style={{minWidth:"500px", width:"100%", cellSpacing:"0", cellPadding:"0"}}>
@@ -355,7 +356,7 @@ export default function Landing() {
                                         <tr>
                                             <td align="left" valign="middle">Seed</td>
                                             <td align="center" valign="middle">$0.45</td>
-                                            <td align="center" valign="middle">Jan 8 -Jan 17</td>
+                                            <td align="center" valign="middle">Jan 14 - Jan 20</td>
                                             <td align="center" valign="middle"></td>
                                             <td align="center" valign="middle">$2,268,000</td>
                                             <td align="center" valign="middle">$10% TGE, 3 months cliff and 15 months vesting</td>
@@ -363,7 +364,7 @@ export default function Landing() {
                                         <tr>
                                             <td align="left" valign="middle">Private Sale</td>
                                             <td align="center" valign="middle">$0.65</td>
-                                            <td align="center" valign="middle">Jan 18-Jan 24</td>
+                                            <td align="center" valign="middle">Jan 21 - Jan 27</td>
                                             <td align="center" valign="middle"></td>
                                             <td align="center" valign="middle">$9,828,000</td>
                                             <td align="center" valign="middle">$12% TGE, 2 months cliff and 12 months vesting</td>
@@ -371,7 +372,7 @@ export default function Landing() {
                                         <tr>
                                             <td align="left" valign="middle">Token Sale</td>
                                             <td align="center" valign="middle">$0.85</td>
-                                            <td align="center" valign="middle">Jan 25-Jan 31</td>
+                                            <td align="center" valign="middle">Feb 22 - Feb 28</td>
                                             <td align="center" valign="middle">$1,904,000</td>
                                             <td align="center" valign="middle">$3,808,000</td>
                                             <td align="center" valign="middle">$100% TGE</td>
@@ -379,7 +380,7 @@ export default function Landing() {
                                         <tr>
                                             <td align="left" valign="middle">Retail Sale</td>
                                             <td align="center" valign="middle">$1.00</td>
-                                            <td align="center" valign="middle">Feb 1	</td>
+                                            <td align="center" valign="middle">Mar 1</td>
                                             <td align="center" valign="middle"></td>
                                             <td align="center" valign="middle"></td>
                                             <td align="center" valign="middle"></td>
@@ -392,7 +393,7 @@ export default function Landing() {
                     <article className="products" id="products">
                         <div className="center" style={{width: '1280px'}}>
                             <h2 className="hash">Products</h2>
-                            <p className="h1" style={{display: 'flex', alignItems: 'center'}}>Powered by <img height={40} style={{display: 'inline', margin: '0px 12px'}} src="assets/img/brandLogo/ever_all_black.png" alt="Ever white logo" /> blockchain</p>
+                            <p className="h1" style={{display: 'flex', alignItems: 'center', fontSize: '20px'}}>Powered by <img height={20} style={{display: 'inline', margin: '0px 12px'}} src="assets/img/brandLogo/ever_all_black.png" alt="Ever white logo" /> blockchain</p>
                             {/* <p className='headline-2'>Auditing by CERTIK in progress</p> */}
                             <p className='mt-2'>The EVER Ecosystem offers suites of decentralized applications (dApps) and services to provide multi-chain security solutions for projects and individuals in the DeFi, Metaverse, and WEB3.0 space. Our dApps and services are powered by EVER and other networks.</p>
                         </div>
@@ -403,7 +404,7 @@ export default function Landing() {
                             <br/>
                             <br/>
                             <p style={{color: "white"}}>
-                                The product releases of our products have been divided into Gamma, Beta, and Alpha. Gamma products are products in the final testing process and are schedule to be release with a month. Beta products and going through the final development process and Alpha products are in the planning process. Alpha products are not listed here.
+                            The product releases of our products have been divided into Gamma, Beta, and Alpha. Gamma products are products in the final testing process and are schedule to be release with a month. Beta products and going through the final development process and Alpha products are late in the planning process.
                                 <br/>
                                 <br/>
                                 Below are demos of our products:
@@ -427,7 +428,7 @@ export default function Landing() {
                                     <br/>
                                     <p>Swap, pool, and farm 12k+ tokens built on 25+ cross-chain networks on the world's largest and most liquid DEX.</p>
                                     <br/>
-                                    <a href="https://app.ever.re/dex" target="_blank" className="try-demo__button">Site Maintenance</a>
+                                    <a href="https://app.ever.re/dex" target="_blank" className="try-demo__button dim">Re-testing</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Perpetual</h2>
@@ -465,21 +466,21 @@ export default function Landing() {
                                     <br/>
                                     <p>Identity Passports and credit scoring for Metaverse and Web 3.0</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                    <a href="#" className="try-demo__button dim">Check rating</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Escrow</h2>
                                     <br/>
                                     <p>Escrow gateway securing GameFi, Metaverse, Marketplaces and beyond</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                    <a href="#" className="try-demo__button dim">Get Started</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Staking</h2>
                                     <br/>
                                     <p>Providing a decentralized crowd computing network CPU-based Dev(Ops) solutions</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                    <a href="#" className="try-demo__button dim">Start earning</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>P2P exchange</h2>
@@ -493,7 +494,7 @@ export default function Landing() {
                                     <br/>
                                     <p>Mint, sell, rent, and buy NFTs from 12+  blockchains in one place</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                    <a href="#" className="try-demo__button dim">Start shopping</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>XPO</h2>

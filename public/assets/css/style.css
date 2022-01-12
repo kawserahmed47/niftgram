@@ -2195,7 +2195,7 @@ img {
 
     .mobile-app__img-phone {
         position: relative;
-        max-height: 350px !important;
+        max-height: 200px !important;
         height: auto;
         margin: auto;
         left: 0;
