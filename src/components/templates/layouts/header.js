@@ -106,10 +106,12 @@ export default function Header() {
                 <nav className="header__menu mobile">
                     <ul className="menu">
                         <li className="menu__item"><a href="./#about" className="menu__link">About</a></li>
+                        <li className="menu__item"><a href="https://careers.ever.re" className="menu__link" target="_blank">Careers <sup style={{fontStyle: "italic", color:'black'}}>We're Hiring</sup> </a></li>
                         <li className="menu__item"><a href="./#demo" className="menu__link">Products</a></li>
                         <li className="menu__item"><a href="./#roadmap" className="menu__link">Roadmap</a></li>
                         <li className="menu__item"><a href="./#token" className="menu__link">Token</a></li>
                         <li className="menu__item"><a href="./#token" className="menu__link">Team</a></li>
+                        <li className="menu__item"><a href="https://www.ever.re/get_listed" className="menu__link">List Token <sup style={{fontStyle: "italic", color:'black'}}>FREE</sup></a></li>
                         <div className="menu__item_signAndGetStart">
                             <li className="menu__item fill"><a href="./signup" className="menu__link">Get Started</a></li>
                             <li className="menu__item"><a href="./signin" className="menu__link">Sgn In</a></li>

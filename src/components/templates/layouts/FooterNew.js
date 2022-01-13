@@ -121,6 +121,10 @@ export default class FooterNew extends Component {
                                 <p>Earn</p>
                                 <p className="footerEachRowSubTitle">Explore new and old ways of earning on EVER </p>
                             </a>
+                            <a href="#" className="footerEachRow">
+                                <p>TaxPal</p>
+                                <p className="footerEachRowSubTitle">Certified tax and accounting for individuals and enterprises in the tokenized economy, globally</p>
+                            </a>
                         </div>
                         <div className="footerEachColumn">
                             <a href="#" className="footerEachRow">
@@ -166,6 +170,10 @@ export default class FooterNew extends Component {
                             <a href="#" className="footerEachRow">
                                 <p>Loans</p>
                                 <p className="footerEachRowSubTitle">Borrow funds at the lowest rates with your crypto as collateral</p>
+                            </a>
+                            <a href="#" className="footerEachRow">
+                                <p>Insurance</p>
+                                <p className="footerEachRowSubTitle">Insuring cryptoassets, crypto projects, Metaverse, and Web3.0</p>
                             </a>
                         </div>
                         <div className="footerEachColumn">
@@ -258,6 +266,10 @@ export default class FooterNew extends Component {
                             <a href="#" className="footerEachRow">
                                 <p>Protocol</p>
                                 <p className="footerEachRowSubTitle">Explore the most extensive, scalable, usable, and flexible blockchain in the cryptocurrency space</p>
+                            </a>
+                            <a href="#" className="footerEachRow">
+                                <p>Crowdfund</p>
+                                <p className="footerEachRowSubTitle">Retail and crowd funding of crypto, social, and educational projects done right</p>
                             </a>
                         </div>
                         <div className="footerEachColumn">

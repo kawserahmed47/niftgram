@@ -153,8 +153,8 @@ export default function Landing() {
                         <div className="center">
                             <h1 className="first-screen__title h1">One platform, all things money.</h1>
                             <div className="first-screen__btns">
-                                <a href="./#demo" className="btn btn--grad btn--demo" rel="noopener nofollow">
-                                    <span>Live Demo</span>
+                                <a href="https://invest.ever.re/" className="btn btn--grad btn--demo" rel="noopener nofollow">
+                                    <span>Invest now</span>
                                     {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
                                 </a>
                                 <a href="/assets/pdf/EverWhitepaper.pdf" className="btn btn--grad btn--demo" download="Ever Whitepaper.pdf" rel="noopener nofollow">
@@ -197,9 +197,7 @@ export default function Landing() {
                         <div className="center">
                             <h2 className="hash">About</h2>
                             <p style={{marginBottom: "24px"}}>
-                                EVER is a multinational fintech company providing an integrated platform for banking,
-                                asset/wealth management, trading of cryptos and securities, insurance, cryptocurrency, NFTs,
-                                and underwriting.
+                                EVER is a multinational fintech company providing an integrated platform for banking, asset/wealth management, insurance, cryptocurrency, NFTs, underwriting, and trading of cryptos, commodities, forex, indices, ETFs, debt, equity, derivative, and hybrid securities.
                                 <br/>
                                 <br/>
                                 EVER is issuing a coinset primarily made of its blockchain coin, meme token, and a
@@ -277,16 +275,26 @@ export default function Landing() {
                             <p class="h2">Seed</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 5,040,000</strong> is allocated for seed investors at a price of <strong>$0.45</strong> per token. The seed funding event will start on <strong>Friday January 14th</strong> and end on <strong>Thursday January 20th</strong> The seed funding will have a vesting schedule as follows: <strong>$10% TGE, 3 months cliff and 15 months vesting</strong>.
+                                An amount of <strong>$EVE 5,040,000</strong> is allocated for seed investors at a price of <strong>$0.45</strong> per token. The seed funding event will start on <strong>Tuesday January 18th</strong> and end on <strong>Monday January 24th</strong> The seed funding will have a vesting schedule as follows: <strong>$10% TGE, 3 months cliff and 15 months vesting</strong>.
                                 <br/>
                                 <br/>
-                                You have been given an exclusive invitation to participate in EVER's seed funding. To invest, please drop us an email at <a href="mailto:invest@ever.re" style={{color: "var(--siteColor2)", textDecoration: 'none'}} target="_blank">invest@ever.re</a> or contact Pieter on Telegram at <a href="https://t.me/pieter_ever/" style={{color: "var(--siteColor2)", textDecoration: 'none'}} target="_blank">https://t.me/pieter_ever/</a>. Thank you.
+                                You have been given an exclusive invitation to participate in EVER's seed funding. 
+                                {/*
+                                    To invest, please drop us an email at <a href="mailto:invest@ever.re" style={{color: "var(--siteColor2)", textDecoration: 'none'}} target="_blank">invest@ever.re</a> or contact Pieter on Telegram at <a href="https://t.me/pieter_ever/" style={{color: "var(--siteColor2)", textDecoration: 'none'}} target="_blank">https://t.me/pieter_ever/</a>. Thank you.
+                                */}
+                                  
                             </p>
+                            <div className="investBtn">
+                                <a href="https://invest.ever.re/" className="btn btn--grad btn--demo" rel="noopener nofollow">
+                                        <span>Invest now</span>
+                                        {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
+                                </a>
+                            </div>
                             <br/>
                             <p class="h2">Private Sale</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 15,120,000</strong> is allocated for private sale investors at a price of $0.65 per token. The private sale funding event will start on <strong>Friday January 21st</strong> and end on <strong>Thursday January 27th</strong>. The private sale funding will have a vesting schedule as follows: <strong>$12% TGE, 2 months cliff and 12 month vesting</strong>.
+                                An amount of <strong>$EVE 15,120,000</strong> is allocated for private sale investors at a price of $0.65 per token. The private sale funding event will start on <strong>Tuesday January 25th</strong> and end on <strong>Monday January 31st</strong>. The private sale funding will have a vesting schedule as follows: <strong>$12% TGE, 2 months cliff and 12 month vesting</strong>.
                             </p>
                             <br/>
                             <p class="h2">Public Sale</p>
@@ -356,7 +364,7 @@ export default function Landing() {
                                         <tr>
                                             <td align="left" valign="middle">Seed</td>
                                             <td align="center" valign="middle">$0.45</td>
-                                            <td align="center" valign="middle">Jan 14 - Jan 20</td>
+                                            <td align="center" valign="middle">Jan 18 - Jan 24</td>
                                             <td align="center" valign="middle"></td>
                                             <td align="center" valign="middle">$2,268,000</td>
                                             <td align="center" valign="middle">$10% TGE, 3 months cliff and 15 months vesting</td>
@@ -364,7 +372,7 @@ export default function Landing() {
                                         <tr>
                                             <td align="left" valign="middle">Private Sale</td>
                                             <td align="center" valign="middle">$0.65</td>
-                                            <td align="center" valign="middle">Jan 21 - Jan 27</td>
+                                            <td align="center" valign="middle">Jan 25 - Jan 31</td>
                                             <td align="center" valign="middle"></td>
                                             <td align="center" valign="middle">$9,828,000</td>
                                             <td align="center" valign="middle">$12% TGE, 2 months cliff and 12 months vesting</td>
@@ -389,13 +397,33 @@ export default function Landing() {
                                 </table>
                             </div>
                         </div>
+
+                        <div className="howTo center">
+                            <p className="h3">How to buy EVE token in 3 minutes</p>
+                            <ul className="howToList">
+                                <li>Visit the Invest in Ever page: https://invest.ever.re/.</li>
+                                <li>Click on the 'Login' button. If you don't have an account, please click on the 'Sign up here' link, create account and verify your email address.</li>
+                                <li>Click on 'Buy Token' button on the top of the dashboard. </li>
+                                <li>Add your Wallet address by clicking on the 'Add your wallet address before you buy' button on the top right corner of the contribute page.</li>
+                                <li>Choose a currency. We support various fiat and crypto currencies so you can easily choose which one work best for you.</li>
+                                <li>Complete your purchase.</li>
+                            </ul>
+
+                            <p className="howToPara">If you encounter any problem, please don't hesitate to 24/7 customer service team via <a href="#" style={{color: '#02ac02', fontWeight:'bold', textDecoration: 'none'}}>Live chat</a> or drop us an eamil at <a href="mailto:invest@ever.re" style={{color: '#02ac02', fontWeight:'bold', textDecoration: 'none'}}>invest@ever.re</a> </p>
+                        </div>
                     </article>
                     <article className="products" id="products">
                         <div className="center" style={{width: '1280px'}}>
                             <h2 className="hash">Products</h2>
-                            <p className="h1" style={{display: 'flex', alignItems: 'center', fontSize: '20px'}}>Powered by <img height={20} style={{display: 'inline', margin: '0px 12px'}} src="assets/img/brandLogo/ever_all_black.png" alt="Ever white logo" /> blockchain</p>
+                            <p className="h1" style={{display: 'flex', alignItems: 'center', fontSize: '20px'}}>Powered by <img height={20} style={{display: 'inline', margin: '0px 12px'}} src="assets/img/brandLogo/ever_all_black.png" alt="Ever white logo" /></p>
                             {/* <p className='headline-2'>Auditing by CERTIK in progress</p> */}
                             <p className='mt-2'>The EVER Ecosystem offers suites of decentralized applications (dApps) and services to provide multi-chain security solutions for projects and individuals in the DeFi, Metaverse, and WEB3.0 space. Our dApps and services are powered by EVER and other networks.</p>
+                            <div className="investBtn">
+                                <a href="https://invest.ever.re/" className="btn btn--grad btn--demo" rel="noopener nofollow">
+                                        <span>Invest now</span>
+                                        {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
+                                </a>
+                            </div>
                         </div>
                     </article>
                     <aside className="try-demo" id="demo">
@@ -437,6 +465,27 @@ export default function Landing() {
                                     <br/>
                                     <a href="https://app.ever.re/perpetual" target="_blank" className="try-demo__button">Start trading</a>
                                 </div>
+                                <div className="try-demo__box__each">
+                                    <h2>P2P exchange</h2>
+                                    <br/>
+                                    <p>With 300+ payment methods supporting instant crypto trading with people who are ready to trade with you</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Re-testing</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>XPO</h2>
+                                    <br/>
+                                    <p>DeFi options trading of 1k+ cryptos with no fixed maturity and no exercise limitation. Deposit just $1 to get started</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Re-testing</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>Underwriting</h2>
+                                    <br/>
+                                    <p>Advanced crypto launcher, token placing, direct (fair launch) lsiting, and auction listing</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Re-testing</a>
+                                </div>
 
                             </div>
 
@@ -448,14 +497,14 @@ export default function Landing() {
                             <br/>
                             <div className="try-demo__box">
                                 <div className="try-demo__box__each">
-                                    <h2>Crab</h2>
+                                    <h2>Vault</h2>
                                     <br/>
                                     <p>The world's first crypto "topup" scratchcard available in your local grocery stores, globally</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Learn more</a>
                                 </div>
                                 <div className="try-demo__box__each">
-                                    <h2>Wallet</h2>
+                                    <h2>EverWallet</h2>
                                     <br/>
                                     <p>Advanced multi cross-chain wallet available online (web), mobile, paper, desktop, and hardware</p>
                                     <br/>
@@ -473,7 +522,7 @@ export default function Landing() {
                                     <br/>
                                     <p>Escrow gateway securing GameFi, Metaverse, Marketplaces and beyond</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Get Started</a>
+                                    <a href="#" className="try-demo__button dim">Launch demo</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Staking</h2>
@@ -483,32 +532,32 @@ export default function Landing() {
                                     <a href="#" className="try-demo__button dim">Start earning</a>
                                 </div>
                                 <div className="try-demo__box__each">
-                                    <h2>P2P exchange</h2>
-                                    <br/>
-                                    <p>With 300+ payment methods supporting instant crypto trading with people who are ready to trade with you</p>
-                                    <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
-                                </div>
-                                <div className="try-demo__box__each">
                                     <h2>NFT</h2>
                                     <br/>
                                     <p>Mint, sell, rent, and buy NFTs from 12+  blockchains in one place</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Start shopping</a>
+                                    <a href="#" className="try-demo__button dim">Launch demo</a>
                                 </div>
                                 <div className="try-demo__box__each">
-                                    <h2>XPO</h2>
+                                    <h2>TaxPal</h2>
                                     <br/>
-                                    <p>Decentralized options trading of 1k+ cryptos with no fixed maturity and no exercise limitation with a deposit of just $1 to get started</p>
+                                    <p>Certified tax and accounting for individuals and enterprises in the tokenized economy, globally</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                    <a href="#" className="try-demo__button dim">Launch demo</a>
                                 </div>
                                 <div className="try-demo__box__each">
-                                    <h2>Underwriting</h2>
+                                    <h2>Insurance</h2>
                                     <br/>
-                                    <p>Advanced crypto launcher, token placing, direct (fair launch) lsiting, and auction listing</p>
+                                    <p>Insuring cryptoassets, crypto projects, Metaverse, and Web3.0</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Launch token</a>
+                                    <a href="#" className="try-demo__button dim">Launch demo</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>Crowdfund</h2>
+                                    <br/>
+                                    <p>Retail and crowd funding of crypto, social, and educational projects done right</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Launch demo</a>
                                 </div>
                             </div>
 

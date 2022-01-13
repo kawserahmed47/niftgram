@@ -74,16 +74,7 @@ export default function Header() {
                             </div>    
                         </li>
                         <li className="menu__item">
-                            <a className="menu__link">Prices <b class="caret"></b></a>
-                            <div className="menu__hidden_items">
-                                <ul className="menu">
-                                    <li className="menu__item"><a href="#" className="menu__link">Banking</a></li>
-                                    <li className="menu__item"><a href="#" className="menu__link">Crypto</a></li>
-                                    <li className="menu__item"><a href="#" className="menu__link">Trading</a></li>
-                                    <li className="menu__item"><a href="#" className="menu__link">Asset Management</a></li>
-                                    <li className="menu__item"><a href="#" className="menu__link">Underwriting</a></li>
-                                </ul>
-                            </div>
+                            <a className="menu__link">Prices</a>
                         </li>
                         <li className="menu__item">
                             <a className="menu__link">Fees <b class="caret"></b></a>

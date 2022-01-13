@@ -315,7 +315,7 @@ export default function Landing() {
                     <article className="products" id="products">
                         <div className="center" style={{width: '1280px'}}>
                             <h2 className="hash">Products</h2>
-                            <p className="h1" style={{display: 'flex', alignItems: 'center', fontSize: '20px'}}>Powered by <img height={20} style={{display: 'inline', margin: '0px 12px'}} src="assets/img/brandLogo/ever_all_black.png" alt="Ever white logo" /> blockchain</p>
+                            <p className="h1" style={{display: 'flex', alignItems: 'center', fontSize: '20px'}}>Powered by <img height={20} style={{display: 'inline', margin: '0px 12px'}} src="assets/img/brandLogo/ever_all_black.png" alt="Ever white logo" /></p>
                             {/* <p className='headline-2'>Auditing by CERTIK in progress</p> */}
                             <p className='mt-2'>The product releases of our products have been divided into Gamma, Beta, and Alpha. Gamma products are products in the final testing process and are schedule to be release with a month. Beta products and going through the final development process and Alpha products are late in the planning process.</p>
                         </div>
@@ -351,6 +351,27 @@ export default function Landing() {
                                     <br/>
                                     <a href="https://app.ever.re/perpetual" target="_blank" className="try-demo__button">Start trading</a>
                                 </div>
+                                <div className="try-demo__box__each">
+                                    <h2>P2P exchange</h2>
+                                    <br/>
+                                    <p>With 300+ payment methods supporting instant crypto trading with people who are ready to trade with you</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Re-testing</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>XPO</h2>
+                                    <br/>
+                                    <p>DeFi options trading of 1k+ cryptos with no fixed maturity and no exercise limitation. Deposit just $1 to get started</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Re-testing</a>
+                                </div>
+                                <div className="try-demo__box__each">
+                                    <h2>Underwriting</h2>
+                                    <br/>
+                                    <p>Advanced crypto launcher, token placing, direct (fair launch) lsiting, and auction listing</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Re-testing</a>
+                                </div>
 
                             </div>
 
@@ -362,14 +383,14 @@ export default function Landing() {
                             <br/>
                             <div className="try-demo__box">
                                 <div className="try-demo__box__each">
-                                    <h2>Crab</h2>
+                                    <h2>Vault</h2>
                                     <br/>
                                     <p>The world's first crypto "topup" scratchcard available in your local grocery stores, globally</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Learn more</a>
                                 </div>
                                 <div className="try-demo__box__each">
-                                    <h2>Wallet</h2>
+                                    <h2>EverWallet</h2>
                                     <br/>
                                     <p>Advanced multi cross-chain wallet available online (web), mobile, paper, desktop, and hardware</p>
                                     <br/>
@@ -387,7 +408,7 @@ export default function Landing() {
                                     <br/>
                                     <p>Escrow gateway securing GameFi, Metaverse, Marketplaces and beyond</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Get Started</a>
+                                    <a href="#" className="try-demo__button dim">Launch demo</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Staking</h2>
@@ -396,34 +417,36 @@ export default function Landing() {
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Start earning</a>
                                 </div>
-                                <div className="try-demo__box__each">
-                                    <h2>P2P exchange</h2>
-                                    <br/>
-                                    <p>With 300+ payment methods supporting instant crypto trading with people who are ready to trade with you</p>
-                                    <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
-                                </div>
+                                
                                 <div className="try-demo__box__each">
                                     <h2>NFT</h2>
                                     <br/>
                                     <p>Mint, sell, rent, and buy NFTs from 12+  blockchains in one place</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Start shopping</a>
+                                    <a href="#" className="try-demo__button dim">Launch demo</a>
                                 </div>
                                 <div className="try-demo__box__each">
-                                    <h2>XPO</h2>
+                                    <h2>TaxPal</h2>
                                     <br/>
-                                    <p>Decentralized options trading of 1k+ cryptos with no fixed maturity and no exercise limitation with a deposit of just $1 to get started</p>
+                                    <p>Certified tax and accounting for individuals and enterprises in the tokenized economy, globally</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Start trading</a>
+                                    <a href="#" className="try-demo__button dim">Launch demo</a>
                                 </div>
                                 <div className="try-demo__box__each">
-                                    <h2>Underwriting</h2>
+                                    <h2>Insurance</h2>
                                     <br/>
-                                    <p>Advanced crypto launcher, token placing, direct (fair launch) lsiting, and auction listing</p>
+                                    <p>Insuring cryptoassets, crypto projects, Metaverse, and Web3.0</p>
                                     <br/>
-                                    <a href="#" className="try-demo__button dim">Launch token</a>
+                                    <a href="#" className="try-demo__button dim">Launch demo</a>
                                 </div>
+                                <div className="try-demo__box__each">
+                                    <h2>Crowdfund</h2>
+                                    <br/>
+                                    <p>Retail and crowd funding of crypto, social, and educational projects done right</p>
+                                    <br/>
+                                    <a href="#" className="try-demo__button dim">Launch demo</a>
+                                </div>
+                                
                             </div>
 
                             {/* Alpha */}

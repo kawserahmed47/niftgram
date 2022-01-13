@@ -2846,3 +2846,25 @@ img {
       -webkit-transform: scaleY(1.0);
     }
   }
+
+
+/* Added By Ahadujjaman Nur */
+.investBtn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.howTo{
+    margin-top: 48px;
+}
+.howToList{
+    list-style: decimal;
+    margin-left: 18px;
+    margin-top: 20px;
+}
+.howToList > li{
+    margin-bottom: 12px;
+    font-size: 16px;
+}
