@@ -7,7 +7,7 @@ import ForgetPassword from './templates/forget_password'
 import CheckOTP from './templates/otp_check'
 import ResetPassword from './templates/reset_password'
 import Invest from './templates/Invest'
-import GetListed from './templates/GetListed';
+import GetListed from './templates/getListed';
 
 const  Main = () => (
     <Routes>
