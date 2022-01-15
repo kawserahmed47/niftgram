@@ -275,7 +275,7 @@ export default function Landing() {
                             <p class="h2">Seed</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 5,040,000</strong> is allocated for seed investors at a price of <strong>$0.45</strong> per token. The seed funding event will start on <strong>Tuesday January 18th</strong> and end on <strong>Monday January 24th</strong> The seed funding will have a vesting schedule as follows: <strong>$10% TGE, 3 months cliff and 15 months vesting</strong>.
+                                An amount of <strong>$EVE 5,040,000</strong> is allocated for seed investors at a price of <strong>$0.45</strong> per token. The seed funding event will start on <strong>Tuesday January 18th</strong> and end on <strong>Monday January 31th</strong> The seed funding will have a vesting schedule as follows: <strong>$10% TGE, 3 months cliff and 15 months vesting</strong>.
                                 <br/>
                                 <br/>
                                 You have been given an exclusive invitation to participate in EVER's seed funding. 
@@ -294,19 +294,19 @@ export default function Landing() {
                             <p class="h2">Private Sale</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 15,120,000</strong> is allocated for private sale investors at a price of $0.65 per token. The private sale funding event will start on <strong>Tuesday January 25th</strong> and end on <strong>Monday January 31st</strong>. The private sale funding will have a vesting schedule as follows: <strong>$12% TGE, 2 months cliff and 12 month vesting</strong>.
+                                An amount of <strong>$EVE 15,120,000</strong> is allocated for private sale investors at a price of $0.65 per token. The private sale funding event will start on <strong>Tuesday February 8th</strong> and end on <strong>Monday Febraury 21st</strong>. The private sale funding will have a vesting schedule as follows: <strong>$12% TGE, 2 months cliff and 12 month vesting</strong>.
                             </p>
                             <br/>
                             <p class="h2">Public Sale</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 2,240,000</strong> is allocated for public (token) sale investors at a price of $0.85 per token. The public sale funding event will start on <strong>Tuesday February 22nd</strong> and end on <strong>Monday Febraury 28th</strong>. The public sale funding will have no vesting schedule but will have <strong>$100% TGE</strong>. There will be an Initial DEX Offering (IDO) on Trustpad and an Initial Exchange Offering (IEO) on Gate.io. Both the IDO and IEO will be held on the same date.
+                                An amount of <strong>$EVE 2,240,000</strong> is allocated for public (token) sale investors at a price of $0.85 per token. The public sale funding event will start on <strong>Friday MMarch 25th</strong> and end on <strong>Thursday March 31st</strong>. The public sale funding will have no vesting schedule but will have <strong>$100% TGE</strong>. There will be an Initial DEX Offering (IDO) on Trustpad and an Initial Exchange Offering (IEO) on Gate.io. Both the IDO and IEO will be held on the same date.
                             </p>
                             <br/>
                             <p class="h2">Retail Sale</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 4,500,000</strong> is allocated for the retail sale at a price of $1.00 per token. Eve will be listed on EverDEX, Perpetual exchange, Pancakeswap, and Gate.io on <strong>Tuesday March 1st</strong>
+                                An amount of <strong>$EVE 4,500,000</strong> is allocated for the retail sale at a price of $1.00 per token. Eve will be listed on EverDEX, Perpetual exchange, Pancakeswap, and Gate.io on <strong>Friday April 1st</strong>
                             </p>
                         </div>
                     </article>
