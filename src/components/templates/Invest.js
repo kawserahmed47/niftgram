@@ -364,7 +364,7 @@ export default function Landing() {
                                         <tr>
                                             <td align="left" valign="middle">Seed</td>
                                             <td align="center" valign="middle">$0.45</td>
-                                            <td align="center" valign="middle">Jan 18 - Jan 24</td>
+                                            <td align="center" valign="middle">Jan 18 - Jan 31</td>
                                             <td align="center" valign="middle"></td>
                                             <td align="center" valign="middle">$2,268,000</td>
                                             <td align="center" valign="middle">$10% TGE, 3 months cliff and 15 months vesting</td>
@@ -372,7 +372,7 @@ export default function Landing() {
                                         <tr>
                                             <td align="left" valign="middle">Private Sale</td>
                                             <td align="center" valign="middle">$0.65</td>
-                                            <td align="center" valign="middle">Jan 25 - Jan 31</td>
+                                            <td align="center" valign="middle">Feb 8 - Feb 21</td>
                                             <td align="center" valign="middle"></td>
                                             <td align="center" valign="middle">$9,828,000</td>
                                             <td align="center" valign="middle">$12% TGE, 2 months cliff and 12 months vesting</td>
@@ -380,7 +380,7 @@ export default function Landing() {
                                         <tr>
                                             <td align="left" valign="middle">Token Sale</td>
                                             <td align="center" valign="middle">$0.85</td>
-                                            <td align="center" valign="middle">Feb 22 - Feb 28</td>
+                                            <td align="center" valign="middle">Mar 25 - Mar 31</td>
                                             <td align="center" valign="middle">$1,904,000</td>
                                             <td align="center" valign="middle">$3,808,000</td>
                                             <td align="center" valign="middle">$100% TGE</td>
@@ -388,7 +388,7 @@ export default function Landing() {
                                         <tr>
                                             <td align="left" valign="middle">Retail Sale</td>
                                             <td align="center" valign="middle">$1.00</td>
-                                            <td align="center" valign="middle">Mar 1</td>
+                                            <td align="center" valign="middle">Apr 1</td>
                                             <td align="center" valign="middle"></td>
                                             <td align="center" valign="middle"></td>
                                             <td align="center" valign="middle"></td>
