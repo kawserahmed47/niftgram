@@ -13,7 +13,7 @@ export default function Header() {
                         <img src="./assets/img/brandLogo/ever_all_white.png" height="16"/>
                     </div>
                 </div>
-                <div style={{display: 'flex', flexDirection: 'column'}}>
+                <div className='footer__menu_container'>
                     <div className="footer__menu" style={{marginBottom: '20px'}}>
                         <ul className="menu">
                             <li className="menu__item"><a href="./#about" className="menu__link">About</a></li>
@@ -27,7 +27,7 @@ export default function Header() {
                             <li className="menu__item"><a href="./#token" className="menu__link">Token</a></li>
                             <li className="menu__item"><a href="./#team" className="menu__link">Team</a></li>
                             <li className="menu__item"><a href="./signup" className="menu__link">Get Started</a></li>
-                            <li className="menu__item"><a href="https://www.ever.re/get_listed" className="menu__link">List Token <sup style={{fontStyle: "italic", color:'white'}}>FREE</sup> </a></li>
+                            <li className="menu__item"><a href="https://www.ever.re/get_listed" className="menu__link" target="_blank">List Token <sup style={{fontStyle: "italic", color:'white'}}>FREE</sup> </a></li>
                         </ul>
                     </div>
                 </div>

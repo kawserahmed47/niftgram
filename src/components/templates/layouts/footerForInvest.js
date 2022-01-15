@@ -13,16 +13,22 @@ export default function Header() {
                         <img src="./assets/img/brandLogo/ever_all_white.png" height="16"/>
                     </div>
                 </div>
-                <div className="footer__menu">
+                <div className='footer__menu_container'>
+                    <div className="footer__menu" style={{marginBottom:"20px"}}>
+                        <ul className="menu">
+                            <li className="menu__item"><a href="#about" className="menu__link">About</a></li>
+                            <li className="menu__item"><a href="#tge" className="menu__link"> TGE</a></li>
+                            <li className="menu__item"><a href="https://careers.ever.re" className="menu__link" target="_blank">Careers <sup style={{fontStyle: "italic", color:'white'}}>We're Hiring</sup> </a></li>
+                            <li className="menu__item"><a href="#products" className="menu__link">Products</a></li>  
+                        </ul>
+                    </div>
+                    <div className="footer__menu">
                     <ul className="menu">
-                        <li className="menu__item"><a href="#about" className="menu__link">About</a></li>
-                        <li className="menu__item"><a href="#tge" className="menu__link"> TGE</a></li>
-                        <li className="menu__item"><a href="https://careers.ever.re" className="menu__link" target="_blank">Careers <sup style={{fontStyle: "italic", color:'white'}}>We're Hiring</sup> </a></li>
-                        <li className="menu__item"><a href="#products" className="menu__link">Products</a></li>
                         <li className="menu__item"><a href="#roadmap" className="menu__link">Roadmap</a></li>
                         <li className="menu__item"><a href="#token" className="menu__link">Token</a></li>
                         <li className="menu__item"><a href="#team" className="menu__link">Team</a></li>    
                     </ul>
+                </div>
                 </div>
                 <div className="footer__social">
                     <ul class="social">

@@ -153,12 +153,12 @@ export default function Landing() {
                         <div className="center">
                             <h1 className="first-screen__title h1">One platform, all things money.</h1>
                             <div className="first-screen__btns">
-                                <a href="https://invest.ever.re/" className="btn btn--grad btn--demo" rel="noopener nofollow">
+                                <a href="https://invest.ever.re/" className="btn btn--grad btn--demo" target="_blank" rel="noopener nofollow">
                                     <span>Invest now</span>
                                     {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
                                 </a>
-                                <a href="/assets/pdf/EverWhitepaper.pdf" className="btn btn--grad btn--demo" download="Ever Whitepaper.pdf" rel="noopener nofollow">
-                                    <span style={{paddingLeft:0}}>Whitepaper</span>
+                                <a href="#" className="btn btn--grad btn--demo">
+                                    <span style={{paddingLeft:0}}>Pitch deck</span>
                                     {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
                                 </a>
                             </div>
