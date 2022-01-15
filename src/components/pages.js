@@ -1,5 +1,6 @@
 import React from 'react'
 import { Routes ,Route } from 'react-router-dom';
+import NotFound from './templates/NotFound.js'
 import Landing from './templates/landing'
 import Signin from './templates/signin'
 import Signup from './templates/signup'
@@ -21,6 +22,8 @@ const  Main = () => (
       <Route exact path="/forget-password" element={<ForgetPassword />} />
       <Route exact path="/otp-check" element={<CheckOTP />} />
       <Route exact path="/reset-password" element={<ResetPassword />} />
+
+      <Route exact path="*" element={<NotFound />} />
 
 
 

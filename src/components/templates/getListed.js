@@ -254,7 +254,7 @@ export default function GetListed() {
                             <br />
                             <br />
                         </div>
-                        <input type="text" placeholder="https://"/>
+                        <input className="formInput" type="text" placeholder="https://"/>
                         <div className="nextBtn">
                             <button className="listedBtn" onClick={() => next()}>Ok <span>&#10003;</span></button>
                             <p className="helperText">press <span>Enter</span> <span className="enter">&#8629;</span></p>
@@ -274,7 +274,7 @@ export default function GetListed() {
                 <section className="individualForm">
                     <div className="mainInput">
                         <label className="inputLabel">14. &#8594; BitcoinTalk URL</label>
-                        <input type="text" placeholder="https://"/>
+                        <input className="formInput" type="text" placeholder="https://"/>
                         <div className="nextBtn">
                             <button className="listedBtn" onClick={() => next()}>Ok <span>&#10003;</span></button>
                             <p className="helperText">press <span>Enter</span> <span className="enter">&#8629;</span></p>

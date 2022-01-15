@@ -90,7 +90,7 @@ export default function Header() {
                         <li className="menu__item"><a href="./#roadmap" className="menu__link">Roadmap</a></li>
                         <li className="menu__item"><a href="./#token" className="menu__link">Token</a></li>
                         <li className="menu__item"><a href="./#team" className="menu__link">Team</a></li>
-                        <li className="menu__item"><a href="https://www.ever.re/get_listed" className="menu__link">List Token <sup style={{fontStyle: "italic", color:'black'}}>FREE</sup></a></li>
+                        <li className="menu__item"><a href="https://www.ever.re/get_listed" target="_blank" className="menu__link">List Token <sup style={{fontStyle: "italic", color:'black'}}>FREE</sup></a></li>
                     </ul>
                 </nav>
                 <nav className="header__menu desktop">
