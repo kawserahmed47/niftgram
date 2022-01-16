@@ -1,0 +1,420 @@
+@media screen and (max-width: 1200px){
+    .ecosystemCopyContentEach{
+        flex-direction: column;
+    }
+    .ecosystemCopyContent{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 992px){
+    .pageWithSideBar .mainBody{
+        padding-left: 50px;
+    }
+    .mask.active{
+        opacity: 0.6;
+        pointer-events: initial;
+    }
+
+    .eachProductAndServiceLeft{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bannerSection{
+        flex-direction: column;
+    }
+    .bannerSectionEach.bannerSectionLeft{
+        width: 100%;
+    }
+    .bannerCountdownContainer{
+        width: 100%;
+        min-width: unset;
+    }
+    .flipdown{
+        transform: unset;
+        position: absolute;
+        top: 48px;
+    }
+    .bannerCountdownButton{
+        margin-top: 136px;
+    }
+
+    .wolnomicsSection1Right{
+        flex-direction: column;
+    }
+    .wolnomicsSectionTable{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    .pie-chart-container{
+        width: 100%;
+    }
+
+    .leftSideBarMainNavSection{
+        display: block;
+    }
+    .headerNav{
+        display: none !important;
+    }
+    /* private sale page */
+    .privateSaleTop{
+        flex-direction: column;
+    }
+    .privateSaleCountdownContainer{
+        min-width: calc(100% + 48px);
+    }
+    .table2in1{
+        flex-direction: column;
+    }
+    .normalTables .table2in1 .tableWithTitle:first-child{
+        margin-right: 0;
+        width: 100%;
+    }
+    .normalTables .table2in1 .tableWithTitle:last-child{
+        width: 100%;
+    }
+
+
+    .exchangeContainer{
+        flex-direction: column;
+    }
+    body .eachExchangeElement{
+        margin-right: 0;
+    }
+    body .swapLogo{
+        height: 40px;
+        margin: 16px auto;
+    }
+    body .swapButton{
+        top: 0;
+        transform: rotate(90deg);
+    }
+    body .exchangeButton{
+        margin-top: 48px;
+    }
+    body .buyButton{
+        margin-top: 0;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 768px){
+    .commonSectionTitleAndSubTitleContainer{
+        flex-direction: column;
+    }
+    .commonSection .sectionTitle{
+        width: 100%;
+    }
+    .commonSection .sectionTitleSubTitle, .communitySection .sectionTitleSubTitle{
+        margin-left: 0;
+        margin-top: 16px;
+        width: 100%;
+        /* font-size: 16px; */
+        line-height: 24px;
+    }
+    /* .commonSectionBodyEachElementLogoContainer{
+        height: 150px;
+    }
+    .commonSectionBodyEachElementLogo{
+        max-width: 100px;
+        max-height: 100px;
+    } */
+    .ecosystemCopyContainer{
+        grid-template-columns: auto;
+    }
+    .ecosystemCopyContentEach:first-child{
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .ecosystemCopyContentEach{
+        max-width: 100%;
+    }
+    .wolnomicsEachChartContainer{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .wolnomicsEachChartContainer:last-child{
+        margin-bottom: 0;
+    }
+    .scrollButtonContainer{
+        margin-left: 0;
+        margin-top: 16px;
+    }
+    .wolpaperLeft{
+        flex-direction: column;
+    }
+    .whitepaperPdfDownload{
+        width: calc(50% - 6px);
+    }
+    /* .faqVideoContainer{
+        height: 400px;
+    } */
+    .videoPlayButton{
+        right: 24px;
+        bottom: 24px;
+    }
+    .commonSectionBodyEachElementTitle{
+        font-size: 18px;
+    }
+    .eachProductTitle{
+        font-size: 20px;
+    }
+    .eachCarity{
+        width: calc(50% - 12px);
+    }
+    .charityImageContainer{
+        height: 150px;
+    }
+    .commonSectionBodyEachElement{
+        width: calc(50% - 12px);
+        min-width: calc(50% - 12px);
+    }
+    .commonSectionBodyEachElement:nth-child(2n){
+        margin-right: 0;
+    }
+    .eachCarity{
+        width: calc(50% - 12px);
+        min-width: calc(50% - 12px);
+    }
+
+
+    .eachProductandService{
+        flex-direction: column-reverse;
+    }
+    .eachProductAndServiceRight{
+        width: 100%;
+    }
+
+    .whyInvestUsContent2ItemsColumn{
+        flex-direction: column;
+    }
+    .whyInvestUsContentEachItem{
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .socialMediaAndApp{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gamblingButtonAll{
+        width: 100%;
+    }
+    .footerContactContainer{
+        width: 100%;
+        margin-top: 24px;
+    }
+    .communityBody{
+        flex-direction: column;
+    }
+    .communitySummary{
+        width: 100%;
+    }
+    .communityMascot{
+        width: 100%;
+    }
+
+
+    /* private sale page */
+    .privateSaleTopEachTitle{
+        font-size: 18px;
+    }
+    .privateSaleMultipleInputContainer{
+        flex-direction: column;
+    }
+    .privateSaleMultipleInputContainer .privateSaleEachInputContainer:first-child{
+        margin-bottom: 8px;
+    }
+    .privateSaleEachInputContainer{
+        width: 100%;
+    }
+
+    .footerBottom{
+        flex-direction: column;
+    }
+    .footerBottomEach:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
+@media screen and (max-width: 576px){
+    .headerBrandLogo{
+        height: 20px;
+    }
+    .headerBrandLogoContainer{
+        margin-left: 8px;
+    }
+    .bannerTitle{
+        font-size: 24px;
+    }
+    .bannerSubTitle{
+        font-size: 14px;
+    }
+
+    .bannerCountdownButton{
+        margin-top: 96px;
+    }
+    .countdownInfo1Title{
+        font-size: 18px;
+    }
+
+
+    .ecosystemSection{
+        margin-top: 160px;
+    }
+    .sectionTitle{
+        font-size: 20px !important;
+        line-height: 36px;
+    }
+    .pie-chart-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .eachProduct{
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .eachProduct:nth-child(2n){
+        flex-direction: column;
+    }
+    .productImageContainer{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .eachProductBody{
+        width: 100%;
+    }
+    .productImage{
+        max-height: 200px;
+    }
+
+    .eachCarity{
+        width: 100%;
+        min-width: 100%;
+    }
+    .charityImageContainer{
+        height: 150px;
+    }
+    .commonSectionBodyEachElement{
+        width: 100%;
+        min-width: 100%;
+        margin-right: 0;
+    }
+    .communityWolpaper{
+        flex-direction: column;
+    }
+    .wolpaperLeft{
+        width: 100%;
+        margin-right: 0;
+    }
+    .wolpaperRight{
+        width: 100%;
+        margin-top: 24px;
+        justify-content: center;
+    }
+    .whitepaperPdfDownload{
+        width: 100%;
+    }
+    .multipleOnlineNewsPaperContainer{
+        justify-content: center;
+    }
+    .eachOnlineNewsPaper{
+        width: 144px;
+        min-width: 144px;
+    }
+    .inTheNewsIndicator{
+        width: 144px;
+    }
+    .inTheNewsQuote p{
+        font-size: 18px;
+    }
+    .communityCopyContainer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .communityCopyCode{
+        width: 100%;
+        margin-bottom: 16px;
+        flex: unset;
+    }
+    .faqCategoryContainer{
+        display: none;
+    }
+    /* .faqVideoContainer{
+        height: 200px;
+    } */
+    .communityCopyContainer{
+        width: 100%;
+    }
+    .roadMapLeft{
+        width: 100%;
+    }
+    .roadMapEachEventLeft{
+        justify-content: space-between;
+    }
+    .roadMapEachEventRight{
+        display: block;
+        height: 0;
+        overflow: hidden;
+        position: static;
+        padding-left: 0;
+        margin-top: 24px;
+    }
+
+
+    .pie-chart-main-container{
+        margin-right: 0;
+        width: 200px;
+        height: 200px;
+    }
+
+    .whitepaperPdfDownloadPopUp{
+        grid-template-columns: auto auto;
+    }
+
+    .underConstructionBanner{
+        width: 100%;
+        height: 100%;
+        object-fit: unset;
+    }
+
+
+    .eachProductAndServiceLeft{
+        grid-template-columns: 1fr;
+    }
+    .mainProductAndServiceTitle{
+        font-size: 20px;
+    }
+
+    .ourTeamImageContainer{
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+}
+@media screen and (max-width: 350px){
+    .flipdown{
+        transform: scale(.8);
+    }
+    .sectionTitle{
+        font-size: 20px !important;
+        line-height: 28px;
+    }
+    .sectionTitleSubTitle{
+        /* font-size: 14px; */
+        line-height: 20px;
+    }
+    .commonSection .sectionTitleSubTitle{
+        /* font-size: 14px; */
+        line-height: 20px;
+    }
+    .commonSectionBodyEachElementTitle{
+        font-size: 16px;
+    }
+    .eachProductTitle{
+        font-size: 18px;
+    }
+    .eachCategoryTitle, .communityFeaturedIn h1, .wolpaperLeft h1{
+        font-size: 20px;
+    }
+}

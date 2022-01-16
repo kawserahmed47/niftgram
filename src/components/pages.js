@@ -2,6 +2,7 @@ import React from 'react'
 import { Routes ,Route } from 'react-router-dom';
 import NotFound from './templates/NotFound.js'
 import Landing from './templates/landing'
+import Dashboard from './templates/dashboard/Dashboard';
 import Signin from './templates/signin'
 import Signup from './templates/signup'
 import ForgetPassword from './templates/forget_password'
@@ -14,6 +15,7 @@ const  Main = () => (
     <Routes>
 
       <Route exact path="/" element={<Landing />} />
+      <Route exact path="/dashboard" element={<Dashboard />} />
       <Route exact path="/signin" element={<Signin />} />
       <Route exact path="/signup" element={<Signup />} />
       <Route exact path="/invest" element={<Invest />} />

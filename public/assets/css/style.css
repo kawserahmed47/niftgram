@@ -906,7 +906,8 @@ img {
 }
 
 .roadmap__row--q1-2021 .roadmap__tbody {
-    background-color: var(--secondary)
+    background-color: var(--secondary);
+    
 }
 
 .roadmap__row--q1-2021 .roadmap__thead::after,
@@ -952,7 +953,8 @@ img {
     display: flex;
     background-color: var(--primaryLight);
     flex-grow: 1;
-    border-radius: 18px
+    border-radius: 18px;
+    flex-wrap: wrap;
 }
 
 .roadmap__td {

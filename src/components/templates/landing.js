@@ -530,10 +530,10 @@ export default function Landing() {
                                         <div className="roadmap__quarter">Q1</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
-                                        <div className="roadmap__td"><span>Assemble executives and development team</span></div>
-                                        <div className="roadmap__td"><span>Develop framework and wireframe for Ever blockchain</span></div>
-                                        <div className="roadmap__td"><span>Launch EverDEX, Classic exchange and Perpetual exchange</span></div>
-                                        <div className="roadmap__td"><span>End CERTIK 1st round of audits</span></div>
+                                        <div className="roadmap__td"><span>Assemble executives team and technical staff</span></div>
+                                        <div className="roadmap__td"><span>Ever blockchain conception and development</span></div>
+                                        <div className="roadmap__td"><span>Release EverDEX v1, Classic exchange v1 and Perpetual exchange v1</span></div>
+                                        <div className="roadmap__td"><span>Token Generation Event (TGE)</span></div>
                                     </div>
                                 </div>
                                 <div className="roadmap__row roadmap__row--q2-2021">
@@ -543,9 +543,9 @@ export default function Landing() {
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
                                         <div className="roadmap__td"><span>List Eve token on EverDEX, PancakeSwap, Uniswap, and Gate.io</span></div>
-                                        <div className="roadmap__td"><span>Launch XPO exchange, P2P exchange, and EVER Underwriting products</span></div>
-                                        <div className="roadmap__td"><span>Launch Ever blockchain</span></div>
-                                        <div className="roadmap__td"><span>Initiate banking, insurance, and brokerage certifications globally</span></div>
+                                        <div className="roadmap__td"><span>Release XPO exchange v1, P2P exchange v1, and EVER Underwriting products</span></div>
+                                        <div className="roadmap__td"><span>Launch Ever blockchain and protocol</span></div>
+                                        <div className="roadmap__td"><span>File banking, insurance, and brokerage certification applications, globally</span></div>
                                     </div>
                                 </div>
                                 <div className="roadmap__row roadmap__row--q3-2021">
@@ -555,9 +555,9 @@ export default function Landing() {
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
                                         <div className="roadmap__td"><span>Fair launch utility coin, Ever, and stablecoin, eDollar</span></div>
-                                        <div className="roadmap__td"><span>Launch EverWallet, ScoreFi, Escrow, TaxPal, Crowdfund and Staking platforms</span></div>
+                                        <div className="roadmap__td"><span>Release EverWallet, ScoreFi, Escrow, TaxPal, Crowdfund and Staking platforms</span></div>
                                         <div className="roadmap__td"><span>Initiate FINRA and SIPC membership and certifications</span></div>
-                                        <div className="roadmap__td"><span>Launch EVER crypto exchanges: Pro, Margin, Derivatives, Advanced, and Prime</span></div>
+                                        <div className="roadmap__td"><span>Release EVER crypto exchanges v1: Pro, Margin, Derivatives, Advanced, and Prime</span></div>
                                     </div>
                                 </div>
                                 <div className="roadmap__row roadmap__row--q4-2021">
@@ -566,10 +566,26 @@ export default function Landing() {
                                         <div className="roadmap__quarter">Q4</div>
                                     </div>
                                     <div className="roadmap__tbody fade-in--000">
-                                        <div className="roadmap__td"><span>Launch website version 2.02</span></div>
-                                        <div className="roadmap__td"><span>Launch EVER trading exchanges: CFD, SpreadBet, Binaries, DX, and CDx</span></div>
+                                        <div className="roadmap__td"><span>Release website platform version 2.0</span></div>
+                                        <div className="roadmap__td"><span>Release EVER trading exchanges v1: CFD, SpreadBet, Binaries, DX, and CDx</span></div>
                                         <div className="roadmap__td"><span>Launch Ever mobile apps, Desktop apps, and Linux version</span></div>
                                         <div className="roadmap__td"><span>Initiate Money Transmitter licenses certifications</span></div>
+                                    </div>
+                                </div>
+                                <div className="roadmap__row roadmap__row--q5-2021">
+                                    <div className="roadmap__thead fade-in--left">
+                                        <div className="roadmap__year">2023</div>
+                                        <div className="roadmap__quarter">+</div>
+                                    </div>
+                                    <div className="roadmap__tbody fade-in--000">
+                                        <div className="roadmap__td"><span>Expand Ever blockchain global reach and usage</span></div>
+                                        <div className="roadmap__td"><span>Launch EVER Endowment Fund (EVER GRANT)</span></div>
+                                        <div className="roadmap__td"><span>Open global offices and branches of EVER</span></div>
+                                        <div className="roadmap__td"><span>Release EverPay and EverPOS</span></div>
+                                        <div className="roadmap__td"><span>Release crypto and trading exchanges v2</span></div>
+                                        <div className="roadmap__td"><span>File NASDAQ and public listings of EVER via SPACs</span></div>
+                                        <div className="roadmap__td"><span>Launch corporate sponsorship of global sports events and teams</span></div>
+                                        <div className="roadmap__td"><span>Continue banking, insurance, and brokerage certification applications, globally</span></div>
                                     </div>
                                 </div>
                             </div>

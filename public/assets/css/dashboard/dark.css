@@ -1,0 +1,278 @@
+body.dark{
+    background-color: var(--siteBackgroundColorDark);
+    color: white;
+}
+.dark .headerContainer{
+    background-color: var(--siteBackgroundColorDark);
+}
+.dark .leftSidebarToggleButtonLogo{
+    fill: white;
+}
+.dark .leftSideBar{
+    background-color: var(--siteBackgroundColorDark);
+}
+.dark .searchInput{
+    color: white;
+}
+.dark .searchButton img{
+    filter: brightness(0) invert(1);
+}
+.dark .eachNavMenu:hover{
+    background-color:rgb(0, 0, 0);
+}
+.dark .languageChangeButton img, .dark .displayModeChangeButton img{
+    filter: brightness(0) invert(1);
+}
+.dark .socialMediaButton.github img, .dark .socialMediaButton.medium img{
+    filter: brightness(0) invert(1);
+}
+.dark .languageChangeButton span{
+    color: white !important;
+}
+
+
+.dark .bannerSectionMask{
+    background-color: rgba(0, 0, 0, 0.4);;
+}
+.dark .commonSectionBodyEachElement{
+    background-color: rgb(19, 19, 19);
+    color: white;
+}
+.dark .pie-chart-each-label-title{
+    color: white;
+}
+.dark .pie-chart-each-label-relative-value{
+    color: white;
+}
+.dark .eachProduct{
+    background-color: rgb(19, 19, 19);
+}
+.dark .eachProductDesc{
+    color: #7b7b7b;
+}
+.dark .roadMapEachEvent.active .roadMapLeftTitle{
+    color: white;
+}
+.dark .roadMapRightTitle{
+    color: white;
+}
+.dark .roadMapEachEvent.active .roadMapEachEventCircle{
+    background-color: white;
+    color: rgb(19, 19, 19);
+}
+.dark .eachCategory.active{
+    color: white;
+}
+.dark .communitySectionTitleContainer .sectionTitle{
+    color: white;
+}
+.dark .communityFeaturedIn h1{
+    /* color: white; */
+}
+.dark .communityCopyContainer{
+    background-color: rgb(19, 19, 19);
+}
+.dark .communityCopyCode span{
+    background-image: linear-gradient(to right, transparent , rgb(19, 19, 19));
+}
+.dark .communitySection .sectionTitle{
+    /* color: white; */
+}
+.dark .communitySection .sectionTitleSubTitle{
+    color: white;
+}
+.dark .wolpaperLeft h1{
+    /* color: white; */
+}
+.dark .communityCarityTitle{
+    /* color: white; */
+}
+.dark .eachCarity{
+    background-color: rgb(19, 19, 19);
+}
+.dark .eachSectionMask{
+    background-color: transparent;
+}
+
+.dark .mask{
+    background-color: rgba(31, 10, 73, 0.7);
+}
+
+.dark .appButtonDynamicLogo{
+    filter: invert(1);
+}
+.dark .currencyBalanceLogo.day{
+    display: none;
+}
+.dark .currencyBalanceLogo.dark{
+    display: block;
+}
+.dark .filterWhiteOnDark{
+    filter: brightness(0) invert(1);
+}
+.dark .newsLetterConfirmationPopUp{
+    background-color: var(--siteBackgroundColorDark);
+    box-shadow: 0 0 10px rgb(255 255 255 / 20%);
+}
+
+
+
+.dark .cryptoTradingTableContent{
+    box-shadow: 0 16px 32px rgb(100 100 100 / 24%);
+}
+.dark .customTable{
+    border-color: rgb(24, 24, 24);
+}
+.dark .customTable tr{
+    border-bottom-color: rgb(44, 44, 44);
+}
+.dark .customTable th{
+    background-color: var(--siteBackgroundColorDark);
+    border-right-color: rgb(44, 44, 44);
+}
+.dark .customTable td{
+    background-color: rgb(19, 19, 19);
+    border-right-color: rgb(44, 44, 44);
+}
+.dark .customTable .tableSpecialCoumn{
+    background-color: var(--siteBackgroundColorDark);
+}
+
+.dark .ourTeamEachImageContainer{
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border: 2px solid rgb(19, 19, 19);
+}
+.dark .ourTeamDescEach{
+    color: white;
+}
+
+.dark .communityFeaturedInOnlineNewsPaperContainer{
+    background-color: rgb(19, 19, 19);
+}
+.dark #blomberg .eachOnlineNewsPaperLogo, .dark #forbes .eachOnlineNewsPaperLogo, .dark #yahoo .eachOnlineNewsPaperLogo, .dark #cointelegraph .eachOnlineNewsPaperLogo{
+    filter: invert(1);
+}
+.dark .invertOnDark{
+    filter: invert(1);
+}
+.dark .footerPaymentImage.ever.day{
+    display: none;
+}
+.dark .footerPaymentImage.ever.dark{
+    display: block;
+}
+
+.dark .customCheckmarksListStyle li{
+    color: white;
+}
+
+.dark .popUpForm{
+    background-color: var(--siteBackgroundColorDark);
+}
+.dark .thankYouMessageContainer{
+    background-color: rgb(19, 19, 19);
+}
+
+.dark .version{
+    background-color: rgb(19, 19, 19);
+}
+
+
+.dark .leftSideBarNavLogo{
+    filter: brightness(0) invert(1);
+}
+.dark .leftSideBarNavExpandLogo{
+    filter: brightness(0) invert(1);
+}
+.dark button{
+    color: inherit;
+}
+.dark .eachScrollButton img{
+    filter: brightness(0) invert(1);
+}
+.dark .eachScrollButton{
+    border-color: white;
+}
+.dark .commonSectionBodyEachElementLogo{
+    filter: brightness(0) invert(1);
+}
+.dark .headerEach .headerButton{
+    color: white;
+}
+.dark .headerEach .headerButton > img{
+    filter: brightness(0) invert(1);
+}
+
+
+.dark .typyingCursor::after{
+    color: white;
+}
+.dark .exchangeCurrencySelect, .dark .buyButton{
+    background-color: white;
+    color: var(--siteColor1);
+}
+.dark .inputContainer, .dark .actualAmountAfterFeeContainer{
+    border-color: white;
+}
+.dark .exchangeInput, .dark .actualAmountAfterFee{
+    color: white;
+}
+.dark .exchangeCurrencyDropdown{
+    background-color: var(--siteBackgroundColorDark);
+    border-color: white;
+}
+.dark .currencySearch{
+    border-color: white;
+    background-color: transparent;
+    color: white;
+}
+.dark .exchangeCurrencyDropdownEachItem:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.dark .exchangeCurrencyDropdownEachItem.expandable:after{
+    color: white;
+}
+.dark .exchangeCurrencySelect:after{
+    color: var(--siteColor1);
+}
+
+.dark .perpetualTableContainer .customTable tr:hover{
+    background-color: black;
+}
+.dark .rowButton{
+    background-color: black;
+}
+.dark .eachFilterOption.selected, .dark .eachFilterOption:hover{
+    background-color: black;
+}
+.dark .cryptoPreviewContainer{
+    background-color: rgb(0, 0, 0);
+}
+.dark .cryptoPreviewChartWithDetails{
+    background-color: var(--siteBackgroundColorDark);
+}
+.dark .chartButtonEach{
+    background-color: rgb(0, 0, 0);
+}
+.dark .chartButtonEach:hover, .dark .chartButtonEach.selected{
+    background-color: #292a2e;
+}
+.dark .ratingValue > span{
+    color: white;
+}
+
+.dark .footerCRLogo.day{
+    display: none;
+}
+.dark .footerCRLogo.dark{
+    display: block;
+}
+/* For connect modal styles */
+.dark .connect-modal-wraper .connect-modal-content{
+    background-color: var(--siteBackgroundColorDark);
+}
+.connect-modal-wraper .connect-modal-content{
+    background-color: white;
+}

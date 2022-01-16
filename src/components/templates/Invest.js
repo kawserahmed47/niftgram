@@ -399,17 +399,19 @@ export default function Landing() {
                         </div>
 
                         <div className="howTo center">
-                            <p className="h3">How to buy EVE token in 3 minutes</p>
+                            <p className="h3">How to buy invest in EVER token in 3 minutes</p>
                             <ul className="howToList">
-                                <li>Visit the Invest in Ever page: https://invest.ever.re/.</li>
+                                <li>Go to the EVER Invest page: https://invest.ever.re/.</li>
                                 <li>Click on the 'Login' button. If you don't have an account, please click on the 'Sign up here' link, create account and verify your email address.</li>
                                 <li>Click on 'Buy Token' button on the top of the dashboard. </li>
                                 <li>Add your Wallet address by clicking on the 'Add your wallet address before you buy' button on the top right corner of the contribute page.</li>
                                 <li>Choose a currency. We support various fiat and crypto currencies so you can easily choose which one work best for you.</li>
-                                <li>Complete your purchase.</li>
+                                <li>Complete your payment.</li>
                             </ul>
 
-                            <p className="howToPara">If you encounter any problem, please don't hesitate to 24/7 customer service team via <a href="#" style={{color: '#02ac02', fontWeight:'bold', textDecoration: 'none'}}>Live chat</a> or drop us an eamil at <a href="mailto:invest@ever.re" style={{color: '#02ac02', fontWeight:'bold', textDecoration: 'none'}}>invest@ever.re</a> </p>
+                            <p className="howToPara">
+                            If you encounter any problem, please don't hesitate to 24/7 customer service team via <a href="#" style={{color: '#02ac02', fontWeight:'bold', textDecoration: 'none'}}>Live chat</a> or drop us an eamil at <a href="mailto:invest@ever.re" style={{color: '#02ac02', fontWeight:'bold', textDecoration: 'none'}}>invest@ever.re</a> 
+                            </p>
                         </div>
                     </article>
                     <article className="products" id="products">
@@ -684,6 +686,22 @@ export default function Landing() {
                                         <div className="roadmap__td"><span>Initiate Money Transmitter licenses certifications</span></div>
                                     </div>
                                 </div>
+                                <div className="roadmap__row roadmap__row--q5-2021">
+                                    <div className="roadmap__thead fade-in--left">
+                                        <div className="roadmap__year">2023</div>
+                                        <div className="roadmap__quarter">+</div>
+                                    </div>
+                                    <div className="roadmap__tbody fade-in--000">
+                                        <div className="roadmap__td"><span>Expand Ever blockchain global reach and usage</span></div>
+                                        <div className="roadmap__td"><span>Launch EVER Endowment Fund (EVER GRANT)</span></div>
+                                        <div className="roadmap__td"><span>Open global offices and branches of EVER</span></div>
+                                        <div className="roadmap__td"><span>Release EverPay and EverPOS</span></div>
+                                        <div className="roadmap__td"><span>Release crypto and trading exchanges v2</span></div>
+                                        <div className="roadmap__td"><span>File NASDAQ and public listings of EVER via SPACs</span></div>
+                                        <div className="roadmap__td"><span>Launch corporate sponsorship of global sports events and teams</span></div>
+                                        <div className="roadmap__td"><span>Continue banking, insurance, and brokerage certification applications, globally</span></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -731,6 +749,9 @@ export default function Landing() {
                                         </a>
                                         <a href="mailto:peter.plange@ever.re" target="_blank">
                                             <img style={{width: '30px', marginLeft: '16px'}} src="/assets/img/socialLogos/email.svg" alt="mail" />
+                                        </a>
+                                        <a href="https://calendly.com/pieter-plange/30" target="_blank">
+                                            <img style={{width: '30px', marginLeft: '16px'}} src="https://img.icons8.com/color/48/000000/zoom.png" alt="Zoom" />
                                         </a>
                                     </div>
                                 </div>
