@@ -144,6 +144,7 @@ export default function Landing() {
         // slider.step = slider.max/totalBlock
     }
 
+    document.title = "Invest in EVER | EVER - one platform, all things money."
     return(
         <div>
             <div className="wrapper">
@@ -399,7 +400,7 @@ export default function Landing() {
                         </div>
 
                         <div className="howTo center">
-                            <p className="h3">How to buy invest in EVER token in 3 minutes</p>
+                            <p className="h3">How to invest in EVER in 3 minutes?</p>
                             <ul className="howToList">
                                 <li>Go to the EVER Invest page: https://invest.ever.re/.</li>
                                 <li>Click on the 'Login' button. If you don't have an account, please click on the 'Sign up here' link, create account and verify your email address.</li>
@@ -410,7 +411,7 @@ export default function Landing() {
                             </ul>
 
                             <p className="howToPara">
-                            If you encounter any problem, please don't hesitate to 24/7 customer service team via <a href="#" style={{color: '#02ac02', fontWeight:'bold', textDecoration: 'none'}}>Live chat</a> or drop us an eamil at <a href="mailto:invest@ever.re" style={{color: '#02ac02', fontWeight:'bold', textDecoration: 'none'}}>invest@ever.re</a> 
+                            If you encounter any problem, please don't hesitate to contact our 24/7 customer service team via <a href="https://direct.lc.chat/13445646/" style={{color: '#02ac02', fontWeight:'bold', textDecoration: 'none'}}>Live chat</a> or drop us an email at <a href="mailto:invest@ever.re" style={{color: '#02ac02', fontWeight:'bold', textDecoration: 'none'}}>invest@ever.re</a> 
                             </p>
                         </div>
                     </article>
