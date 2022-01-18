@@ -411,7 +411,7 @@ export default function Landing() {
                             </ul>
 
                             <p className="howToPara">
-                            If you encounter any problem, please don't hesitate to contact our 24/7 customer service team via <a href="https://direct.lc.chat/13445646/" style={{color: '#02ac02', fontWeight:'bold', textDecoration: 'none'}}>Live chat</a> or drop us an email at <a href="mailto:invest@ever.re" style={{color: '#02ac02', fontWeight:'bold', textDecoration: 'none'}}>invest@ever.re</a> 
+                            If you encounter any problem, please don't hesitate to contact our 24/7 customer service team via <a href="https://direct.lc.chat/13445646/" style={{color: '#02ac02', fontWeight:'bold', textDecoration: 'none'}} target="_blank">Live chat</a> or drop us an email at <a href="mailto:invest@ever.re" style={{color: '#02ac02', fontWeight:'bold', textDecoration: 'none'}}>invest@ever.re</a> 
                             </p>
                         </div>
                     </article>
