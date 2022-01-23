@@ -335,7 +335,7 @@ export default function Landing() {
                                     <br/>
                                     <p>Instant buying and selling of over 9k+ cryptos on the world's #1 and largest Instant Exchanger</p>
                                     <br/>
-                                    <a href="https://app.ever.re/classic" target="_blank" className="try-demo__button">Start trading</a>
+                                    <a href="https://classic.ever.re/" target="_blank" className="try-demo__button">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>EverDEX</h2>
@@ -349,7 +349,7 @@ export default function Landing() {
                                     <br/>
                                     <p>One-off and recurrent trading of 7k+ cryptos with intuitive charts and risk scores of each crypto on the world's #1 retail crypto exchanger</p>
                                     <br/>
-                                    <a href="https://app.ever.re/perpetual" target="_blank" className="try-demo__button">Start trading</a>
+                                    <a href="https://perpetual.ever.re/" target="_blank" className="try-demo__button">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>P2P exchange</h2>
@@ -368,7 +368,7 @@ export default function Landing() {
                                 <div className="try-demo__box__each">
                                     <h2>Underwriting</h2>
                                     <br/>
-                                    <p>Advanced crypto launcher, token placing, direct (fair launch) lsiting, and auction listing</p>
+                                    <p>Advanced crypto launcher, token placing, direct listing (fair launch), and auction listing</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Re-testing</a>
                                 </div>
@@ -635,7 +635,15 @@ export default function Landing() {
                         <div className="center team__center">
                             <h2 className="hash">Team</h2>
                             <p className="h1">Team members</p>
-                            <p style={{marginTop: "16px"}}>EVER is hiring c-suit, top and mid-level executives, programmers, customer services, etc to join our team. <a href="https://careers.ever.re" target="_blank" className="referenceLink" style={{textDecoration: 'none'}}>Careers</a> page to learn more.</p>
+                            <p style={{marginTop: "16px"}}>
+                                EVER currently has in-house 23 technical staff and 2 project managers and we are presently interviewing and onboarding executives for our c-suit and top-level positions as well as more programmers/coders for the EVER protocol and framework. Soon, we will be having their profiles on this section.
+                                <br/>
+                                <br/>
+                                There are still available positions in c-suit, top, and mid-level, engineering, programming, internships, customer services, etc.
+                                <br/>
+                                <br/>
+                                Please visit our  <a href="https://careers.ever.re" target="_blank" className="referenceLink" style={{textDecoration: 'none', fontWeight:"bold"}}>Careers</a> page to learn more about our current available job offers.
+                            </p>
                             <div className="teamFounderContainer">
                                 <div className="founderImageContainer center-x-with-flex-column">
                                     <img src="/assets/img/founder.png" alt="Founder Image"/>

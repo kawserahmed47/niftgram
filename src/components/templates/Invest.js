@@ -271,12 +271,17 @@ export default function Landing() {
                     <article className="about" id="tge">
                         <div className="center">
                             <h2 className="hash">Token Generation Event (TGE)</h2>
-                            <p>EVER is conducting a TGE for its meme token, Eve. The TGE will start with a Seed funding event, Private Sale event, Public Sale event, and a Retail Sale event, which will consist of an IDO and IEO. Below are the details for each event: </p>
+                            <p>
+                                EVER is conducting a TGE for its meme token, Eve.
+                                <br/>
+                                <br/>
+                                The TGE will involve a Seed, Private Sale, Strategic Partners Sale, PreSale, Public (Token) Sale, and a Retail Sale, which will consist of an IDO and IEO. Both the Strategic Partners Sale and the PreSale will be communicated to investors in due course.
+                            </p>
                             <br/>
                             <p class="h2">Seed</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 5,040,000</strong> is allocated for seed investors at a price of <strong>$0.45</strong> per token. The seed funding event will start on <strong>Tuesday January 18th</strong> and end on <strong>Monday January 31th</strong> The seed funding will have a vesting schedule as follows: <strong>$10% TGE, 3 months cliff and 15 months vesting</strong>.
+                                An amount of <strong>$EVE 5,040,000</strong> is allocated for seed investors at a price of <strong>$0.75</strong> per token. The seed funding event will start on <strong>Tuesday January 25th</strong> and end on <strong>Monday January 31st</strong> The seed funding will have a vesting schedule as follows: <strong>$10% TGE, 4 months cliff and 15 months vesting</strong>.
                                 <br/>
                                 <br/>
                                 You have been given an exclusive invitation to participate in EVER's seed funding. 
@@ -295,19 +300,19 @@ export default function Landing() {
                             <p class="h2">Private Sale</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 15,120,000</strong> is allocated for private sale investors at a price of $0.65 per token. The private sale funding event will start on <strong>Tuesday February 8th</strong> and end on <strong>Monday Febraury 21st</strong>. The private sale funding will have a vesting schedule as follows: <strong>$12% TGE, 2 months cliff and 12 month vesting</strong>.
+                                An amount of <strong>$EVE 15,120,000</strong> is allocated for private sale investors at a price of $1.00 per token. The private sale funding event will start on <strong>Tuesday February 8th</strong> and end on <strong>Monday Febraury 21st</strong>. The private sale funding will have a vesting schedule as follows: <strong>$12% TGE, 3 months cliff and 12 month vesting</strong>.
                             </p>
                             <br/>
                             <p class="h2">Public Sale</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 2,240,000</strong> is allocated for public (token) sale investors at a price of $0.85 per token. The public sale funding event will start on <strong>Friday MMarch 25th</strong> and end on <strong>Thursday March 31st</strong>. The public sale funding will have no vesting schedule but will have <strong>$100% TGE</strong>. There will be an Initial DEX Offering (IDO) on Trustpad and an Initial Exchange Offering (IEO) on Gate.io. Both the IDO and IEO will be held on the same date.
+                                An amount of <strong>$EVE 2,240,000</strong> is allocated for public (token) sale investors at a price of $1.30 per token. The public sale funding event will start on <strong>Friday March 25th</strong> and end on <strong>Thursday March 31st</strong>. The public sale funding will have no vesting schedule but will have $100% TGE. There will be an Initial DEX Offering (IDO) on EVER and on Trustpad. There will be an Initial Exchange Offering (IEO) EVER and on Gate.io. Both the IDO and IEO will be held on the same date.
                             </p>
                             <br/>
                             <p class="h2">Retail Sale</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 4,500,000</strong> is allocated for the retail sale at a price of $1.00 per token. Eve will be listed on EverDEX, Perpetual exchange, Pancakeswap, and Gate.io on <strong>Friday April 1st</strong>
+                                An amount of <strong>$EVE 4,500,000</strong> is allocated for the retail sale at a price of $1.50 per token. Eve will be listed on EverDEX, Perpetual exchange, Pancakeswap, and Gate.io on <strong>Friday April 1st</strong>
                             </p>
                         </div>
                     </article>
@@ -364,35 +369,62 @@ export default function Landing() {
                                     <tbody>
                                         <tr>
                                             <td align="left" valign="middle">Seed</td>
-                                            <td align="center" valign="middle">$0.45</td>
-                                            <td align="center" valign="middle">Jan 18 - Jan 31</td>
+                                            <td align="center" valign="middle">$0.75</td>
+                                            <td align="center" valign="middle">Jan 25 - Jan 31</td>
                                             <td align="center" valign="middle"></td>
-                                            <td align="center" valign="middle">$2,268,000</td>
-                                            <td align="center" valign="middle">$10% TGE, 3 months cliff and 15 months vesting</td>
+                                            <td align="center" valign="middle">$3,780,000</td>
+                                            <td align="center" valign="middle">$10% TGE, 4 months cliff and 15 months vesting</td>
                                         </tr>
                                         <tr>
                                             <td align="left" valign="middle">Private Sale</td>
-                                            <td align="center" valign="middle">$0.65</td>
+                                            <td align="center" valign="middle">$1.00</td>
                                             <td align="center" valign="middle">Feb 8 - Feb 21</td>
                                             <td align="center" valign="middle"></td>
-                                            <td align="center" valign="middle">$9,828,000</td>
-                                            <td align="center" valign="middle">$12% TGE, 2 months cliff and 12 months vesting</td>
+                                            <td align="center" valign="middle">$15,120,000</td>
+                                            <td align="center" valign="middle">$12% TGE, 3 months cliff and 12 month vesting</td>
                                         </tr>
                                         <tr>
                                             <td align="left" valign="middle">Token Sale</td>
-                                            <td align="center" valign="middle">$0.85</td>
+                                            <td align="center" valign="middle">$1.30</td>
                                             <td align="center" valign="middle">Mar 25 - Mar 31</td>
-                                            <td align="center" valign="middle">$1,904,000</td>
-                                            <td align="center" valign="middle">$3,808,000</td>
+                                            <td align="center" valign="middle">$1,456,000</td>
+                                            <td align="center" valign="middle">$2,912,000</td>
                                             <td align="center" valign="middle">$100% TGE</td>
                                         </tr>
                                         <tr>
                                             <td align="left" valign="middle">Retail Sale</td>
-                                            <td align="center" valign="middle">$1.00</td>
+                                            <td align="center" valign="middle">$1.50</td>
                                             <td align="center" valign="middle">Apr 1</td>
                                             <td align="center" valign="middle"></td>
                                             <td align="center" valign="middle"></td>
                                             <td align="center" valign="middle"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br/>
+                            <br/>
+                            <p className='h2'>Bonuses</p>
+                            <br/>
+                            <div className="eachTableContainer">
+                                <table class="customTable noBold" style={{minWidth:"500px", width:"100%", cellSpacing:"0", cellPadding:"0"}}>
+                                    <thead>
+                                        <tr>
+                                            <th width="33.33%" align="left" valign="bottom">Seed</th>
+                                            <th width="33.33%" align="center" valign="bottom">Private Sale</th>
+                                            <th width="33.33%" align="center" valign="bottom">Token Sale</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td align="left" valign="middle">Jan 25 - Jan 28</td>
+                                            <td align="center" valign="middle">Feb 08 - Feb 15</td>
+                                            <td align="center" valign="middle">Mar 25 - Mar 31</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="middle">25%</td>
+                                            <td align="center" valign="middle">15%</td>
+                                            <td align="center" valign="middle">5%</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -403,7 +435,7 @@ export default function Landing() {
                             <p className="h3">How to invest in EVER in 3 minutes?</p>
                             <ul className="howToList">
                                 <li>Go to the EVER Invest page: https://invest.ever.re/.</li>
-                                <li>Click on the 'Login' button. If you don't have an account, please click on the 'Sign up here' link, create account and verify your email address.</li>
+                                <li>Login with your details. If you don't have an account, please click on the '<a href="https://ever.re/signup" target="_blank" className="referenceLink" style={{textDecoration: 'none'}}>Sign up here</a>', create account and verify your email address.</li>
                                 <li>Click on 'Buy Token' button on the top of the dashboard. </li>
                                 <li>Add your Wallet address by clicking on the 'Add your wallet address before you buy' button on the top right corner of the contribute page.</li>
                                 <li>Choose a currency. We support various fiat and crypto currencies so you can easily choose which one work best for you.</li>
@@ -452,21 +484,21 @@ export default function Landing() {
                                     <br/>
                                     <p>Instant buying and selling of over 9k+ cryptos on the world's #1 and largest Instant Exchanger</p>
                                     <br/>
-                                    <a href="https://app.ever.re/classic" target="_blank" className="try-demo__button">Start trading</a>
+                                    <a href="https://classic.ever.re/" target="_blank" className="try-demo__button">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>EverDEX</h2>
                                     <br/>
                                     <p>Swap, pool, and farm 12k+ tokens built on 25+ cross-chain networks on the world's largest and most liquid DEX.</p>
                                     <br/>
-                                    <a href="https://app.ever.re/dex" target="_blank" className="try-demo__button dim">Re-testing</a>
+                                    <a href="https://dex.ever.re/" target="_blank" className="try-demo__button dim">Re-testing</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>Perpetual</h2>
                                     <br/>
                                     <p>One-off and recurrent trading of 7k+ cryptos with intuitive charts and risk scores of each crypto on the world's #1 retail crypto exchanger</p>
                                     <br/>
-                                    <a href="https://app.ever.re/perpetual" target="_blank" className="try-demo__button">Start trading</a>
+                                    <a href="https://perpetual.ever.re/" target="_blank" className="try-demo__button">Start trading</a>
                                 </div>
                                 <div className="try-demo__box__each">
                                     <h2>P2P exchange</h2>
@@ -485,7 +517,7 @@ export default function Landing() {
                                 <div className="try-demo__box__each">
                                     <h2>Underwriting</h2>
                                     <br/>
-                                    <p>Advanced crypto launcher, token placing, direct (fair launch) lsiting, and auction listing</p>
+                                    <p>Advanced crypto launcher, token placing, direct listing (fair launch), and auction listing</p>
                                     <br/>
                                     <a href="#" className="try-demo__button dim">Re-testing</a>
                                 </div>
@@ -738,7 +770,15 @@ export default function Landing() {
                         <div className="center team__center">
                             <h2 className="hash">Team</h2>
                             <p className="h1">Team members</p>
-                            <p style={{marginTop: "16px"}}>EVER is hiring c-suit, top and mid-level executives, programmers, customer services, etc to join our team. <a href="https://careers.ever.re" target="_blank" className="referenceLink" style={{textDecoration: 'none'}}>Careers</a> page to learn more.</p>
+                            <p style={{marginTop: "16px"}}>
+                                EVER currently has in-house 23 technical staff and 2 project managers and we are presently interviewing and onboarding executives for our c-suit and top-level positions as well as more programmers/coders for the EVER protocol and framework. Soon, we will be having their profiles on this section.
+                                <br/>
+                                <br/>
+                                There are still available positions in c-suit, top, and mid-level, engineering, programming, internships, customer services, etc.
+                                <br/>
+                                <br/>
+                                Please visit our  <a href="https://careers.ever.re" target="_blank" className="referenceLink" style={{textDecoration: 'none', fontWeight:"bold"}}>Careers</a> page to learn more about our current available job offers.
+                            </p>
                             <div className="teamFounderContainer">
                                 <div className="founderImageContainer center-x-with-flex-column">
                                     <img src="/assets/img/founder.png" alt="Founder Image"/>

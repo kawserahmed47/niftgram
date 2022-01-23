@@ -16,7 +16,7 @@ export default function Header() {
 
     return(
         <header className="header" id="header_block">
-            <div className='topInfo d-flex'>
+            {/* <div className='topInfo d-flex'>
                 <a href='https://www.ever.re/'>https://www.ever.re/</a>
                 <a href='mailto:invest@ever.re'>invest@ever.re</a>
                 <div className='center-y'>
@@ -24,7 +24,7 @@ export default function Header() {
                     <a class="disabled" href="javascript:void(0)" style={{marginRight: "8px"}}><img width="20px" src="assets/img/socialLogos/twitter.svg"/></a>
                     <a href="https://eblog.medium.com/" target="_blank"><img width="20px" src="assets/img/socialLogos/medium.svg"/></a>
                 </div>
-            </div>
+            </div> */}
             <div className="center" style={{paddingTop: "1rem", paddingBottom: "1rem"}}>
                 <div className="header__logo">
                     <a href="./" className="logo" title="Ever Corp">

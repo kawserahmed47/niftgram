@@ -78,7 +78,7 @@ export default function Signin() {
                         setFormWarning(response.message + " Redirecting..." );
                         setEmailVal("");
                         setPasswordVal("");
-                        window.location.href = "https://app.ever.re?auth="+response.token
+                        window.location.href = "https://dash.ever.re?auth="+response.token
                     }else{
                         setFormWarning(response.message);
                     }
