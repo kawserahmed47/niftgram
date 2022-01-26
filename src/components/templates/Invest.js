@@ -158,7 +158,7 @@ export default function Landing() {
                                     <span>Invest now</span>
                                     {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
                                 </a>
-                                <a href="#" className="btn btn--grad btn--demo">
+                                <a href="https://doc.ever.re/pitch_deck" target='_blank' className="btn btn--grad btn--demo">
                                     <span style={{paddingLeft:0}}>Pitch deck</span>
                                     {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
                                 </a>

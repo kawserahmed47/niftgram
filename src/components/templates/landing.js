@@ -218,7 +218,7 @@ export default function Landing() {
                                     <span>Live Demo</span>
                                     {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
                                 </a>
-                                <a href="/assets/pdf/EverWhitepaper.pdf" className="btn btn--grad btn--demo" download="Ever Whitepaper.pdf" rel="noopener nofollow">
+                                <a href="https://doc.ever.re/whitepaper" target='_blank' className="btn btn--grad btn--demo" rel="noopener nofollow">
                                     <span style={{paddingLeft:0}}>Whitepaper</span>
                                     {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
                                 </a>
