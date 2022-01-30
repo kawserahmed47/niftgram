@@ -275,21 +275,16 @@ export default function Landing() {
                                 EVER is conducting a TGE for its meme token, Eve.
                                 <br/>
                                 <br/>
-                                The TGE will involve a Seed, Private Sale, Strategic Partners Sale, PreSale, Public (Token) Sale, and a Retail Sale, which will consist of an IDO and IEO. Both the Strategic Partners Sale and the PreSale will be communicated to investors in due course.
+                                The TGE will involve a IDO Round, IEO Round, and a Retail Sale.
                             </p>
                             <br/>
-                            <p class="h2">Seed</p>
+                            <p class="h2">IDO Round</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 5,040,000</strong> is allocated for seed investors at a price of <strong>$0.75</strong> per token. The seed funding event will start on <strong>Tuesday January 25th</strong> and end on <strong>Monday January 31st</strong> The seed funding will have a vesting schedule as follows: <strong>$10% TGE, 4 months cliff and 15 months vesting</strong>.
-                                <br/>
-                                <br/>
-                                You have been given an exclusive invitation to participate in EVER's seed funding. 
-                                {/*
-                                    To invest, please drop us an email at <a href="mailto:invest@ever.re" style={{color: "var(--siteColor2)", textDecoration: 'none'}} target="_blank">invest@ever.re</a> or contact Pieter on Telegram at <a href="https://t.me/pieter_ever/" style={{color: "var(--siteColor2)", textDecoration: 'none'}} target="_blank">https://t.me/pieter_ever/</a>. Thank you.
-                                */}
-                                  
+                                An amount of <strong>$EVE 20,160,000</strong> is allocated for IDO Round at a price of $1 per token. The IDO Round will start on <strong>Tuesday March 1st</strong> and end on <strong>Thursday March 31st</strong>. The IDO Round will have no vesting schedule and will be $100% unlocked. The IDO Round will be held on EVER! Launcher.
                             </p>
+                            <br/>
+                            <p>You have been given an exclusive invitation to participate in EVER's IDO Round.</p>
                             <div className="investBtn">
                                 <a href="https://invest.ever.re/" className="btn btn--grad btn--demo" rel="noopener nofollow">
                                         <span>Invest now</span>
@@ -297,22 +292,16 @@ export default function Landing() {
                                 </a>
                             </div>
                             <br/>
-                            <p class="h2">Private Sale</p>
+                            <p class="h2">IEO Round</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 15,120,000</strong> is allocated for private sale investors at a price of $1.00 per token. The private sale funding event will start on <strong>Tuesday February 8th</strong> and end on <strong>Monday Febraury 21st</strong>. The private sale funding will have a vesting schedule as follows: <strong>$12% TGE, 3 months cliff and 12 month vesting</strong>.
-                            </p>
-                            <br/>
-                            <p class="h2">Public Sale</p>
-                            <br/>
-                            <p>
-                                An amount of <strong>$EVE 2,240,000</strong> is allocated for public (token) sale investors at a price of $1.30 per token. The public sale funding event will start on <strong>Friday March 25th</strong> and end on <strong>Thursday March 31st</strong>. The public sale funding will have no vesting schedule but will have $100% TGE. There will be an Initial DEX Offering (IDO) on EVER and on Trustpad. There will be an Initial Exchange Offering (IEO) EVER and on Gate.io. Both the IDO and IEO will be held on the same date.
+                                An amount of <strong>$EVE 2,240,000</strong> is allocated for IEO Round at a price of $1 per token. The IEO Round will start on <strong>Friday March 25th</strong> and end on <strong>Thursday March 31st</strong>. The IEO Round will have no vesting schedule and will be $100% unlocked. The IEO will be held in 4 CEXs: Gate.io ($EVE 560,000), OKEx ($EVE 560,000), KuCoin ($EVE 560,000), and Huobi ($EVE 560,000).
                             </p>
                             <br/>
                             <p class="h2">Retail Sale</p>
                             <br/>
                             <p>
-                                An amount of <strong>$EVE 4,500,000</strong> is allocated for the retail sale at a price of $1.50 per token. Eve will be listed on EverDEX, Perpetual exchange, Pancakeswap, and Gate.io on <strong>Friday April 1st</strong>
+                                An amount of <strong>$EVE 4,500,000</strong> is allocated for the retail sale at a price of $1.50 per token. Eve will concurrently be listed on EverDEX, Perpetual exchange, Classic exchange, Pancakeswap, Gate.io, OKEx, KuCoin, and Huobi on <strong>Friday April 1st</strong>.
                             </p>
                         </div>
                     </article>
@@ -358,43 +347,43 @@ export default function Landing() {
                                 <table class="customTable noBold" style={{minWidth:"500px", width:"100%", cellSpacing:"0", cellPadding:"0"}}>
                                     <thead>
                                         <tr>
-                                            <th width="16.66%" align="left" valign="bottom"></th>
-                                            <th width="16.66%" align="center" valign="bottom">Price</th>
-                                            <th width="16.66%" align="center" valign="bottom">Date</th>
-                                            <th width="16.66%" align="center" valign="bottom">Soft cap</th>
-                                            <th width="16.66%" align="center" valign="bottom">Hard cap</th>
-                                            <th width="16.66%" align="center" valign="bottom">Vesting</th>
+                                            <th width="12.5%" align="left" valign="bottom"></th>
+                                            <th width="12.5%" align="center" valign="bottom">Price</th>
+                                            <th width="12.5%" align="center" valign="bottom">Date</th>
+                                            <th width="12.5%" align="center" valign="bottom">Soft cap</th>
+                                            <th width="12.5%" align="center" valign="bottom">Hard cap</th>
+                                            <th width="12.5%" align="center" valign="bottom">Vesting</th>
+                                            <th width="12.5%" align="center" valign="bottom">Min tokens</th>
+                                            <th width="12.5%" align="center" valign="bottom">Max tokens</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td align="left" valign="middle">Seed</td>
-                                            <td align="center" valign="middle">$0.75</td>
-                                            <td align="center" valign="middle">Jan 25 - Jan 31</td>
-                                            <td align="center" valign="middle"></td>
-                                            <td align="center" valign="middle">$3,780,000</td>
-                                            <td align="center" valign="middle">$10% TGE, 4 months cliff and 15 months vesting</td>
-                                        </tr>
-                                        <tr>
-                                            <td align="left" valign="middle">Private Sale</td>
+                                            <td align="left" valign="middle">IDO</td>
                                             <td align="center" valign="middle">$1.00</td>
-                                            <td align="center" valign="middle">Feb 8 - Feb 21</td>
-                                            <td align="center" valign="middle"></td>
-                                            <td align="center" valign="middle">$15,120,000</td>
-                                            <td align="center" valign="middle">$12% TGE, 3 months cliff and 12 month vesting</td>
+                                            <td align="center" valign="middle">Mar 01 - 31</td>
+                                            <td align="center" valign="middle">$10,080,000</td>
+                                            <td align="center" valign="middle">$20,160,000</td>
+                                            <td align="center" valign="middle">$100% Unlocked</td>
+                                            <td align="center" valign="middle">$EVE 5</td>
+                                            <td align="center" valign="middle">$EVE 100,000</td>
                                         </tr>
                                         <tr>
-                                            <td align="left" valign="middle">Token Sale</td>
-                                            <td align="center" valign="middle">$1.30</td>
-                                            <td align="center" valign="middle">Mar 25 - Mar 31</td>
-                                            <td align="center" valign="middle">$1,456,000</td>
-                                            <td align="center" valign="middle">$2,912,000</td>
-                                            <td align="center" valign="middle">$100% TGE</td>
+                                            <td align="left" valign="middle">IEO</td>
+                                            <td align="center" valign="middle">$1.00</td>
+                                            <td align="center" valign="middle">Mar 25 - 31</td>
+                                            <td align="center" valign="middle">$ 1,120,000</td>
+                                            <td align="center" valign="middle">$2,240,000</td>
+                                            <td align="center" valign="middle">$100% Unlocked</td>
+                                            <td align="center" valign="middle">$EVE 5</td>
+                                            <td align="center" valign="middle">$EVE 1,000</td>
                                         </tr>
                                         <tr>
                                             <td align="left" valign="middle">Retail Sale</td>
                                             <td align="center" valign="middle">$1.50</td>
                                             <td align="center" valign="middle">Apr 1</td>
+                                            <td align="center" valign="middle"></td>
+                                            <td align="center" valign="middle"></td>
                                             <td align="center" valign="middle"></td>
                                             <td align="center" valign="middle"></td>
                                             <td align="center" valign="middle"></td>
@@ -410,21 +399,31 @@ export default function Landing() {
                                 <table class="customTable noBold" style={{minWidth:"500px", width:"100%", cellSpacing:"0", cellPadding:"0"}}>
                                     <thead>
                                         <tr>
-                                            <th width="33.33%" align="left" valign="bottom">Seed</th>
-                                            <th width="33.33%" align="center" valign="bottom">Private Sale</th>
-                                            <th width="33.33%" align="center" valign="bottom">Token Sale</th>
+                                            <th width="33.33%" align="left" valign="bottom"></th>
+                                            <th width="33.33%" align="center" valign="bottom">Date</th>
+                                            <th width="33.33%" align="center" valign="bottom">Bonus</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td align="left" valign="middle">Jan 25 - Jan 28</td>
-                                            <td align="center" valign="middle">Feb 08 - Feb 15</td>
-                                            <td align="center" valign="middle">Mar 25 - Mar 31</td>
+                                            <td align="left" valign="middle">IDO Round Tier 1</td>
+                                            <td align="center" valign="middle">Mar 01 - 14</td>
+                                            <td align="center" valign="middle">25 Eve tokens</td>
                                         </tr>
                                         <tr>
-                                            <td align="left" valign="middle">25%</td>
-                                            <td align="center" valign="middle">15%</td>
-                                            <td align="center" valign="middle">5%</td>
+                                            <td align="left" valign="middle">IDO Round Tier 2</td>
+                                            <td align="center" valign="middle">Mar 15 - 24</td>
+                                            <td align="center" valign="middle">10 Eve tokens</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="middle">IDO Round Tier 3</td>
+                                            <td align="center" valign="middle">Mar 25 - 29</td>
+                                            <td align="center" valign="middle">1 Eve token</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="middle">IEO Round</td>
+                                            <td align="center" valign="middle">Mar 25 - 29</td>
+                                            <td align="center" valign="middle">1 Eve token</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -755,9 +754,6 @@ export default function Landing() {
                                 </div>
                                 <div className="token__col">
                                     <img src="/assets/img/token/token2.svg" alt=""/>
-                                </div>
-                                <div className="token__col">
-                                    <img src="/assets/img/token/token3.svg" alt=""/>
                                 </div>
                                 <div className="token__col">
                                     <img src="/assets/img/token/token4.svg" alt=""/>

@@ -610,9 +610,6 @@ export default function Landing() {
                                     <img src="/assets/img/token/token2.svg" alt=""/>
                                 </div>
                                 <div className="token__col fade-in--100">
-                                    <img src="/assets/img/token/token3.svg" alt=""/>
-                                </div>
-                                <div className="token__col fade-in--100">
                                     <img src="/assets/img/token/token4.svg" alt=""/>
                                 </div>
                             </div>
