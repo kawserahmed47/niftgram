@@ -6,8 +6,9 @@ export default function Landing() {
     document.body.title = 'Invest in EVER | EVER - one platform, all things money'
     const [sliderVal, setSliderVal] = useState(0)
     useEffect(() => {
+        window.location.href = "/"
         getAllTeamMembers()
-    });
+    }, []);
 
     var startX,
         startY,
