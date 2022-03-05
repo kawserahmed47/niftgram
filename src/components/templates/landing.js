@@ -218,8 +218,8 @@ export default function Landing() {
                                     <span>Live Demo</span>
                                     {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
                                 </a>
-                                <a href="https://doc.ever.re/whitepaper" target='_blank' className="btn btn--grad btn--demo" rel="noopener nofollow">
-                                    <span style={{paddingLeft:0}}>Whitepaper</span>
+                                <a href="https://doc.ever.re/pitch_deck" target='_blank' className="btn btn--grad btn--demo" rel="noopener nofollow">
+                                    <span style={{paddingLeft:0}}>Pitch Deck</span>
                                     {/* <img src="./assets/img/brandLogo/favicon_white.png" alt="" /> */}
                                 </a>
                             </div>
@@ -641,7 +641,7 @@ export default function Landing() {
                                 <br/>
                                 Please visit our  <a href="https://careers.ever.re" target="_blank" className="referenceLink" style={{textDecoration: 'none', fontWeight:"bold"}}>Careers</a> page to learn more about our current available job offers.
                             </p>
-                            <div className="teamFounderContainer">
+                            {/* <div className="teamFounderContainer">
                                 <div className="founderImageContainer center-x-with-flex-column">
                                     <img src="/assets/img/founder.png" alt="Founder Image"/>
                                     <p className="founderName">Peter M. Plange, PhD, Esq.</p>
@@ -659,7 +659,7 @@ export default function Landing() {
                                     <p>Peter Plange has been working in the banking industrial for the past 16 and half years. An alumna from both Oxford University and Harvard University, Peter started his banking career in 2005 at Standard Chartered as an analyst. He rose through the ranks to be the head of Research in Financial and Emerging Markets till he left Standard Chartered to up start EVER in 2021.</p>
                                     <p>Peter has been involved in crypto since 2017. He is experienced in several crypto businesses ranging from a crypto-focused startup fund to arbitrage among a few others.</p>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="team__list hide" id="team__list" onTouchStart={(e)=>{touchStart(e)}} onTouchMove={(e)=>{touchMove(e)}} onTouchEnd={(e)=>{touchEnd(e)}}>
 
                                 <div className="team__member">
