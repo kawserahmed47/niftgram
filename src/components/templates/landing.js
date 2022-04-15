@@ -705,6 +705,7 @@ export default function Landing() {
                     Re-testing
                   </a>
                 </div>
+                
 
                 <div className="try-demo__box__each" style={{backgroundImage : "linear-gradient( white, green, blue )"}} >
                   <h2>Niftvoucher</h2>
